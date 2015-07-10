@@ -1,0 +1,10 @@
+%% This is an example first chapter. 
+
+\chapter{Arquitectura}
+
+Generalidades, Arquitectura de Sistemas y Arquitectura de Software
+
+\include{section_architecture_generals}
+\include{section_architecture_systems}
+\include{section_architecture_software}
+

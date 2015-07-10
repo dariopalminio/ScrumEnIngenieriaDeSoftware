@@ -1,0 +1,66 @@
+\chapter{Glosario y Acrónimos}
+
+\begin{table}[h]
+\begin{tabular}{lllll}
+\cline{1-2}
+\multicolumn{1}{|l|}{Nombre} & \multicolumn{1}{l|}{Detalle}                              &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{ADL}   & \multicolumn{1}{l|}{Architecture Description Language}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{BPMN}   & \multicolumn{1}{l|}{Business Process Modeling Notation}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{CD}   & \multicolumn{1}{l|}{Conceptual Diagram or ConceptDraw}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{CLD}   & \multicolumn{1}{l|}{Causal Loop Diagram}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{ERD}   & \multicolumn{1}{l|}{Entity Relationship Diagram}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{FC}   & \multicolumn{1}{l|}{Flow Chart Diagram for control flow}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{DFD}   & \multicolumn{1}{l|}{Data Flow Diagram}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{MMD}   & \multicolumn{1}{l|}{Map Mind Diagram}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SAD}  & \multicolumn{1}{l|}{Software Architecture Documentation} &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SC}   & \multicolumn{1}{l|}{Structure Chart}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SFD}   & \multicolumn{1}{l|}{Stock and Flow Diagrams}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SGT}   & \multicolumn{1}{l|}{
+\begin{tabular}[c]{@{}l@{}}
+System General Theory, Teoría General de Sistemas o Sistema General.  \\
+Originariamente la Teoría General de Sistemas fue desarrollada por  \\
+Ludwig von Bertalanffy \cite{Bertalanffy-1968} y luego Le Moigne la \\
+denomina Sistema General \cite{Le-Moigne-1994}. \\
+\end{tabular}
+}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SSADM}   & \multicolumn{1}{l|}{Structured Systems Analysis and Design Method}  &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SW}   & \multicolumn{1}{l|}{Software}                            &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{UML}   & \multicolumn{1}{l|}{Unified Modeling Language}  &  &  &  \\ \cline{1-2}
+
+%% Ejemplo de como agregar una fila con saltos de linea
+%% \multicolumn{1}{|l|}{Example}   & \multicolumn{1}{l|}{
+%% \begin{tabular}[c]{@{}l@{}}
+%% texto texto texto texto texto texto texto  \\
+%% texto texto texto texto texto texto texto \\
+%% \end{tabular}
+%% }  &  &  &  \\ \cline{1-2}
+
+                           &                                                          &  &  & 
+\end{tabular}
+\end{table}
+
+
+Ejemplos de referencias:
+\cite{AGdE-2004}   \cite{Albin-2003} \cite{AndresMejiaD-2007} \cite{Bass-Clements-Kazman-1998} \cite{BAWG-2008}
+\cite{Beck-2001} \cite{Bertalanffy-1968} \cite{Billy-Koen-2000} \cite{BIZBOK-2014} \cite{Boehm-1995}
+\cite{Booch-2007} \cite{Bredemeyer-2002} \cite{Bunge-1979} \cite{Bunge-2003} \cite{Burd-2011} \cite{Buschmann-1996}
+\cite{Capretz-1996} \cite{CCIT-1996} \cite{Claude-Perrault-1673} \cite{Clements-Northrop-1996} \cite{Cohn-2004}
+\cite{Larman-Vodde-2008} \cite{Dan-North-2009} \cite{Dan-North-2012}\cite{Donella-Meadows-1982}\cite{DRAE-2014}
+\cite{DSA-2002} \cite{Edwards-Deming-2000} \cite{Esterking-2007}\cite{Evans-2004} \cite{Ferguson-2014}
+\cite{Finkelstein-1996} \cite{Fiuba-2005} \cite{FOLDOC-2015} \cite{Francesco-Milizia-1781} \cite{Giraldo-2006}
+\cite{PMBOK-2004} \cite{Maturana-1988} \cite{Sommerville-2006} \cite{IEEE-2000} \cite{IEEE-1993}
+\cite{IEEE-1990} \cite{IEEE-Architecture} \cite{Arnau-2000} \cite{Arnau-2000} 
+\cite{Kazman-1996} \cite{Beck-2003} \cite{Beck-2005} 
+\cite{Kruchten-1999} \cite{Kurzweil-2005} \cite{Le-Corbusier-1923} \cite{Malveau-1997}
+\cite{Malveau-2004} \cite{Vitruvio-25ac} \cite{Martin-Alaimo-2014} \cite{Martin-Fowler-1999} \cite{Martin-Fowler-2002}
+\cite{Meadows-2009} \cite{Montrose-1995} \cite{Moore-1975} \cite{Cosmos-2014}
+\cite{Oxford-2015} \cite{Perry-1997} \cite{Peter-Senge-1990} \cite{Poppendieck-2003}
+\cite{Pressman-2002} \cite{Robert-Martin-2009} \cite{Giachetti-2009} \cite{Rozanski-Woods-2012}
+\cite{Ackoff-1981} \cite{Sarabia-1995} \cite{SBOK-2013} \cite{SCEA-2010} \cite{Scott-Bellware-2008}
+\cite{SEBoK-2014} \cite{SEI-2003} \cite{Shaw-Garlan-1996} \cite{SLI-2009} \cite{SOLID-2009}
+\cite{Stafford-Beer-1977} \cite{Stephen-Burd-2011} \cite{Stephen-Hawking-2010} \cite{SWEBOK-2014}
+\cite{UBA-2015} \cite{UIT-2014} \cite{UNTREF-2014} \cite{US-2015} \cite{Velthuis-Parra-2007}
+\cite{Vilana-Arto-2011} \cite{Wirf-Brock-McKean-2015} \cite{Scott-Ambler-2004} \cite{Gane-Sarson-1979}
+\cite{Dixit-2007}
+
+

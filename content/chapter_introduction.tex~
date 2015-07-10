@@ -1,0 +1,21 @@
+%% This is an example first chapter. 
+
+\chapter{Introducción}
+
+Texto del Capítulo 1 
+
+\begin{figure}[h]
+  \includegraphics{image_001}
+  \caption{Ejemplo de imagen}
+  \centering
+  \label{fig:ejemplo} %\ref{fig:ejemplo}
+\end{figure}
+
+\section{Título de la sección primera}
+
+Texto de la sección 1 
+
+
+\subsection{Título de la sub-sección primera}
+
+Texto de la sub-sección 1

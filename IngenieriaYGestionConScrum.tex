@@ -1,0 +1,43 @@
+%% 
+%% Libro en español
+%% Pantilla Latex para estructura de un libro en español
+%% Autor: Dario A. Palminio
+%% LaTeX versión: 2.0
+%% Sistema operativo: Ubuntu
+%% Editor usado: LaTeXila 2.4.0
+%% 
+
+% Document pattern and general formatt
+\documentclass[a4paper,11pt]{book}
+
+% Imports
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} %% file charset=utf-8
+\usepackage{lmodern}
+\usepackage{graphicx}
+
+% Image location
+\graphicspath{ {images/} }
+
+% Rename names to spanish language
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\bibname}{Bibliografía} % Bibliography in spanish
+\renewcommand{\figurename}{Figura}
+
+\begin{document}
+
+% General structure
+\include{content/cover}
+\include{content/contents}
+\include{content/introduction}
+\include{content/principles}
+\include{content/scrum_system}
+\include{content/scaling}
+\include{content/chapter_acronyms}
+
+% Bibliography
+\bibliographystyle{apalike}
+\bibliography{content/bibliography_list}
+
+\end{document}
