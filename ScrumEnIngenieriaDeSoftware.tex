@@ -16,8 +16,8 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 
-% Image location
-\graphicspath{ {images/} }
+% Image location (all images into document should be in this location)
+\graphicspath{ {images/} } 
 
 % Rename names to spanish language
 \renewcommand{\contentsname}{Índice}
@@ -28,15 +28,17 @@
 \begin{document}
 
 % General structure
-\include{content/cover}
-\include{content/contents}
 
+\include{content/cover}            % Title and author
+\include{content/contents}         % contents table and figures list
 
+% Chapters
 \include{content/introduction}
-\include{content/principles}
-\include{content/scrum_system}
-\include{content/scaling}
-\include{content/chapter_acronyms}
+\include{content/criticism}        % Previous critical analysis
+\include{content/principles}       % Principles and values
+\include{content/scrum_system}     % Process and methodology
+\include{content/scaling}          % Scaling to big organizations
+\include{content/chapter_acronyms} % Dictionary
 
 % Bibliography
 \bibliographystyle{apalike}
