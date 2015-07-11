@@ -1,1 +1,52 @@
 \chapter{Sistema Scrum}
+
+\section{Estructura Scrum}
+
+Scrum está pensado como un proceso de trabajo para equipos con tres roles: el Product Owner, el ScrumMaster y Miembros del Equipo de Desarrollo o Desarrolladores Scrum. 
+
+Ejercendo los roles mencionados en un flujo de trabajo Scrum se trabaja sobre tres artefactos esenciales: el Product Backlog (lo que nos queda por hacer), el Sprint Backlog (lo que vamos a hacer) y el Incremento de Producto (lo que logramos hacer). Estos artefactos son tratados en un flujo de trabajo en el cual se construyen productos en forma incremental, en una serie de ciclos cortos de tiempo llamados Sprints. 
+
+En cada ciclo Sprint del flujo de trabajo se practican cinco actividades Scrum: refinamiento de producto, planificación, reunión diaria, revisión de producto y retrospectiva. La actividad de  refinamiento de producto no suele tener un nombre unificado; pues, se la suele llamar "Backlog Grooming", Manteniemiento de Baclog o Refinamiento.
+
+\section{Sistema de Roles}
+
+(ver figura \ref{fig:ScrumRolesSystem})
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{ScrumRolesSystem}
+  \caption{Diagrama del Sistema de Roles Scrum}
+  \centering
+  \label{fig:ScrumRolesSystem} %\ref{fig:ScrumRolesSystem}
+\end{figure}
+
+
+\section{Proceso Scrum}
+
+En el proceso Scrum o sistema de flujo de actividades Scrum los miembros del equipo Scrum colaboran para crear una serie de Incrementos de Producto durante iteraciones de intervalos fijos de tiempo denominados Sprints. En cada Sprint, se comienza por una Planificación del Sprint para producir un Backlog del Sprint a partir del Backlog de Producto, es decir un plan para el Sprint. El equipo se auto-organiza para realizar el Desarrollo, mediante reuniones Diarias de Scrum para coordinar y asegurarse de estar produciendo el mejor Incremento de Producto posible en el proceso de desarrollo del producto o servicio. Cada incremento satisface el criterio de aceptación del Product Owner y la Definición de Hecho o "Definition of Done" compartida por el equipo para satisfacer el criterio de tarea terminada. Junto al proceso de desarrollo se hace también un Refinamiento del Backlog ("Refinement") para prepararse para la reunión de planificación del próximo Sprint. Finalizando cada ciclo se termina el Sprint con una reunión de Revisión del Sprint y luego una reunión Retrospectiva del Sprint, revisando el producto y su proceso con una perspectiva crítica y de mejora contínua. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{ScrumFlow}
+  \caption{Diagrama de Flujo de Datos del Proceso Scrum}
+  \centering
+  \label{fig:ScrumFlow} %\ref{fig:ScrumFlow}
+\end{figure}
+
+
+\section{Flujo de artefactos}
+
+Los artefactos ítems de trabajo fluyen desde que se definen en el Backlog de Producto hasta que se transforman en incremento de producto. Los ítems de trabajo son items de valor para el cliente que comienzan su nacimiento como items de backlog o PBIs del Backlog de Producto. Debido a que el dueño del Backlog de Producto es el Product Owner, es él quien crea los PBIs, ya sea por trabajo individual o con la colaboración del Equipo de Desarrollo. Los PBIs son requerimientos que puede escribirse de diferente manera. Es común escribir los PBIs en forma de Historias de Usuario \cite{Cohn-2004}, pero no es un requisito de Scrum. Estos PBIs son refinados por la actividad de Refinamiento de Backlog hecha por el Product Owner y el Equipo de Desarrollo mientras se practica el desarrollo de un Sprint y son priorizados por el ProductOwner. El la la reunión de planificación "Planning" se toman PBIs que cumplan el criterio de aceptación o "Definition of Ready" (2 "Selection") para ser incluidos en el "Sprint Backlog" y el Equipo de Desarrollo pueda trabajar en ellos en el Sprint. A medida que el Equipo de Desarrollo termina un ítem "Sprint Backlog" cumpliendo el criterio de aceptación "Definition of Done" (3 "increment") se genera un Incremento de Producto candidato potencialmente entregable (Potentially Shippable Product Increment). Luego en la Revisión se acepta el Incremento de Producto candidato pasando a ser efectivamente un Incremento de Producto listo para ser entregado o desplegado, para "Release" (4 "releasing"). En caso de no ser aprobado (5 "Rejection") pasa nuevamente al Product Backlog para ser tenido en cuenta en el próximo Sprint. Los ítems de "Sprint Backlog" que no se lograron terminar también vuelven (6 "comeback") al "Product Backlog". Esto ocurre formalmente en la revisión \cite{Martin-Alaimo-2014}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.4]{ScrumArtifactsStockFlow}
+  \caption{Diagrama de Flujo de Stock de artefactos Scrum}
+  \centering
+  \label{fig:ScrumArtifactsStockFlow} %\ref{fig:ScrumArtifactsStockFlow}
+\end{figure}
+
+\section{Reglas y Consideraciones}
+
+Además se establecen alguna consideraciones relacionadas a tiempos y tamaños. Se aconseja un tamaño de equipo de desarrollo mayor a 4 miembros y menor a diez (7 +- 2), o sea entre cinco y nueve. Por debajo de este número mínimo se tiene un equipo pobre que puede brindar un produto pobre y por sobre ese número máximo se aumenta la complejidad de gestión y coordinación del equipo disminuyendo el funcionamiento apropiado tras la metodología planteada. También se recomienda una duración de Sprint no mayor a un mes \cite{Ken-Jeff-2013}. La Reunión de Planificación de Sprint debería tener un máximo de duración de ocho horas para un Sprint de un mes. El Scrum Diario o "daily" es una reunión con un bloque de tiempo de 15 minutos para que el Equipo de Desarrollo sincronice sus actividades y cree un plan para el día. Por ejemplo, una daily de mayor de 15 minutos se puede considerar larga y en 15 minutos es complicado que mas de 15 personas puedan exponer lo que hiciero, lo que harán y si tienen bloqueos. Por eso se aconseja como máximo nueve personas en el eqiopo de desarrollo. En lo que concierne a la Revisión, el tiempo estipulado es de cuatro horas para Sprints de un mes o dos horas para uno de una quinsena. La reunión de Retrospectiva  debería estar restringida a un bloque de tiempo de tres horas para Sprints de un mes o  a una hora y media para los de una quinsena. Las reuniones de Planificación, Revisión y Retrospectiva deberían ser proporcionales a la duración del Sprint.
+
