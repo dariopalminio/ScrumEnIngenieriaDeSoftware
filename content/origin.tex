@@ -53,11 +53,19 @@ La causa de los problemas y fracasos de los proyectos de software en la situaci�
 
 El Modelo en Cascada (Waterfall Methodology) \cite{Ken-Schwaber-1995} es un Modelo Secuencial de Procesos para la ingeniería de software presentado por Winston Royce en 1970, aunque ya se venía desarrollando desde antes. Para algunos críticos, el Modelo en Cascada, se convirtió en el modelo metodológico más utilizado dentro de la industria en un período de tiempo. Pero hay que considerar que el modelo solo abarca al sistema de producción o sistema de desarrollo (ver "Development Process" en la figura \ref{fig:WaterfallMethodology}) de la industria, no al de gestión, y es simplemente un modelo, no una metodología.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.6]{WaterfallModel}
+  \caption{Modelo Cascada de desarrollo}
+  \centering
+  \label{fig:WaterfallModel} %\ref{fig:WaterfallModel}
+\end{figure}
+
 En un sentido lato y ortodoxo se puede decir que el Modelo en Cascada refleja un proceso lineal y secuencial de un conjunto de procesos o fases independientes dentro de un proyecto. Las fases son: requerimientos (requerimiento del sistema y requerimientos del software), diseño, codificación, pruebas y operación. Según esto y siempre cuando el proceso de desarrollo de un proyecto conste de solo la secuencia de estas fases sin repetición, la principales críticas como desventajas que se hacen son:
 
 \begin{enumerate}
 
-\item \textbf{Previción:} Al tener una face de requerimientos única al comienzo, el producto final es anticipado de antemano \cite{Scrum-Institute-2015}. Esto requiere de cierta previción y certidumbre inicial que en proyectos complejos y cambiantes es poco factible que suceda.
+\item \textbf{Previción:} Al tener una face de requerimientos única al comienzo, el producto final es anticipado de antemano \cite{Scrum-Institute-2015}. Esto requiere de cierta previción y certidumbre inicial. La previción es acorde a una mirada más tradicional y analitica que concidera que el diseño se puede planificar en detalle al comienzo del proceso de desarrollo. A este método y práctica se lo llama BMUF que significa “Diseño Inicial Grande” o "Gran Modelado al Inicio" y con él se establece la práctica de realización explícita de Diseño Arquitectónico Completo al Inicio \cite{Wiley-Sons-2002}. Es el mandato técnico de crear modelos integrales de los requisitos para un sistema, el análisis de esos requisitos, una arquitectura que cumple esos requisitos y, finalmente, un diseño detallado antes de implememtar el sistema. Lo que sucede es que cierta previción y certidumbre inicial y necesaria, en proyectos complejos y cambiantes, es poco factible que suceda.
 
 \item \textbf{Requerimientos no necesarios:} Requerimientos elicitados al comienzo del proyecto y luego implementados nunca serán completamente necesitados por el cliente \cite{Scrum-Institute-2015}. O sea que pueden haber requerimientos irrelevantes o inecesariamente implementados, ya sea porque el cliente dejó de tener la necesidad en el transcurso del proyecto o porque la incertidumbre inicial generó una mala elicitación de los mismos.
 
@@ -71,21 +79,43 @@ En un sentido lato y ortodoxo se puede decir que el Modelo en Cascada refleja un
 
 \subsubsection{Gestión de Proyectos Clásica}
 
+Bajo el marco Scrum se critica el uso de la gestión de proyectos tradicional o clásica (ver figura \ref{fig:PMIMethodology}) en proyectos de dominios complejos y con dinámica de requerimientos cambiantes. Se atribuye parte de los fracasos a las siguientes causas:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.45]{PMIMethodology}
+  \caption{Metodología de Gestión de Proyectos Clásica PMI}
+  \centering
+  \label{fig:PMIMethodology} %\ref{fig:PMIMethodology}
+\end{figure}
+
 \begin{enumerate}
 
-\item \textbf{Planeación predictiva:} La planeación predictiva fue impulsada por el PMI quien ha adoptado el enfoque predictivo y mecanicista para la gestión de proyectos. Planeación predictiva es cuando el alcance del proyecto, el tiempo y el costo requerido para el proyecto se determina lo antes posible y luego durante la ejecución del proyecto se busca seguir y respetar el plan. El éxito (o rendimiento) del enfoque predictivo ha sido menos del 50 por ciento (en tiempo, en la fecha y con la funcionalidad deseada) y Scrum se presenta como alternativa para mejorar esta tasa \cite{Ken-Schwaber-2011}. El enfoque predictivo es útil para producción de volumen alto y fabricación de bajo coste. Sus beneficios resultan de reducir la imprevisibilidad del espacio del problema a través de la estandarización y la repetición. La planificación perfecta, la formación y la repetibilidad son las claves. Planificar y luego hacer una y otra vez. La productividad se optimiza a través de procesos de flujo de trabajo perfecto e invariable, y se optimiza el uso de los recursos (personas o máquinas). Pero esta metodología no se ajusta a proyectos donde hay más novedad que repetibilidad y donde las tecnologías, capacidades y creatividad de las personas son cambiantes. En estos casos hay alta probabilidad de que la predictividad fracase \cite{Ken-Schwaber-2011}.
+\item \textbf{Planeación predictiva:} La planeación predictiva fue impulsada por el PMI quien ha adoptado el enfoque predictivo y mecanicista para la gestión de proyectos. Planeación predictiva es cuando el alcance del proyecto, el tiempo y el costo requerido para el proyecto se determina lo antes posible, en la fase de inicio del proyecto, y luego durante la ejecución del proyecto se busca seguir y respetar el plan hasta la fase de cierre (ver figura \ref{fig:PMIProject}). El éxito (o rendimiento) del enfoque predictivo ha sido menos del 50 por ciento (en tiempo, en la fecha y con la funcionalidad deseada) y Scrum se presenta como alternativa para mejorar esta tasa \cite{Ken-Schwaber-2011}. El enfoque predictivo es útil para producción de volumen alto y fabricación de bajo coste. Sus beneficios resultan de reducir la imprevisibilidad del espacio del problema a través de la estandarización y la repetición. La planificación perfecta, la formación y la repetibilidad son las claves. Planificar y luego hacer una y otra vez. La productividad se optimiza a través de procesos de flujo de trabajo perfecto e invariable, y se optimiza el uso de los recursos (personas o máquinas). Pero esta metodología no se ajusta a proyectos donde hay más novedad que repetibilidad y donde las tecnologías, capacidades y creatividad de las personas son cambiantes. En estos casos hay alta probabilidad de que la predictividad fracase \cite{Ken-Schwaber-2011}.
 
-\item \textbf{Planeación a largo plazo:}
+\item \textbf{Planeación a largo plazo:} Debido a que el proyecto se desarrolla en forma lineal (no iterativo)\footnote{El modelo lineal de producción y gestión fue propuesta por primera vez por Frederick Taylor en "Principios de Administración Científica", que fue la base de la línea de montaje del modelo T de Ford.} y que se hace una planificación por Adelantado debido a que se considera que los cambios deben ser manejados por un sistema formal de Gestión del Cambio es que se realizan planificaciones a largo plazo. Los proyectos son planificados, en la etapa de inicio de proyecto, para efectuar entregables finales a largo plazo, en el cierre del proyecto. Los cambios que surjan en la fase de ejecución son manejados por un sistema formal de Gestión del Cambio, pero estos cambios suelen tratar de evitarse. No suele ser bien visto la introducción de cambios en la etapa de ejecución y la misma, que involucra la construcción del producto, suele abarcar un período de tiempo grande. Esto hace que se comprometan entregablas a largo plazo y en forma contractual. Y el compromiso contractual efectuado al inicio del proyecto es dificil de cumplir cuando la realidad del desarrollo no se ajusta a lo planificado debido a la alta tasa de cambios resultado de la incertidumbre y a la variabilidad de las necesidades del cliente en proyectos de software o de dominio complejo. Por otro lado, si se comprueba el retorno de la inversión solo al final del proyecto y el proyecto es prolongado en el tiempo se aumenta la probabilidad de no stisfacerla y no lograr la satisfacción del cliente y estar tarde en la posibilidad de corregir o ajustar para el retorno de la inversión planificado.
 
-\item \textbf{Gestión de recursos humanos:} En la planificación tradicional las personas son gestionadas como recursos, hasta cierto punto intercambiables, especializados que siguen planes. Sin embargo la productividad, la calidad y la creatividad es mucho mayor si la gente que hace el trabajo también lo planea \cite{Ken-Schwaber-2011}.
+\item \textbf{Gestión de recursos humanos:} En la planificación tradicional las personas son gestionadas como recursos, hasta cierto punto intercambiables, individuales y especializados que siguen planes. Sin embargo la productividad, la calidad y la creatividad es mucho mayor si la gente que hace el trabajo también lo planea \cite{Ken-Schwaber-2011}. La alta rotación de personal que no deja madurar equipos, el foco en procesos y no en ambientes de trabajo, la evaluación de desempeño individual y no grupal, la priorización de procesos de calidad y herramientas por sobre las personas y relaciones se pueden transformar en un problema.
 
 \item \textbf{Gerente de Proyecto:} En el marco de Scrum se considera que el papel del gerente de proyecto es contraproducente en un trabajo complejo y creativo \cite{Ken-Schwaber-2011}. La dirección de un gerente en base a un plan puede limitar la creatividad y la inteligencia del equipo en lugar de insentivarla para resolver mejor los problemas. Si se elimina la figura de gerente de proyecto y se delegan sus actividades de gestión en otros roles, junto con un enfoque de auto-organización, se puede mejorar la productividad y la creatividad.
 
+\item \textbf{Gestión Centralizada:} La organización de la gestión tradicional es centralizada. Es centralizada porque se centra en el gerente de proyectos y en una forma de liderazgo de mando y control. 
+
 \end{enumerate}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.8]{PMIProject}
+  \caption{Ciclo de vida en una Gestión de Proyectos tradicional}
+  \centering
+  \label{fig:PMIProject} %\ref{fig:PMIProject}
+\end{figure}
+
 
 \subsubsection{Metodología en Cascada}
 
-La convinación del "Modelo en Cascada" con la "Gestión de Proyectos Clásica" conforma la metodología e idea de desarrollo de proyectos en forma de cascada. La idea se relaciona con una "carrera de relevos secuencial" en la que está incluida la administración del proyecto (proceso de gestión) y la producción del mismo (proceso de desarrollo) en una secuencia prácticamente lineal y en faces secuenciales.
+La combinación del "Modelo en Cascada" con la "Gestión de Proyectos Clásica" conforma la metodología e idea de desarrollo de proyectos en forma de cascada (ver figura \ref{fig:WaterfallMethodology}). La idea se relaciona con una "carrera de relevos secuencial" en la que está incluida la administración del proyecto (proceso de gestión) y la producción del mismo (proceso de desarrollo) en una secuencia prácticamente lineal y en faces secuenciales.
 
 \begin{figure}[h]
   \centering
@@ -94,3 +124,4 @@ La convinación del "Modelo en Cascada" con la "Gestión de Proyectos Clásica" 
   \centering
   \label{fig:WaterfallMethodology} %\ref{fig:WaterfallMethodology}
 \end{figure}
+
