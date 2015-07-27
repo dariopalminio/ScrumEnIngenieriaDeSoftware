@@ -1,0 +1,21 @@
+Reglas a seguir para escribir y editar el libro:
+- Escribir en primera persona del plural (Por ejemplo: "Nos proponemos explicarle al lector el sistema Scrum.").
+- Usar referencias bibliograficas mientras sea posible. Pues no se trata de un libro de opinología, más bien es un libro integrador de diferentes fuentes.
+- Trabajar con una estructura modular del libro (por ejemplo por capítulos).
+- No explayarse extensamente en un solo tema o sección.
+- Lograr cohesión temática por capítulos y secciones.
+- Usar herramientas libres (como LaTeX para edición de texto).
+- Usar gráficos con diagramas o imágenes no didácticas infantiles sino más bien ingenieriles o técnicas. 
+- Los gráficos deben estar en ingles porque el libro está dirigido a técnicos informáticos, profesionales o ingenieros que tienen o deberían tener una base de inglés. Además de que el inglés en diagramas ingenieriles debería ser un estándar.
+- Usar una homogeneidad en las figuras y en los gráficos.
+- Usar revisiones de a pares. No liberar una revisión sin antes haber sido revisada por alguien capacitado en el tema y por algún corrector ortográfico.
+
+Herramientas libres a usar:
+- Sistema Operativo: Ubuntu 12.04 LTS.
+- Lenguaje de texto: LaTeX (Formato ".tex").
+- Editor de texto: LaTeXila, editor LaTeX para GNOME desktop. Es free/libre software (GPL 3+ license).
+- Librerías de LaTeX: librerías para Ubuntu gedit-latex-plugin y texlive-full.
+- Editor de diagramas: Dia-gnome 0.97.2 licencia GPL (C) 1998-2009 The Free Software Foundation and the authors (Formato ".dia").
+- Editor de imágenes: Draw LibreOffice 3.5.7.2. libre (Formato ".odg").
+- Cliente de gestión de versiones: Git.
+
