@@ -1,6 +1,10 @@
+% Chapter about Scrum System core
+
 \chapter{Núcleo del Sistema Scrum}
 
-Scrum es un sistema compuesto por la filosofía Scrum (SCRUM Philosophy), como parte del sistema cultural, y tres conjuntos de componentes interrelacionados que forman el Núcleo del Sistema Scrum (ver figura \ref{fig:ScrumSystemCore}). Los tres conjuntos de componentes son: roles, actividades y artefactos. Los roles conforman un sistema de roles que determina las responsabilidades de los actores integrantes, sus relaciones recíprocas, sus restricciones y la relación con los demás componentes. Las actividades conforman la parte principal del sistema de procesos Scrum (Proceso Scrum) que determina las relaciones de organización entre actividades, roles y artefactos. Y los artefactos conforman el conjunto de almacenes o componentes de trabajo. A continuación se describiran estos sistemas y sus relaciones.
+Scrum es un sistema compuesto por la filosofía Scrum (SCRUM Philosophy), como parte del sistema cultural, y tres conjuntos de componentes interrelacionados que forman el Núcleo del Sistema Scrum (ver figura \ref{fig:ScrumSystemCore}). Los tres conjuntos de componentes son: roles, actividades y artefactos. Los roles conforman un sistema de roles que determina las responsabilidades de los actores integrantes, sus relaciones recíprocas, sus restricciones y la relación con los demás componentes. Las actividades conforman la parte principal del sistema de procesos Scrum (Proceso Scrum) que determina las relaciones de organización entre actividades, roles y artefactos. Y los artefactos conforman el conjunto de almacenes o componentes de trabajo. Todo el sistema busca asegurar una cadencia de trabajo que consta de una regularidad basada en iteraciones de tiempo fijo y ceremonias o actividades regulares que permiten la repetibilidad (predictibilidad del flujo de trabajo) bajo un grado de prestancia.
+
+A continuación se describiran estos componentes y sus relaciones.
 
 \begin{figure}[h]
   \centering
@@ -21,7 +25,9 @@ En cada ciclo Sprint del flujo de trabajo se practican seis actividades Scrum: r
 
 \section{Sistema de Roles}
 
-El Sistema de Roles (ver figura \ref{fig:ScrumRolesSystem}) es el conjunto de roles y relaciones parte del sistema Scrum. Como se mencionó anteriormente hay tres roles principales: el Product Owner o dueño del producto, el Scrum Master o facilitador y el Scrum Team o Equipo Scrum (Miembros del Equipo de Desarrollo o Desarrolladores Scrum). Tambien hay roles secundarios como el de Stakeholder, Vendedores y Cuerpo de Asesoramiento de Scrum. El rol Stakeholder es el más importante de los roles secundarios e incluye a los clientes, usuarios y patrocinadores.
+El Sistema de Roles (ver figura \ref{fig:ScrumRolesSystem}), en el núcleo de Scrum, es el conjunto de roles y relaciones parte del sistema Scrum. Como se mencionó anteriormente hay tres roles principales: el Product Owner o dueño del producto, el Scrum Master o facilitador y el Equipo de Desarrollo o Equipo a secas (Scrum Development Team, Miembros del Equipo de Desarrollo o Desarrolladores Scrum). Tambien hay roles secundarios como el de Stakeholder, Vendedores y Cuerpo de Asesoramiento de Scrum. El rol Stakeholder es el más importante de los roles secundarios e incluye a los clientes, usuarios y patrocinadores.
+
+Hay que tener en cuenta que Scrum contempla solo estos tres roles principales como núcleo en el equipo Scrum y cuando se implementa en forma ortodoxa son los únicos roles permitidos. En el caso del Equipo de Desarrollo, cada integrante puede tener diferentes perfiles, características o roles especializados, pero bajo este marco solo tienen el rol de Desarrollador. Cuando Scrum se integra con otras metodologías o esquemas de roles los desarrolladores pueden cumplir otros roles que funcionan como sub-roles.
 
 \begin{figure}[h]
   \centering
@@ -33,46 +39,74 @@ El Sistema de Roles (ver figura \ref{fig:ScrumRolesSystem}) es el conjunto de ro
 
 A continuación se listan los diferentes roles principales:
 
-\subsection{Scrum Master}
+\subsection{Equipo de Desarrollo}
 
-Para el cumplimiento del rol Scrum Master se deben tener en cuenta las siguientes afirmaciones:
+El Equipo de Desarrollo es parte del Equipo Scrum y son los responsables de hacer el trabajo, o sea desarrollar el producto.
+ 
+Para el cumplimiento del rol Equipo de Desarrollo se deben tener en cuenta las siguientes afirmaciones:
 
 \begin{itemize}
-\item Es el responsable de que se siga Scrum.
-\item Necesita desempeñar su rol con coraje.
-\item La presencia en la Daily Scrum no es obligatoria.
-\item No debe estimar junto al Equipo de Desarrollo.
-\item Los mejor manera de cumplir el rol es estar tiempo completo en este rol.
-\item No es gerente de proyecto, no debe gestionar al Equipo de Desarrollo y no es responsable por la planificación del proyecto.
+\item Crea y gestiona el desarrollo de software comprometiendose a fechas de entregas estimadas.
+\item Es responsable de la calidad técnica del producto.
+\item Debe buscar su desarrollo profesional para lograr excelencia técnica. Para ello debe, además, mantener el foco en el aprendizaje, la innovación y el mantenimiento de una actitud de mejora contínua.
+\item Debe evitar trabajar en múltiples proyectos teniendo asignación cien por ciento en el proyecto.
+\item Debe priorizar y promover la comunicación cara a cara.
+\item Provee estimaciones de ítems de trabajo.
+\item Es responsable de gestionar su propio trabajo durante el Sprint.
+\item No debe esperar a que le asignen tareas ya que debe seguir la forma "pull" de asignación que consiste en tomar tareas por sí mismo o por consenso de todo el equipo.
+\item Monitorea el progreso y el éxito con el resto de los roles del Scrum Team.
+\item No debe ocultar impedimentos ni información.
+\item No debe hacer tareas de otro rol Scrum. En el caso de una implementación ortodoxa no tiene otro rol que el de desarrollador.
+\item Debe procurar ser multidisciplinario aprendiendo del conocimientos de los compañeros, aplicando sus habilidades en diferentes tipos de tareas y no especializándose en una sola cosa donde se trabaja en forma estanco (cerrada y hermitaña).
+\item Debe procurar la estabilidad del equipo y su cadencia.
 \end{itemize}
 
 \subsection{Product Owner}
+
+El Product Owner cumple la función de dueño del producto en el proyecto y es el responsable del negocio.
 
 Para el cumplimiento del rol Product Owner se deben tener en cuenta las siguientes afirmaciones:
 
 \begin{itemize}
 \item Debe colaborar con el Scrum Master y con el Equipo de Desarrollo.
 \item Es quien determina el mejor producto a conseguir.
-\item No estima ni provee estimaciones.
+\item Es quien provee las hipótesis requerimientos, por lo que es responsable de entenderlas, escribirlas y transmitirlas en forma eficaz.
+\item Es dueño y responsable por el artefacto Product Backlog.
 \item Es responsable de formar una visión, comunicarla y promoverla.
+\item Es responsable del retorno de la inverción ROI y de los resultados empresariales.
+\item Es recomendable que esté asignado a un solo Scrum Team con un porcentaje de asignación del 70 al 80 por ciento.
+\item Monitorea el progreso y el éxito con el resto de los roles del Scrum Team.
+\item No estima ni provee estimaciones.
+\item No gestiona el presupuesto de todo el proyecto pero puede gestionar el presupuesto del equipo.
+\item No es jefe ni gerente de proyecto.
 \end{itemize}
 
-\subsection{Equipo de Desarrollo}
+\subsection{Scrum Master}
 
-Para el cumplimiento del rol Equipo de Desarrollo se deben tener en cuenta las siguientes afirmaciones:
+El Scrum Master es un facilitador guardián del marco de trabajo Scrum y responsable de mejorar el flujo de valor hacia el cliente. Que sea guardián del marco de trabajo significa que es quien debe asegurar que se siga el sistema Scrum, concientizar sobre la filosofía seguida bajo el mismo, capacitar y entrenar al equipo de desarrollo y facilitar la resolución de impedimentos relacionados a la implementación de Scrum.
+
+Para el cumplimiento del rol Scrum Master se deben tener en cuenta las siguientes afirmaciones:
 
 \begin{itemize}
-\item Es responsable de la calidad técnica del producto.
-\item Debe procurar su desarrollo profesional para lograr excelencia técnica.
-\item Debe evitar trabajar en múltiples proyectos.
-\item Debe priorizar y promover la comunicación cara a cara.
-\item Es responsable de gestionar su propio trabajo durante el Sprint.
-\item No debe ocultar impedimentos.
+\item Es el responsable de que se siga Scrum.
+\item Necesita desempeñar su rol con coraje.
+\item Debe gestionar los riesgos y problemas junto con los demás roles.
+\item Debe buscar remover obstáculos e impedimentos.
+\item Es responsable de buscar lograr la mejora continua del proceso o sistema de trabajo.
+\item Busca conseguir que se haga el trabajo.
+\item Los mejor manera de cumplir el rol es estar tiempo completo en este rol (asignación 100 por ciento).
+\item Debe ser guardián del equipo protegiéndolo de perturbaciones externas negativas.
+\item Monitorea el progreso y el éxito con el resto de los roles del Scrum Team.
+\item La presencia en la Daily Scrum no es obligatoria pero es aconsejable que esté para facilitarla.
+\item No debe estimar junto al Equipo de Desarrollo ni hacer tareas de otro rol como, por ejemplo, desarrollar.
+\item No es jefe, no es gerente de proyecto, no debe gestionar al Equipo de Desarrollo y no es responsable por la planificación del proyecto.
+\item No asigna tareas.
 \end{itemize}
+
 
 \section{Proceso Scrum}
 
-En el proceso Scrum o sistema de flujo de actividades Scrum los miembros del equipo Scrum colaboran para crear una serie de Incrementos de Producto durante iteraciones de intervalos fijos de tiempo denominados Sprints. En cada iteración Sprint, se comienza por una Planificación del Sprint para producir un Backlog del Sprint a partir del Backlog de Producto, es decir un plan para el Sprint. El equipo se auto-organiza para realizar el Desarrollo, mediante reuniones Diarias de Scrum para coordinar y asegurarse de estar produciendo el mejor Incremento de Producto posible en el proceso de desarrollo del producto o servicio. Cada incremento satisface el criterio de aceptación del Product Owner y la Definición de Hecho o "Definition of Done" compartida por el equipo para satisfacer el criterio de tarea terminada. Junto al proceso de desarrollo se hace también un Refinamiento del Backlog ("Refinement") para prepararse para la reunión de planificación del próximo Sprint. Finalizando cada ciclo se termina el Sprint con una reunión de Revisión del Sprint y luego una reunión Retrospectiva del Sprint, revisando el producto y su proceso con una perspectiva crítica y de mejora contínua. 
+En el proceso Scrum o sistema de flujo de actividades Scrum (ver figura \ref{fig:ScrumFlow}) los miembros del equipo Scrum colaboran para crear una serie de Incrementos de Producto durante iteraciones de intervalos fijos de tiempo denominados Sprints. En cada iteración Sprint, se comienza por una Planificación del Sprint para producir un Backlog del Sprint a partir del Backlog de Producto, es decir un plan para el Sprint. El equipo se auto-organiza para realizar el Desarrollo, mediante reuniones Diarias de Scrum para coordinar y asegurarse de estar produciendo el mejor Incremento de Producto posible en el proceso de desarrollo del producto o servicio. Cada incremento satisface el criterio de aceptación del Product Owner y la Definición de Hecho o "Definition of Done" compartida por el equipo para satisfacer el criterio de tarea terminada. Junto al proceso de desarrollo se hace también un Refinamiento del Backlog ("Refinement") para prepararse para la reunión de planificación del próximo Sprint. Finalizando cada ciclo se termina el Sprint con una reunión de Revisión del Sprint y luego una reunión Retrospectiva del Sprint, revisando el producto y su proceso con una perspectiva crítica y de mejora contínua. 
 
 \begin{figure}[h]
   \centering
@@ -82,6 +116,27 @@ En el proceso Scrum o sistema de flujo de actividades Scrum los miembros del equ
   \label{fig:ScrumFlow} %\ref{fig:ScrumFlow}
 \end{figure}
 
+\subsection{Reuniones proncipales}
+
+\begin{itemize}
+
+\item \textbf{Planificación:} es una actividad o una conversación de duración fija al principio de cada Sprint para decidir sobre lo que se terminará y se demostrará en la revisión.
+
+\item \textbf{Revisión:} es una actividad o una conversación de duración fija al final de cada Sprint para dar retroalimentación sobre el avance del producto.
+
+\item \textbf{Retroespectiva:} es una actividad o una conversación de duración fija al final de cada Sprint para que el Equipo reflexione y busque mejoras procedimentales.
+
+\item \textbf{Scrum Diario:} es una actividad o una reunión diaria obligatoria del Equipo Scrum, en el lugar de trabajo, con una duración fija, que sirve para coordinación y organización mediante una retroalimentación del estado de actividades de cada integrante del Equipo. Permite identificar impedimentos bloqueantes, actualizar artefactos, revisar el Sprint Backlog, ayudar a disminuir riesgos e identificar personas que pueden servir de ayuda a determinadas tareas. En esta reunión los miembros del equipo se reúnen, de pie, para informar de sus progresos en el Sprint y planificar las actividades del día. Para ello proporcionan respuestas a tres preguntas:
+
+\begin{itemize}
+\item{¿Qué hice ayer?}
+\item{¿Qué voy a hacer hoy?}
+\item{Si tengo obstáculos: ¿Qué impedimentos tengo?}
+\end{itemize}
+
+\item \textbf{Refinamiento:} es una actividad o reunión para refinar la lista de PBIs o Product Backlog que consiste en añadir detalles, estimaciones y priorización. Es un proceso continuo que hace el Product Owner, pero formalmente como reunión se desarrolla con participación del Equipo en colaboración para examinar y revisar los elementos del Product Owner. En esta reunión la responsabilidad recae en el Product Owner y el Equipo solo colabora.
+
+\end{itemize}
 
 \section{Flujo de artefactos}
 
