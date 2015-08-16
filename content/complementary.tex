@@ -21,17 +21,17 @@ Rodeando el núcleo de Scrum se encuentra un anillo de complementos. Estos compl
 
 \subsection{Historias de usuarios}
 
-Para Scrum las hipótesis de requerimientos se representan en items de Backlog de producto PBI y que se los suele denominar como "Story" o "Historias de Usuarios"\footnote{Las "User Story" son una técnica de eXtremme Programming (XP)}. El Product Backlog incluye incisos o Stories que aportan valor al cliente y que suelen ser descripción de requisitos funcionales. Aunque también puede incluir entradas para exploración de características, necesidades del cliente u opciones técnicas, requerimientos no funcionales, el trabajo necesario para lanzar el producto, y otros incisos, así como la configuración del entorno o arreglar defectos \footnote{\cite{Scrum-Institute-2015}}. O sea que puede proporcionar valor en forma indirecta mediante el aumento de la calidad o la reducción de los incidentes en el largo plazo \footnote{\cite{Scrum-Institute-2015}}.
+Para Scrum las hipótesis de requerimientos se representan en items de Backlog de producto PBI. A estos PBIs se los suele denominar "Story" o "Historias de Usuarios"\footnote{Las "User Story" son una técnica de eXtremme Programming (XP)}. El Product Backlog incluye incisos o Stories que aportan valor al cliente y que suelen ser descripción de requisitos funcionales. Aunque también puede incluir entradas para exploración de características, necesidades del cliente u opciones técnicas, requerimientos no funcionales, el trabajo necesario para lanzar el producto, y otros incisos, así como la configuración del entorno o arreglar defectos \footnote{\cite{Scrum-Institute-2015}}. O sea que puede proporcionar valor en forma indirecta mediante el aumento de la calidad o la reducción de los incidentes en el largo plazo \footnote{\cite{Scrum-Institute-2015}}.
 
-Según el concepto general de metodología Ágil, la Story se define como una "promesa de una conversación " o una "descripción de una característica" \footnote{\cite{UNTREF-2014}, \cite{Dan-North-2015}}. Según esta perspectiva, la historias de usuario representa una "funcionalidad de aplicación" para un usuario y que brinda un beneficio (ROL + FUNCIONALIDAD + BENEFICIO). Las mismas se escriben con la siguiente pauta:
+Las historias representan un concepto verificable y simple, que el Product Owner quiere implementar en el producto. Según el concepto general de metodología Ágil, la historia se define como una "promesa de una conversación" o una "descripción de una característica" \footnote{\cite{UNTREF-2014}, \cite{Dan-North-2015}}. Según esta perspectiva, la historias de usuario representa una "funcionalidad de aplicación" para un usuario y que brinda un beneficio (ROL + FUNCIONALIDAD + BENEFICIO). Las mismas se escriben siempre con lenguaje de negocio y respetando la siguiente pauta de estructura:
 
-COMO <ROL> QUIERO <FUNCIONALIDAD> PARA QUE <BENEFICIO>
+\textbf{COMO} <ROL> \textbf{QUIERO} <FUNCIONALIDAD> \textbf{PARA QUE} <BENEFICIO>
 
 Por ejemplo:
 
 COMO ScrumMaster QUIERO que las reuniones no se extiendan más de un tiempo consensuado PARA QUE no se pierda el foco.
 
-La historia de usuario no es exactamemte un requerimiento, pero puede considerarse como el título de una hipótesis de requerimiento como recordatorio de algo relevante a conversar con el usuario (o cliente). En consecuencia lo relevante es su evolución como conversación \footnote{\cite{UNTREF-2014}}.
+La historia de usuario no es exactamemte un requerimiento, pero puede considerarse como el título de una hipótesis de requerimiento como recordatorio de algo relevante a conversar con el usuario o cliente. En consecuencia lo relevante es su evolución como conversación \footnote{\cite{UNTREF-2014}}.
 
 La historia de usuario describe lo que el usuario quiere hacer desde la perspectiva de una interacción con un proceso de negocio, describe el objetivo del usuario en términos de necesidad de obtener algo que se hace en el negocio \footnote{\cite{Scott-Bellware-2008}}.
 
@@ -44,11 +44,16 @@ Existen ciertas características a tener en cuenta a la hora de escribir una his
 \begin{enumerate}
 
 \item \textbf{Independiente:} debe ser atómica.
+
 \item \textbf{Negociable:} debe ser conversable y en consecuencia negociable (es viva).
+
 \item \textbf{Valueble:} debe generar un valor al usuario o cliente. Una Story sin una declaración de la motivación del usuario a menudo se piensa que es no accionable; es decir, la historia no se puede estimar o implementar fácilmente \footnote{\cite{Scott-Bellware-2008}}.
+
 \item \textbf{Estimable:} se debe poder estimar.
-\item \textbf{Pequeña:} debe ser lo suficientemente pequeña para entrar en un sprint o iteración.
-\item \textbf{Probable:} debe poder ser testeable. 
+
+\item \textbf{Pequeña:} debe ser lo suficientemente pequeña para entrar en un sprint o iteración. El tamaño pequeño de las historias ayuda a reducir el tamaño del lote, a incrementar el flujo de valor hacia el cliente y a asegurar que cada miembro del equipo de desarrollo pueda hacer una contribución valiosa cada día. Por ejemplo en cada Sprint se pueden completar entre cuatro y ocho historias pequeñas.
+
+\item \textbf{Probable:} debe poder permitir la contrastabilidad. La contrastabilidad del enunciado de la historia es la propiedad de ésta de ser capaz de ser sometida a una prueba empírica a fin de evaluar su adecuación o no a los hechos a los que se refiere o resultados esperados. Esta característica es crucial para hacer ingeniería, sin la contrastabilidad no se hace ingeniería.
 
 \end{enumerate}
 
@@ -101,7 +106,14 @@ Then  [resultado]
   And [otro resultado]...
   
   
-  
+\newpage
+\section{Técnicas de estimación}
+
+\subsection{Poker de planeación}
+
+El Poker de planeación o "Planning Poker" es una técnica de estimación y planificación ágil que se basa el consenso por sabiduría de grupo. 
+
+La dinámica consiste en que el Product Owner o cliente inicia leyendo una historia de usuario ágil o describe una característica para los desarrolladores estimadores. Cada estimador posee una baraja de cartas de Planificación de Poker con valores como 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que es la secuencia fibonacci que se suele recomendar. Los valores representan el número de puntos de la historia, día ideal, u otras unidades en las que el equipo estima. Los estimadores discutir la función, haciendo preguntas al Product Owner, según sea necesario. Cuando la función se ha discutido plenamente, cada estimador selecciona de forma privada una tarjeta a representar a su estimación. Todas las tarjetas se revelaron a continuación, al mismo tiempo. Si todos los estimadores seleccionan el mismo valor, que se convierte en la estimación. Si no, los estimadores discuten sus estimaciones. Los estimadores de valores altos y bajos deben compartir sus razones. Tras un nuevo debate, cada estimador vuelve a seleccionar una tarjeta de estimación, y todas las tarjetas se revelan de nuevo al mismo tiempo. El proceso se repite hasta que se logre el consenso, o hasta que los estimadores deciden que la estimación ágil y planificación de un ítem en particular debe ser diferida hasta que la información adicional se puede adquirir.
 
 \newpage
 \section{Técnicas de Comunicación}
@@ -154,3 +166,23 @@ Un Scrum board, Kamban Board o taskboard físico (Ver figura \ref{fig:ScrumBoard
   \centering
   \label{fig:ScrumBoard} %\ref{fig:ScrumBoard}
 \end{figure}
+
+\subsection{Gráficos de esfuerzo pendiente}
+
+\subsubsection{Gráfico Burndown}
+Un gráfico de trabajo pendiente o "Burndown charts" es uno que muestra el trabajo restante o que queda por hacer versus tiempo. Muestra la velocidad a la que se están completando los PBIs o historias reflejando el avance y permitiendo extrapolar si el Equipo podrá completar el trabajo en el tiempo restante.
+
+Se pueden utilizan dos gráficos de esfuerzo pendiente:
+
+\begin{enumerate}
+
+\item \textbf{Burndown de Sprint:} Días u horas pendientes para completar las tareas de la iteración (sprint burndown chart), realizado a partir de la lista de tareas de la iteración. Normalmente se utiliza para saber cuánto falta para terminar las historias comprometidas en un Sprint. Es un diagrama de dos ejes: en el eje X el tiempo en días de duración del sprint, en el eje Y la cantidad de trabajo comprometida con el cliente durante el sprint en las unidades que se hayan acordado.
+
+\item \textbf{Burndown de Proyecto:} Días pendientes para completar los requisitos del producto o proyecto (product burndown chart), realizado a partir de la lista de requisitos priorizada (Product Backlog).
+
+\end{enumerate}
+
+\subsubsection{Gráfico Burn-Up}
+
+El gráfico Burn-up es muy similar al Burndown, con la diferencia de que se parte del cero, y se va marcando la cantidad de trabajo completado. En este gráfico la curva va hacia arriba asercándose a una línea que representa el alcance comprometido. En este tipo de gráfico es más fácil visualizar los cambios de alcance.
+
