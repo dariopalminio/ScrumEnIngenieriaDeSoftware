@@ -1,2 +1,2 @@
-# IngenieriaYGesti-nConScrum
-Ingenieria y gestión con Scrum
+Proyecto Libro: 
+Scrum en Ingeniería de Software
