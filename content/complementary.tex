@@ -6,8 +6,10 @@ Rodeando el núcleo de Scrum se encuentra un anillo de complementos. Estos compl
 
 %Técnicas para requerimientos
 % Historias de usuarios
-% Técnica Killen 
-% Mapas de historia
+% Técnica Killen :  sirve para definir cuales son las cuestiones clave a desarrollar en un proyecto y su priorización logrando un conjunto de historis de usuario.
+% Mapas de historia (Técnica propuesta por Jeff Patton)
+% Articles: The New User Story Backlog is a Map By Jeff Patton. JPattonAssociates.com, Octuber 8, 2008.
+% URL: http://jpattonassociates.com/the-new-backlog/
 %Técnicas de Planeación
 %Técnicas de estimación
 % Poker de planeación
@@ -15,6 +17,7 @@ Rodeando el núcleo de Scrum se encuentra un anillo de complementos. Estos compl
 % Radiadores de información
 % Scrum task board
 % Comunicación osmótica
+% -----------técnica que te permita limitar la cantidad de trabajo en progreso y la priorización de las tareas, como % son la Técnica pomodoro y la Matriz de Eisenhower respectivamente.
 
 \newpage
 \section{Técnicas para requerimientos}
@@ -23,13 +26,18 @@ Rodeando el núcleo de Scrum se encuentra un anillo de complementos. Estos compl
 
 Para Scrum las hipótesis de requerimientos se representan en items de Backlog de producto PBI. A estos PBIs se los suele denominar "Story" o "Historias de Usuarios"\footnote{Las "User Story" son una técnica de eXtremme Programming (XP)}. El Product Backlog incluye incisos o Stories que aportan valor al cliente y que suelen ser descripción de requisitos funcionales. Aunque también puede incluir entradas para exploración de características, necesidades del cliente u opciones técnicas, requerimientos no funcionales, el trabajo necesario para lanzar el producto, y otros incisos, así como la configuración del entorno o arreglar defectos \footnote{\cite{Scrum-Institute-2015}}. O sea que puede proporcionar valor en forma indirecta mediante el aumento de la calidad o la reducción de los incidentes en el largo plazo \footnote{\cite{Scrum-Institute-2015}}.
 
-Las historias representan un concepto verificable y simple, que el Product Owner quiere implementar en el producto. Según el concepto general de metodología Ágil, la historia se define como una "promesa de una conversación" o una "descripción de una característica" \footnote{\cite{UNTREF-2014}, \cite{Dan-North-2015}}. Según esta perspectiva, la historias de usuario representa una "funcionalidad de aplicación" para un usuario y que brinda un beneficio (ROL + FUNCIONALIDAD + BENEFICIO). Las mismas se escriben siempre con lenguaje de negocio y respetando la siguiente pauta de estructura:
+Las historias representan un concepto verificable y simple, que el Product Owner quiere implementar en el producto. Según el concepto general de metodología Ágil, la historia se define como una "promesa de una conversación" o una "descripción de una característica" \footnote{\cite{UNTREF-2014}, \cite{Dan-North-2015}}. Según esta perspectiva, la historias de usuario representa una "funcionalidad de aplicación" para un usuario y que brinda un beneficio (ROL + FUNCIONALIDAD + BENEFICIO). Las mismas se escriben siempre con lenguaje de negocio y respetando la siguiente pauta de estructura:\newline
 
-\textbf{COMO} <ROL> \textbf{QUIERO} <FUNCIONALIDAD> \textbf{PARA QUE} <BENEFICIO>
+\textbf{COMO} <ROL> \textbf{QUIERO} <FUNCIONALIDAD> \textbf{PARA QUE} <BENEFICIO>\newline
 
 Por ejemplo:
 
-COMO ScrumMaster QUIERO que las reuniones no se extiendan más de un tiempo consensuado PARA QUE no se pierda el foco.
+%Example of User Story
+\begin{itemize}
+\item \textbf{COMO} ScrumMaster 
+\item \textbf{QUIERO} que las reuniones no se extiendan más de un tiempo consensuado 
+\item \textbf{PARA QUE} no se pierda el foco.
+\end{itemize}
 
 La historia de usuario no es exactamemte un requerimiento, pero puede considerarse como el título de una hipótesis de requerimiento como recordatorio de algo relevante a conversar con el usuario o cliente. En consecuencia lo relevante es su evolución como conversación \footnote{\cite{UNTREF-2014}}.
 
@@ -39,52 +47,53 @@ Según Dan North y en el marco de Behavior-Driven Development (BDD), una Story e
 
 \subsubsection{Criterio de demarcación}
 
-Existen ciertas características a tener en cuenta a la hora de escribir una historia de usuario y determinar cuál es una válida. El criterio de demarcación aceptado en metodología ágil en general es el criterio INVEST que consta de seis características a cumplir \footnote{\cite{UNTREF-2014}, \cite{Scrum-Alliance-2015}}:
+Las historias de usuario bien escritas son esenciales para el desarrollo ágil y la ingeniería de software. Existen ciertas características a tener en cuenta a la hora de escribir una historia de usuario y determinar cuál es una bien escrita o una válida. El criterio de demarcación aceptado en metodología ágil en general es el criterio INVEST\footnote{INVEST es un acrónimo creado por Bill Wake.} y que consta de seis características a cumplir \footnote{\cite{UNTREF-2014}, \cite{Scrum-Alliance-2015}}:
 
 \begin{enumerate}
 
-\item \textbf{Independiente:} debe ser atómica.
+\item \textbf{Independiente:} una historia debe ser atómica. Es decir que se debe buscar asegurar la cohesión funcional y el bajo acoplamiento entre historias distintas. La fuerte dependencia entre diferentes historias hace que sea más dificil planificar, priorizar y estimar.
 
-\item \textbf{Negociable:} debe ser conversable y en consecuencia negociable (es viva).
+\item \textbf{Negociable:} debe ser conversable y en consecuencia negociable (es viva). Las historias no son requerimientos contractuales ni requisitos rígidos, y su detalle y precisión debe poder evolucionar en el tiempo en procesos de refinamiento y conversaciones en una ingeniería de requerimientos evolutiva.
 
-\item \textbf{Valueble:} debe generar un valor al usuario o cliente. Una Story sin una declaración de la motivación del usuario a menudo se piensa que es no accionable; es decir, la historia no se puede estimar o implementar fácilmente \footnote{\cite{Scott-Bellware-2008}}.
+\item \textbf{Valueble:} debe generar un valor al cliente (usuario o comprador). Una Story sin una declaración de la motivación del usuario a menudo se piensa que es no accionable; es decir, la historia no se puede estimar o implementar fácilmente \footnote{\cite{Scott-Bellware-2008}}. Lo ideal, además de la declaración explícita del beneficio, es que haya una forma de medir el valor que aporta al cliente.
 
-\item \textbf{Estimable:} se debe poder estimar.
+\item \textbf{Estimable:} se debe poder estimar. La historia debe brindar la suficiente información que de la certidumbre necesaria para que los desarrolladores puedan estimarla y permitir, de este modo, que se pueda priorizar y planificar. 
 
-\item \textbf{Pequeña:} debe ser lo suficientemente pequeña para entrar en un sprint o iteración. El tamaño pequeño de las historias ayuda a reducir el tamaño del lote, a incrementar el flujo de valor hacia el cliente y a asegurar que cada miembro del equipo de desarrollo pueda hacer una contribución valiosa cada día. Por ejemplo en cada Sprint se pueden completar entre cuatro y ocho historias pequeñas.
+\item \textbf{Pequeña:} debe ser lo suficientemente pequeña para entrar en un sprint o iteración. El tamaño pequeño de las historias ayuda a reducir el tamaño del lote, incrementar el flujo de valor hacia el cliente y asegurar que cada miembro del equipo de desarrollo pueda hacer una contribución valiosa cada día. Por ejemplo, en cada Sprint se podrían completar entre cuatro y ocho historias pequeñas. A medida que una historia es más grande va a tener más errores asociados a la estimación y alcance, y aumentará la probabilidad de terminar en un Sprint fallido.
 
-\item \textbf{Probable:} debe poder permitir la contrastabilidad. La contrastabilidad del enunciado de la historia es la propiedad de ésta de ser capaz de ser sometida a una prueba empírica a fin de evaluar su adecuación o no a los hechos a los que se refiere o resultados esperados. Esta característica es crucial para hacer ingeniería, sin la contrastabilidad no se hace ingeniería.
+\item \textbf{Probable:} debe poder permitir la contrastabilidad. La contrastabilidad del enunciado de la historia es la propiedad de ésta de ser capaz de ser sometida a una prueba empírica y repetible a fin de evaluar su adecuación o no a los hechos a los que se refiere o resultados esperados. Esta característica es crucial para hacer ingeniería, sin la contrastabilidad no se hace ingeniería. Un ejemplo de historia no probable sería: "Como usuario quiero un software hermoso y facil de usar".
 
 \end{enumerate}
 
 \subsubsection{¿Qué NO es una Historia de Usuario?}
 
-Si no cumple con el criterio INVEST es bastante probable que no sea una Story. Por ejemplo una tarea puramente técnica (que le interesa solo al desarrollador), un refactoring técnico o un Spike no cumplen con INVEST y en su generalidad no son Story. Veamos:
+Si no cumple con el criterio INVEST es bastante probable que no sea una Story. Por ejemplo una tarea puramente técnica (que le interesa solo al desarrollador), un refactoring técnico o un Spike no cumplen con INVEST y en su generalidad no son Story. 
+Veamos los siguientes ejemplos:
 
 \begin{itemize}
 
 \item \textbf{Spike:}
-No es una Story ya que es una tarea de investigación y/o experimentación en formato time-boxing por lo que no cumple con ser testeable ni estimable (no cumple con dos criterios).
+No es una Story ya que es una tarea de investigación y/o experimentación en formato time-boxing por lo que no cumple con ser probable ni estimable (no cumple con dos criterios).
 
 \item \textbf{Refactoring Task:}
-Es una tarea técnica que no es valuable o su valoración es a futuro o en relación a un atributo de calidad que puede no estar directamente solicitado por el cliente o no impacta en beneficio inmediato para el cliente, ya que podría estar resolviendo una deuda técnica. Esto no quiere decir que no pueda haber una "story de refactoring" que puede proporcionar valor en forma indirecta mediante el "aumento de la calidad o la reducción de los incidentes en el largo plazo".
+Es una tarea técnica de reingeniería que no es valuable o su valoración es a futuro o en relación a un atributo de calidad que puede no estar directamente solicitado por el cliente o no impacta en beneficio inmediato para el cliente, ya que podría estar resolviendo una "deuda técnica"\footnote{Deuda técnica es la incurrida involuntariamente debido a trabajos de baja calidad o deuda incurrida intencionalmente (McConnell, Ward Cunningham) y que consta en arquitectura no escalable, defectos en el código, documentación inservible o desactualizada, problemas para migrar o actualizar funcionalidades o problemas por falta de mantenimiento.}. Esto no quiere decir que no pueda haber una "story de refactoring" que puede proporcionar valor en forma indirecta mediante el "aumento de la calidad o la reducción de los incidentes en el largo plazo".
 
 \item \textbf{Technical Story:}
 “Cada historia tiene que ser valorada por los usuarios. Pero eso sería un error."\footnote{\cite{Cohn-2004}} Pues en realidad, una historia de usuario describe la funcionalidad que será valiosa para un usuario o comprador de un sistema o software \footnote{\cite{Cohn-2004}}. Hay historias que especifican aspectos técnicos que no son valiosos para el usuario sino mas bien para el cliente o comprador (la valoración es transitiva y no directa). Historias técnicas pueden ser valorados por los compradores que contemplan la compra del producto, pero no serían valorados por los usuarios reales. Pero esto no es lo que podemos llamar una "Technical Story" sino que es una Story con aspectos técnicos que tiene valor para el cliente. Para Scott Ambler en Agile Modeling, una Story es una definición de muy alto nivel de un requerimiento que puede ser funcional o no, por ejemplo de un requerimiento técnico \footnote{\cite{Scott-Ambler-2015}}, por ejemplo: "como usuario quiero que las transcripciones estén disponibles en línea a través de un navegador estándar lo que me permite acceder desde cualquier lugar"\footnote{\cite{Scott-Ambler-2015}}.
 
 Cuando se habla de "Technical Story" se referencia a aquella historia técnica que sólo es valorada por los desarrolladores. Estas historias son las que se quieren evitar y considerar como Technical Story que podría ser una tarea técnica o una historia mejor redactada. Este tipo de historias se centran en la tecnología y las ventajas para los programadores. Es muy posible que las ideas detrás de estas historias sean buenas, pero en cambio deben ser escritas para que los beneficios a los clientes o usuarios sean evidentes. Esto permitirá que el cliente priorizar inteligentemente estas historias en el calendario de desarrollo \footnote{\cite{Cohn-2004}}.
 
-Para la Agile Alliance una Story no se corresponden en general a un "componente técnico" o de la "interfaz de usuario", pues a pesar de que a veces puede ser un atajo útil hablar de por ejemplo "la historia de diálogo de búsqueda", pantallas, cuadros de diálogo y botones, no son historias de usuario \footnote{\cite{Scrum-Alliance-2015}}.
+Para la Agile Alliance una Story no se corresponde en general a un "componente técnico" o de la "interfaz de usuario", pues a pesar de que a veces puede ser un atajo útil hablar de por ejemplo "la historia de diálogo de búsqueda", pantallas, cuadros de diálogo y botones, no son historias de usuario \footnote{\cite{Scrum-Alliance-2015}}.
 
 \end{itemize}
 
 \subsubsection{Componentes de una Historia de Usuario}
 
-Las historias de usuarios se componen de tres elementos:
+Las historias de usuarios se componen de tres elementos comunmente denominados las tres 'C'\footnote{Las 3 Cs de Ron Jeffries.}:
 
 \begin{enumerate}
 
-\item \textbf{Tarjeta (Card):} Las historias se deben poder escribir en una tarjeta de papel pequeña. Por ese motivo la redacción de las mismas debe ser clara, precisa y concisa para caber en una tarjeta de papel.
+\item \textbf{Carta o tarjeta (Card):} Las historias se deben poder escribir en una tarjeta de papel pequeña. Por ese motivo la redacción de las mismas debe ser clara, precisa y concisa para caber en una tarjeta de papel.
 
 \item \textbf{Conversación:} Las historias deben tener y generar conversaciones cara a cara entre el Product Owner y el Equipo de Desarrollo.
 
@@ -94,17 +103,19 @@ Las historias de usuarios se componen de tres elementos:
 
 \subsubsection{Criterio de Aceptación}
 
-Las historias de usuario tienen límites específicos para las características del producto, proceso o servicio definido en la hipótesis de requerimiento que determinan los resultados esperados para que la historia sea aceptada por el cliente. En otras palabras es el conjunto de afirmaciones útiles para que el cliente valide la historia.
+Las historias de usuario tienen límites específicos para las características del producto, proceso o servicio definido en la hipótesis de requerimiento que determinan los resultados esperados para que la historia sea aceptada por el cliente. En otras palabras, es el conjunto de afirmaciones útiles para que el cliente valide la historia.
 
-La estructura de un Criterio de Aceptación presentada como escenario puede ser como la que sigue:
- 
-Scenario 1: Título
-Given [contexto]
-  And [otro contexto]...
-When  [evento]
-Then  [resultado]
-  And [otro resultado]...
-  
+La estructura de un Criterio de Aceptación presentado como escenario puede ser como la siguiente:
+
+%Criterio de aceptación ejemplo con un escenario
+\begin{itemize}
+\item \textbf{Scenario 1:} Título
+  \begin{itemize}
+  \item \textbf{Given} [contexto] And [otro contexto]...
+  \item \textbf{When}  [evento] 
+  \item \textbf{Then}  [resultado] And [otro resultado]...
+  \end{itemize}
+\end{itemize}
   
 \newpage
 \section{Técnicas de estimación}
@@ -185,4 +196,3 @@ Se pueden utilizan dos gráficos de esfuerzo pendiente:
 \subsubsection{Gráfico Burn-Up}
 
 El gráfico Burn-up es muy similar al Burndown, con la diferencia de que se parte del cero, y se va marcando la cantidad de trabajo completado. En este gráfico la curva va hacia arriba asercándose a una línea que representa el alcance comprometido. En este tipo de gráfico es más fácil visualizar los cambios de alcance.
-
