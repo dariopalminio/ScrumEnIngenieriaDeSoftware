@@ -123,9 +123,22 @@ La estructura de un Criterio de Aceptación presentado como escenario puede ser 
 
 \subsection{Poker de planeación}
 
-El Poker de planeación o "Planning Poker" es una técnica de estimación y planificación ágil que se basa el consenso por sabiduría de grupo. 
+El Poker de planeación o "Planning Poker"\footnote{El "Planning Poker" proviene de un paper presentado por James Greening llamado "cómo evitar análisis parálisis en la planificación de liberaciones"\cite{James-Grenning-2002} donde se basa en el método Wideband Delphi para realizar la estimación de requerimientos de forma colaborativa. Luego el método fue popularizado por Mike Cohn con su libro "Agile Estimating and Planning"\cite{Cohn-2005}} es una técnica de estimación y planificación ágil que se basa el consenso por sabiduría de grupo. 
 
-La dinámica consiste en que el Product Owner o cliente inicia leyendo una historia de usuario ágil o describe una característica para los desarrolladores estimadores. Cada estimador posee una baraja de cartas de Planificación de Poker con valores como 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que es la secuencia fibonacci que se suele recomendar. Los valores representan el número de puntos de la historia, día ideal, u otras unidades en las que el equipo estima. Los estimadores discutir la función, haciendo preguntas al Product Owner, según sea necesario. Cuando la función se ha discutido plenamente, cada estimador selecciona de forma privada una tarjeta a representar a su estimación. Todas las tarjetas se revelaron a continuación, al mismo tiempo. Si todos los estimadores seleccionan el mismo valor, que se convierte en la estimación. Si no, los estimadores discuten sus estimaciones. Los estimadores de valores altos y bajos deben compartir sus razones. Tras un nuevo debate, cada estimador vuelve a seleccionar una tarjeta de estimación, y todas las tarjetas se revelan de nuevo al mismo tiempo. El proceso se repite hasta que se logre el consenso, o hasta que los estimadores deciden que la estimación ágil y planificación de un ítem en particular debe ser diferida hasta que la información adicional se puede adquirir.
+La dinámica consiste en que el Product Owner inicia leyendo una historia de usuario ágil o describe una característica para los desarrolladores estimadores. Cada estimador posee una baraja de "Cartas de Poker de Planificación". Los valores representan el número de puntos de la historia, día ideal, u otras unidades en las que el equipo estima. Los estimadores discutir la función, haciendo preguntas al Product Owner, según sea necesario. Cuando la función se ha discutido plenamente, cada estimador selecciona de forma privada una tarjeta a representar a su estimación. Todas las tarjetas se revelaron a continuación, al mismo tiempo. Si todos los estimadores seleccionan el mismo valor, que se convierte en la estimación. Si no, los estimadores discuten sus estimaciones. Los estimadores de valores altos y bajos deben compartir sus razones. Tras un nuevo debate, cada estimador vuelve a seleccionar una tarjeta de estimación, y todas las tarjetas se revelan de nuevo al mismo tiempo. El proceso se repite hasta que se logre el consenso, o hasta que los estimadores deciden que la estimación ágil y planificación de un ítem en particular debe ser diferida hasta que la información adicional se puede adquirir.
+
+
+\subsubsection{Cartas de Poker de Planificación}
+
+Las Cartas de Poker de Planificación que más se usan son las de Fibonacci y las de talles de remeras:
+
+\begin{enumerate}
+
+\item \textbf{Talles de remeras:} Las cartas de talles contempla los valores S, M, L, XL y XXL, siendo la XXL la más grande y S la más pequeña. Estos valores sirven para estimar tamaños de historias o trabajo a alto nivel.
+
+\item \textbf{Fibonacci:} Las cartas Fibonacci contempla los valores 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que es la secuencia fibonacci que se suele recomendar. Estos valores son útiles para estimar complejidad de historias o trabajo a nivel medio.
+
+\end{enumerate}
 
 \newpage
 \section{Técnicas de Comunicación}
