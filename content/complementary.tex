@@ -54,7 +54,7 @@ Las historias de usuario bien escritas son esenciales para el desarrollo ágil y
 
 \item \textbf{Independiente:} una historia debe ser atómica. Es decir que se debe buscar asegurar la cohesión funcional y el bajo acoplamiento entre historias distintas. La fuerte dependencia entre diferentes historias hace que sea más dificil planificar, priorizar y estimar.
 
-\item \textbf{Negociable:} debe ser conversable y en consecuencia negociable (es viva). Las historias no son requerimientos contractuales ni requisitos rígidos, y su detalle y precisión debe poder evolucionar en el tiempo en procesos de refinamiento y conversaciones en una ingeniería de requerimientos evolutiva.
+\item \textbf{Negociable:} debe ser conversable y en consecuencia negociable (es viva). Las historias "no son requerimientos contractuales"\footnote{"Las user stories no son obligaciones contractuales"\cite{Cohn-2004}} ni requisitos rígidos, y su detalle y precisión debe poder evolucionar en el tiempo en procesos de refinamiento y conversaciones en una ingeniería de requerimientos evolutiva.
 
 \item \textbf{Valueble:} debe generar un valor al cliente (usuario o comprador). Una Story sin una declaración de la motivación del usuario a menudo se piensa que es no accionable; es decir, la historia no se puede estimar o implementar fácilmente \footnote{\cite{Scott-Bellware-2008}}. Lo ideal, además de la declaración explícita del beneficio, es que haya una forma de medir el valor que aporta al cliente.
 
@@ -104,9 +104,9 @@ Las historias de usuarios se componen de tres elementos comunmente denominados l
 
 \subsubsection{Criterio de Aceptación}
 
-Las historias de usuario tienen límites específicos para las características del producto, proceso o servicio definido en la hipótesis de requerimiento que determinan los resultados esperados para que la historia sea aceptada por el cliente. En otras palabras, es el conjunto de afirmaciones útiles para que el cliente valide la historia.
+Las historias de usuario tienen límites específicos para las características del producto, proceso o servicio definido en la hipótesis de requerimiento que determinan los resultados esperados para que la historia sea aceptada por el cliente. En otras palabras, el criterio de aceptación es el conjunto de afirmaciones útiles para que el cliente valide la historia.
 
-La estructura de un Criterio de Aceptación presentado como escenario puede ser como la siguiente:
+La estructura de un criterio de aceptación presentado como escenario puede ser como la siguiente:
 
 %Criterio de aceptación ejemplo con un escenario
 \begin{itemize}
@@ -121,6 +121,12 @@ La estructura de un Criterio de Aceptación presentado como escenario puede ser 
 \newpage
 \section{Técnicas de Estimación}
 
+\subsection{Puntos de historia}
+
+Los puntos de historia o "Story Points" son una medida relativa de estimación de una historia de usuario para poder medir su tamaño y útil para medir la velocidad de un equipo. Se usa para hacer estimaciones relativas, que quiere decir que las historias se comparan entre si, buscando mantener una relación proporcional entre ellas según sus puntos de historia. O sea que si se piensa a nivel de esfuerzo, una historia que tiene 3 puntos de historia requerirá tres veces más de esfuerzo que una que sea de un punto historia.
+
+Hay que tener en cuenta que "bajo ningún punto de vista la estimación (en story points) es un compromiso"\footnote{\cite{UNTREF-2014}} y que los puntos de historia no son medidas objetivas convertibles en forma precisa a horas. Justamente se usan puntos de historia para no estimar en horas hombre.
+
 \subsection{Poker de planeación}
 
 El Poker de planeación o "Planning Poker"\footnote{El "Planning Poker" proviene de un paper presentado por James Greening llamado "cómo evitar análisis parálisis en la planificación de liberaciones"\cite{James-Grenning-2002} donde se basa en el método Wideband Delphi para realizar la estimación de requerimientos de forma colaborativa. Luego el método fue popularizado por Mike Cohn con su libro "Agile Estimating and Planning"\cite{Cohn-2005}} es una técnica de estimación y planificación ágil que se basa el consenso por sabiduría de grupo. 
@@ -134,9 +140,9 @@ Las Cartas de Poker de Planificación que más se usan son las de Fibonacci y la
 
 \begin{enumerate}
 
-\item \textbf{Talles de remeras:} Las cartas de talles contempla los valores S, M, L, XL y XXL, siendo la XXL la más grande y S la más pequeña. Estos valores sirven para estimar tamaños de historias o trabajo a alto nivel.
+\item \textbf{Talles de remeras:} Las cartas de talles contempla los valores XS (muy pequeño), S (Pequeño), M (Mediano), L (grande), XL (muy grande) y XXL (extra grande). Estos valores sirven para estimar épicas, tamaños de historias o trabajo a alto nivel. 
 
-\item \textbf{Fibonacci:} Las cartas Fibonacci contempla los valores 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que es la secuencia fibonacci que se suele recomendar. Estos valores son útiles para estimar complejidad de historias o trabajo a nivel medio.
+\item \textbf{Fibonacci:} Las cartas Fibonacci contempla los valores 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que es la secuencia fibonacci que se suele recomendar. Estos valores son útiles para estimar complejidad de historias o trabajo a nivel medio. Realizando una estimación relativa, estos valores corresponden a puntos de historia.
 
 \end{enumerate}
 
