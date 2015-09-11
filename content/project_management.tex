@@ -48,9 +48,20 @@ Las métricas son indicadores que ayudan al equipo a medir su propio desempeño 
 
 \begin{enumerate}
 
-\item {\textbf{Velocity:} La velocidad es el número de unidades de trabajo o puntos de historia SP (Story Points) estimados y aceptados por un equipo en una iteración Sprint. De la valocity de cada Sprint se calcula la velocidad promedio o "Average Velocity" que es el número de unidades de trabajo o puntos de historia SP (Story Points\footnote{SP indica una cantidad de alcanse o trabajo que puede ser entregado o tamaño de producto estimado para entregar.}) promedio estimados y aceptados por un equipo en un conjunto de iteraciones Sprint. A esta "Average Velocity" se la suele denominar velocity, ya que lo que nos interesa es nuestra velocidad relativa a nuestra historia pasada y no la relativa a un solo Sprint (salvo en nuestro primer Sprint).}
+\item {\textbf{Velocity:} La velocidad es el número de unidades de trabajo o puntos de historia SP (Story Points) estimados y aceptados por un equipo en una iteración Sprint.}
 
-\item {\textbf{Work Capacity:} La Capacidad es la suma de todos los trabajos reportados durante el Sprint. La capacidad es generalmente igual o superior a la Velocity. Aunque la Capacida puede, en raras ocasiones, caer por debajo de la velocidad. Esto se debe a que la velocidad se calcula en base a las estimaciones originales de trabajo, mientras que la capacidad se calcula en base a la suma de trabajo real reportado. Por lo que en el caso de que esto suceda, lo que indica es que el equipo ha sobre estimando la complejidad de los trabajos solicitados.}
+\item {\textbf{Average Velocity:} De la valocity de cada Sprint se calcula la velocidad promedio o "Average Velocity" que es el número de unidades de trabajo o puntos de historia SP (Story Points\footnote{SP indica una cantidad de alcanse o trabajo que puede ser entregado o tamaño de producto estimado para entregar.}) promedio estimados y aceptados por un equipo en un conjunto de iteraciones Sprint. En un equipo ágil de velocidad estable, la velocidad promedio (de los últimos 4 Sprints) es un indicador adelantado de la velocidad estimada para el próximo Sprint (bajo las mismas condiciones de los Sprints usados para calcularla).}
+
+\item {\textbf{Work Capacity:} La Capacidad es la suma de todos los trabajos reportados durante el Sprint, esten terminados o no\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. La capacidad es generalmente igual o superior a la Velocity. Aunque la Capacida puede, en raras ocasiones, caer por debajo de la velocidad. Esto se debe a que la velocidad se calcula en base a las estimaciones originales de trabajo, mientras que la capacidad se calcula en base a la suma de trabajo real reportado\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. Por lo que en el caso de que esto suceda, lo que indica es que el equipo ha sobre estimando la complejidad de los trabajos solicitados. También existen otras formas de calcular o entender la capacidad. Por ejemplo:
+
+  \begin{enumerate}
+  \item {\textbf{Capacidad en puntos ideales:} La capacidad puede ser una idealización basada en la velocidad promedio, o sea, los puntos de la historia que se pueden considerar gastar en la próxima carrera de velocidad.\footnote{\cite{Satish-Thatte-2013}}}
+
+  \item {\textbf{Capacidad en horas:} La capacidad puede ser calculada en horas basados en la cantidad de miembros y la cantidad de horas efectivas de trabajo en un Sprint. Por ejemplo en un equipo de 8 miembros, con 6 horas de trabajo efectivo y un Sprint de 10 días, la capacidad en horas es igual a 480 hs (8 x 6 hs x 10).}
+
+  \end{enumerate}
+
+}
 
 \item {\textbf{Focus Factor:} El Focus Factor es la relación entre la Velocity y la capacidad de trabajo: ( Velocity / Work Capacity ) x 100\%. La misma debe permanecer en la vecindad de 80 \% en promedio para un equipo saludable. Estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previcibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad pero esto no indica necesariamente que estan trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia.}
 
