@@ -144,9 +144,10 @@ La estructura de un criterio de aceptación presentado como escenario puede ser 
 \newpage
 \section{Técnicas de Estimación}
 
-\subsection{Puntos de historia}
+\subsection{Estimación relativa}
 
-Los puntos de historia o "Story Points" son una medida relativa de estimación de una historia de usuario para poder medir su tamaño y útil para medir la velocidad de un equipo. Se usa para hacer estimaciones relativas, que quiere decir que las historias se comparan entre si, buscando mantener una relación proporcional entre ellas según sus puntos de historia. O sea que si se piensa a nivel de esfuerzo, una historia que tiene 3 puntos de historia requerirá tres veces más de esfuerzo que una que sea de un punto historia.
+Los puntos de historia o "Story Points" son una medida relativa de estimación de un ítem de trabajo o una historia de usuario para poder medir su tamaño y, además, es útil para medir la velocidad de un equipo. Se usa para hacer estimaciones relativas, que quiere decir que las historias se comparan entre si, buscando mantener una relación proporcional entre ellas según sus puntos de historia. O sea que si se piensa a nivel de esfuerzo, una historia que tiene 3 puntos de historia requerirá tres veces más de esfuerzo que una que sea de un punto historia.
+La estimación es relativa porque es subjetiva al equipo que estima. Si diferentes equipos toman a los puntos de historia como medida de complejidad de una historia, pueden llegar a valores distintos porque considerarán la complejidad acorde a su percepción de complejidad que puede ser diferente. Hay equipos que pueden tomar al SP como espectativa de esfuerzo en un día ideal de trabajo (día sin impedimentos) y la espectativa de esfuerzo resultará relativa al equipo que la forma\footnote{\cite{Cohn-2004}}.
 
 Hay que tener en cuenta que "bajo ningún punto de vista la estimación (en story points) es un compromiso"\footnote{\cite{UNTREF-2014}} y que los puntos de historia no son medidas objetivas convertibles en forma precisa a horas. Justamente se usan puntos de historia para no estimar en horas hombre.
 
@@ -179,19 +180,20 @@ Una técnica para lograr silencio en un grupo es pedir silencio cuando se levant
 
 \subsection{Gestión visual}
 
-La gestión visual es la utilización de elementos y técnicas visuales, como complemento de Scrum, para la organización del trabajo y la irradiación visual del trabajo. Es aconsejable que los irradiadores de información presenten las siguientes características:
+La gestión visual es la utilización de elementos y técnicas visuales, como complemento de Scrum, para la organización del trabajo y la irradiación visual del trabajo. Esto es útil para soporte del equipo y para brindar transparencia hacia interesados externos al equipo.
+Es aconsejable que los irradiadores de información presenten las siguientes características:
 
 \begin{enumerate}
 
-\item \textbf{Ubicación ostensible:} estar ubicado en el lugar de trabajo en forma de afiches, carteles o pizarras visibles.
+\item \textbf{Ubicación ostensible:} estar ubicado en el lugar de trabajo en paredes o paneles visibles.
 
-\item \textbf{Soporte físico:} estar hechos de material tangible como papel en vez de usar software, salvo el caso de monitores grandes.
+\item \textbf{Soporte físico:} estar hechos de material tangible como papel en vez de usar software, salvo el caso de monitores grandes. Por ejemplo en forma de afiches (flip-chart), carteles o pizarras visibles.
 
 \item \textbf{Resumen autoexplicativo:} contener información importante autoexplicativa y didáctica.
 
 \end{enumerate}
 
-Ejemplos de irradiadores de información son: el gráfico burndown, indicadores de estados del build (usando semáforos), métricas de errores, riesgos activos, impedimentos. etcétera.
+Ejemplos de irradiadores de información son: tablero de obstáculos o impedimentos, los gráficos de esfuerzo pendiente burndown y burnup, el gráfico de velocidad, indicadores de estados del build (usando semáforos), métricas de errores, riesgos activos, etcétera.
 
 \subsection{Tableros Scrum/Kanban}
 
@@ -270,6 +272,22 @@ El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo
   \centering
   \label{fig:Burnup_chart} %\ref{fig:Burnup_chart}
 \end{figure}
+
+\subsection{Gráficos de Velocidad}
+
+\subsubsection{Valocity Chart}
+
+El gráfico de velocidad muestra todas las unidades estimadas en el plan y aceptadas (US Story Points) para un período de iteraciones realizadas\footnote{\cite{Scrum-Alliance-2014}}. Un gráfico de la velocidad típico de un equipo de proyecto ágil podría ser como el siguiente gráfico de la izquierda (ver \ref{fig:VelocityChartAndAverage}):
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{VelocityChartAndAverage}
+  \caption{Diagrama de Velocidad y Diagrama de Velocidad con Velocidad Promedio}
+  \centering
+  \label{fig:VelocityChartAndAverage} %\ref{fig:VelocityChartAndAverage}
+\end{figure}
+
+Tambien se puede incluir la velocidad promedio (ver gráfico de la derecha \ref{fig:VelocityChartAndAverage}).
 
 \newpage
 \section{Técnicas de Programación}
