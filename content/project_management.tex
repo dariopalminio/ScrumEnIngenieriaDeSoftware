@@ -71,19 +71,27 @@ Hay muchas mediciones que nos pueden ser de utilidad, como por ejemplo las sigui
 
 \item {\textbf{Velocity:} La 'velocidad'\footnote{"Sum of original estimates of all accepted work" \cite{Scott-Jeff-2013}.} es el número de unidades de trabajo o puntos de historia SP estimados y aceptados por un equipo en una iteración Sprint. En otras palabras, es el conjunto de puntos de historia totales conseguidos por el equipo al final de cada Sprint\footnote{\cite{Jipson-Thomas-2015}}.}
 
-Esta definición es algo genérica. Hay dos formas más específicas de interpretar y medir la velocidad:
+Esta definición es la clásica y es algo genérica. Hay tres formas más específicas de interpretar y medir la velocidad:
 
-\begin{enumerate}
-  \item{Cuando la velocidad muestra solo la cantidad de funcionalidad de valor que un equipo entrega en un sprint. En este sentido las historia de usuario que no tienen ningún valor para el cliente o incompletas, las correcciones de errores y las refactorizaciones no cuentan en la velocidad.}
+  \begin{enumerate}
 
-  \item{Cuando la velocidad muestra la cantidad de funcionalidad que un equipo entrega en un sprint incluyendo las de valor indirecto. En este sentido las historia de usuario completadas que tienen valor indirecto para el cliente, las correcciones de errores y las refactorizaciones si cuentan en la velocidad.}
-\end{enumerate}
+  \item{\textbf{Velocidad de trabajo:} cuando la velocidad muestra la cantidad de trabajo o funcionalidad que un equipo entrega (aceptada) en un sprint\footnote{\cite{SBOK-2013}}, incluyendo las de valor indirecto. En este sentido las historia de usuario completadas (tomadas del backlog técnico) que tienen valor indirecto para el cliente, las correcciones de errores, deuda técnica, migraciones y refactorizaciones sí cuentan en la velocidad. En este caso, la velocidad del equipo da pocas indicaciones sobre el verdadero valor de negocio entregado y más sobre la capacidad que puede producir. Pues la velocidad, en este sentido clásico, no suele tener relación directa con el valor de negocio entregado.
+  }
 
-\item {\textbf{Average Velocity:} De la valocity de cada Sprint se calcula la velocidad promedio o "Average Velocity" que es el número de unidades de trabajo o SP promedio estimados y aceptados por un equipo en un conjunto de iteraciones Sprint. En un equipo ágil de velocidad estable, la velocidad promedio (de los últimos 4 Sprints) es un indicador adelantado de la velocidad estimada para el próximo Sprint (bajo las mismas condiciones de los Sprints usados para calcularla).}
+  \item{\textbf{Velocity en nueva funcionalidad:} cuando la velocidad muestra solo la cantidad de funcionalidad de valor para el negocio que un equipo entrega (aceptada) en un sprint. En este sentido las historia de usuario que no tienen ningún valor para el cliente o incompletas, las correcciones de errores y las refactorizaciones no cuentan en la velocidad. En este caso, la velocidad del equipo da un indicio sobre el valor de negocio entregado por el equipo.
+  }
+  
+  \item{\textbf{Value Velocity:} es una forma interesante para medir la productividad (sugerida por James Shore\footnote{\cite{James-Shore-2015}}) similar a la velocidad tradicional o velocidad de trabajo, excepto que se basa en estimaciones de valor de negocio (Business Value Point) hechas por el PO antes de la planeación.
+  }
+  
+  \end{enumerate}
+
+\item {\textbf{Average Velocity:} De la valocity de cada Sprint se calcula la velocidad promedio o "Average Velocity" que es el número de unidades de trabajo o SP promedio estimados y aceptados por un equipo en un conjunto de iteraciones Sprint. En un equipo ágil de velocidad estable, la velocidad promedio (por ejemplo de los últimos 4 Sprints) es un indicador adelantado de la velocidad estimada para el próximo Sprint (bajo las mismas condiciones de los Sprints usados para calcularla).}
 
 \item {\textbf{Work Capacity:} La Capacidad es la suma de todos los trabajos reportados durante el Sprint, esten terminados o no\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. La capacidad es generalmente igual o superior a la Velocity. Aunque la Capacida puede, en raras ocasiones, caer por debajo de la velocidad. Esto se debe a que la velocidad se calcula en base a las estimaciones originales de trabajo, mientras que la capacidad se calcula en base a la suma de trabajo real reportado\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. Por lo que en el caso de que esto suceda, lo que indica es que el equipo ha sobre estimando la complejidad de los trabajos solicitados. También existen otras formas de calcular o entender la capacidad. Por ejemplo:
 
   \begin{enumerate}
+  
   \item {\textbf{Capacidad en puntos ideales:} La capacidad puede ser una idealización basada en la velocidad promedio, o sea, los puntos de la historia que se pueden considerar gastar en la próxima carrera de velocidad.\footnote{\cite{Satish-Thatte-2013}}}
 
   \item {\textbf{Capacidad en horas:} La capacidad puede ser calculada en horas basados en la cantidad de miembros y la cantidad de horas efectivas de trabajo en un Sprint. Por ejemplo en un equipo de 8 miembros, con 6 horas de trabajo efectivo y un Sprint de 10 días, la capacidad en horas es igual a 480 hs (8 x 6 hs x 10).}
