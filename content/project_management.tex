@@ -45,7 +45,9 @@ Para crear un plan de entregables se deben tener disponibles las siguientes cosa
 
 \subsection{Métricas}
 
-Las métricas son indicadores que ayudan al equipo a medir su propio desempeño para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyectos para poder medir el avance del proyecto, revisar la productividad y el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluacion de desempeño de empleados.} del equipo y poder hacer comparaciones entre evolución de diferentes equipos. 
+Las métricas son una combinación de atributos cuantificables pertinentes que comunican información relevante acerca de la calidad de nuestros productos y nuestra productividad\footnote{\cite{INCOSE-2005}}. Para la ingeniería del software, las métricas proporcionan una indicación de la calidad de algún tipo de representación del software basadas en un conjunto de medidas indirectas\footnote{\cite{Roger-Pressman-2002}}. O sea que las mismas están relacionadas a unidades de medida e indicadores que ayudan a medir, descubrir y tomar decisiones para mejorar, corregir problemas, hacer estimaciones, controlar calidad, evaluar productividad y hacer control de proyectos. Intentar medir para mejorar nuestra comprensión de entidades particulares es tan poderoso en ciencia, en ingeniería de software como en cualquier disciplina.
+
+Bajo el marco Scrum ayuda al equipo a medir su propio desempeño para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyectos para poder medir el avance del proyecto, revisar la productividad, el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluacion de desempeño de empleados.} del equipo y poder hacer comparaciones relativas entre evolución de diferentes equipos. 
 
 \subsubsection{Unidades de medida}
 
@@ -63,13 +65,13 @@ El Business Value o BV es el valor añadido que la historia aporta al negocio\fo
 
 \end{enumerate}
 
-\subsubsection{Mediciones}
+\subsubsection{Indicadores}
 
-Hay muchas mediciones que nos pueden ser de utilidad, como por ejemplo las siguientes\footnote{Scott y Jeff \cite{Scott-Jeff-2013} y la  Scrumalliance en un artículo llamado "Velocity, How to Calculate and Use Velocity to Help Your Team and Your Projects", por Catia Oliveira (6 February 2014).}:
+Hay muchos indicadores que nos pueden ser de utilidad, como por ejemplo los siguientes\footnote{Scott y Jeff \cite{Scott-Jeff-2013} y la  Scrumalliance en un artículo llamado "Velocity, How to Calculate and Use Velocity to Help Your Team and Your Projects", por Catia Oliveira (6 February 2014).}:
 
 \begin{enumerate}
 
-\item {\textbf{Velocity:} La 'velocidad'\footnote{"Sum of original estimates of all accepted work" \cite{Scott-Jeff-2013}.} es el número de unidades de trabajo o puntos de historia SP estimados y aceptados por un equipo en una iteración Sprint. En otras palabras, es el conjunto de puntos de historia totales conseguidos por el equipo al final de cada Sprint\footnote{\cite{Jipson-Thomas-2015}}.}
+\item {\textbf{Velocity:} La 'velocidad'\footnote{"Sum of original estimates of all accepted work" \cite{Scott-Jeff-2013}.} es el número de unidades de trabajo o puntos de historia SP estimados y aceptados por un equipo en una iteración Sprint. En otras palabras, es el conjunto de puntos de historia totales conseguidos (aceptados) por el equipo al final de cada Sprint\footnote{\cite{Jipson-Thomas-2015}}.}
 
 Esta definición es la clásica y es algo genérica. Hay tres formas más específicas de interpretar y medir la velocidad:
 
@@ -88,7 +90,7 @@ Esta definición es la clásica y es algo genérica. Hay tres formas más espec�
 
 \item {\textbf{Average Velocity:} De la valocity de cada Sprint se calcula la velocidad promedio o "Average Velocity" que es el número de unidades de trabajo o SP promedio estimados y aceptados por un equipo en un conjunto de iteraciones Sprint. En un equipo ágil de velocidad estable, la velocidad promedio (por ejemplo de los últimos 4 Sprints) es un indicador adelantado de la velocidad estimada para el próximo Sprint (bajo las mismas condiciones de los Sprints usados para calcularla).}
 
-\item {\textbf{Work Capacity:} La Capacidad es la suma de todos los trabajos reportados durante el Sprint, esten terminados o no\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. La capacidad es generalmente igual o superior a la Velocity. Aunque la Capacida puede, en raras ocasiones, caer por debajo de la velocidad. Esto se debe a que la velocidad se calcula en base a las estimaciones originales de trabajo, mientras que la capacidad se calcula en base a la suma de trabajo real reportado\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. Por lo que en el caso de que esto suceda, lo que indica es que el equipo ha sobre estimando la complejidad de los trabajos solicitados. También existen otras formas de calcular o entender la capacidad. Por ejemplo:
+\item {\textbf{Work Capacity:} La Capacidad es la suma de todos los trabajos reportados durante el Sprint, esten terminados o no\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. La capacidad es generalmente igual o superior a la Velocity. Aunque la Capacidad puede, en raras ocasiones, caer por debajo de la velocidad. Esto se debe a que la velocidad se calcula en base a las estimaciones originales de trabajo, mientras que la capacidad se calcula en base a la suma de trabajo real reportado\footnote{Scott y Jeff \cite{Scott-Jeff-2013}}. Por lo que en el caso de que esto suceda, lo que indica es que el equipo ha sobre estimando la complejidad de los trabajos solicitados. También existen otras formas de calcular o entender la capacidad. Por ejemplo:
 
   \begin{enumerate}
   
@@ -101,7 +103,7 @@ Esta definición es la clásica y es algo genérica. Hay tres formas más espec�
 Cuando se definió el marco de trabajo, como algo mínimo de cosas para que funcione, se dejó lo más simple posible. Debido a ello, el concepto de Velocity sí es partes del marco de trabajo, pero Working capacity no lo es, aunque es ampliamente usado \footnote{Erich Buhler, Agilib.org 2015, Proyecto Mercury 2015 (LAN), \cite{Erich-Buhler-Coach-2015}.}.
 }
 
-\item {\textbf{Focus Factor:} El Focus Factor es la relación entre la Velocity y la capacidad de trabajo: ( Velocity / Work Capacity ) x 100\%. La misma debe permanecer en la vecindad de 80 \% en promedio para un equipo saludable. Estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previcibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad, aunque esto no indica necesariamente que están trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia.}
+\item {\textbf{Focus Factor:} El factor de foco revela el foco que el equipo ha tenido para entregar valor y su prestancia. El mismo es la relación entre la Velocity y la capacidad de trabajo: ( Velocity / Work Capacity ) x 100\%. La misma debe permanecer en la vecindad de 80 \% en promedio para un equipo saludable. Estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previcibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad, aunque esto no indica necesariamente que están trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia.}
 
 \item {\textbf{Targeted Value Increase (TVI+)} El TVI+ responde a cuánto cambio ha habido en la velocidad del equipo a través del tiempo desde el primer Sprint. Es la Velocity del Sprint actual dividido la Velocity Original (velocity del primer sprint): ( Current Sprint’s Velocity / Original Velocity ) x 100\%. Sirve para medir el aumento de la contribución de valor de un equipo en base a su velocidad origen Sprint a Sprint.
 Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su capacidad de resolver con éxito la complejidad requerida.
@@ -114,12 +116,22 @@ Un indicador relevante es el valor de negocio entregado. Se pueden contabilizar 
 }
 
 \item {\textbf{Happiness Metric:}
-Un estudio de Harvard muestra que la felicidad aumenta la producción de cualquier tipo de trabajo, pues "la gente feliz es 12 \% más productiva"\footnote{\cite{U-K-University-2014}}. En base a esto podemos intentar medir la felicidad Sprint a Sprint\footnote{\cite{Jeff-2014}}. 
+Un estudio de Harvard muestra que la felicidad aumenta la producción de cualquier tipo de trabajo, pues "la gente feliz es 12 \% más productiva"\footnote{\cite{U-K-University-2014}}. Además, un principio de la agilidad es desarrollar en torno a individuos motivados. En base a esto podemos intentar medir la felicidad Sprint a Sprint\footnote{\cite{Jeff-2014}}. 
 
 La felicidad del equipo es un indicativo de la salud del equipo en relación a su capacidad de entrega de valor. Para medir la felicidad del equipo podemos hacer encuestas o responder las siguientes preguntas:
 
   \begin{enumerate}
-  \item {¿Cómo me siento acerca de mi trabajo? Se puede usar una escala de 1 a 5. Otra escala para medir felicidad puede ser de siete puntos. Por ejemplo a la pregunta... ¿Cómo calificaría su felicidad en este momento? Se puede responder con 1 que es totalmente triste, 2 es muy triste , 3 es triste, 4 es ni feliz ni triste, 5 es bastante feliz, 6 es muy feliz y 7 es completamente feliz\footnote{\cite{U-K-University-2014}}.
+  \item {¿Cómo me siento acerca de mi trabajo? Se puede usar una escala de 1 a 5 (ver figura \ref{fig:HappinessMetric}). 
+  
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.40\textwidth]{HappinessMetric}
+  \caption{Medida de satisfacción}
+  \centering
+  \label{fig:HappinessMetric} %\ref{fig:HappinessMetric}
+\end{figure}
+
+  Otra escala para medir felicidad puede ser de siete puntos. Por ejemplo a la pregunta... ¿Cómo calificaría su felicidad en este momento? Se puede responder con 1 que es totalmente triste, 2 es muy triste , 3 es triste, 4 es ni feliz ni triste, 5 es bastante feliz, 6 es muy feliz y 7 es completamente feliz\footnote{\cite{U-K-University-2014}}.
   }
   
   \item {¿Qué va a hacer que me sienta mejor?}
@@ -133,3 +145,7 @@ También se puede medir la felicidad de los Stakeholder como indicador de grado 
 
 
 \end{enumerate}
+
+
+Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mojora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad.
+

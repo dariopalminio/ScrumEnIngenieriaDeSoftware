@@ -19,3 +19,6 @@ Herramientas libres a usar:
 - Editor de imágenes: Draw LibreOffice 3.5.7.2. libre (Formato ".odg").
 - Cliente de gestión de versiones: Git.
 
+Las fuentes del libro se pueden descargar desde:
+https://github.com/dariopalminio/ScrumEnIngenieriaDeSoftware
+
