@@ -6,7 +6,11 @@ Scrum es un marco de gestión de proyectos para el desarrollo incremental de pro
 
 \subsection{Proyecto Scrum}
 
-Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). En la administración de proyectos es necesario planificar los proyectos y dicha actividad se suele hacer en la fase de inicio ("Starting phase" o "Project Start"). Pero, a diferencia de la metodología clásica (ver figura \ref{fig:PMIProject}) en que la planificación estaba siempre al inicio y el desarrollo en la fase de ejecución, en el marco Scrum la planificación se distribuye durante todo el ciclo de vida del proyecto y en la fase de ejecución se hace el desarrollo incremental de productos (por incrementos de producto) en iteraciones cortas (Sprint) donde cada iteración tiene su respectiva planificación (ver figura \ref{fig:ScrumProject}) y su incremento de producto, en caso de haberlo logrado.
+Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). 
+
+\subsection{Planificación}
+
+En la administración de proyectos es necesario planificar y dicha actividad se suele hacer en la fase de inicio ("Starting phase" o "Project Start"). Pero, a diferencia de la metodología clásica (ver figura \ref{fig:PMIProject}) en que la planificación estaba siempre al inicio y el desarrollo en la fase de ejecución, en el marco Scrum la planificación se distribuye durante todo el ciclo de vida del proyecto y en la fase de ejecución se hace el desarrollo incremental de productos (por incrementos de producto) en iteraciones cortas (Sprint) donde cada iteración tiene su respectiva planificación (ver figura \ref{fig:ScrumProject}) y su incremento de producto, en caso de haberlo logrado.
 
 \begin{figure}[h]
   \centering
@@ -33,15 +37,22 @@ El marco de Scrum cambia el triángulo clásico de la gestión de proyectos. El 
 
 \subsection{Planificación de entregables}
 
-Con esta metodología tampoco es necesario hacer una entrega final (o "releasing") ya que se pueden hacer entregas paulatinas. Para hacer entregas intermedias se puede crear un plan de muy alto nivel para múltiples Sprints durante una planificación de lanzamiento. Este plan de entregables o de de lanzamientos es una guía con la que se pretende reflejar las expectativas sobre las qué funciones se implementarán y cuándo se completarán \cite{Scrum-Institute-2015}. También sirve como una base para monitorear el progreso dentro del proyecto. Pero siempre hay que considerar que no es un plan equivalente a un plan clásico, los ítos de releases no deberían ser compromisos rígidos y contractuales, y el desarrollo del proyecto no debería centrarse en respetar el plan. Por este motivo el plan de lanzamiento no es un plan estático. Pues, se cambia durante todo el proyecto cuando nuevos requerimientos o conocimientos están disponible y, por ejemplo, cuando entradas en el Scrum Product Backlog cambian y re-estiman. Por lo tanto este plan debe ser revisado y actualizado en intervalos regulares, por ejemplo, después de cada Sprint.
+Con este marco de trabajo tampoco es necesario hacer una entrega final (o "releasing") ya que se pueden hacer entregas paulatinas. En cada sprint se puede entregar valor. Para hacer entregas intermedias planificadas se puede crear un plan de muy alto nivel para múltiples Sprints durante una planificación de lanzamiento llamado "Release Plan". Este plan de entregables o de de lanzamientos es una guía con la que se pretende reflejar las expectativas sobre qué funcionalidad se implementará y cuándo, aproximadamente, se completará \footnote{\cite{Scrum-Institute-2015}}. También sirve como una base para monitorear el progreso dentro del proyecto. Pero siempre hay que considerar que no es un plan equivalente a un plan clásico, los ítos de releases no deberían ser compromisos rígidos y contractuales y, además, el desarrollo del proyecto no debería centrarse en respetar el plan. Por este motivo el plan de lanzamiento no es un plan estático; pues, se cambia durante todo el proyecto cuando nuevos requerimientos o conocimientos están disponible y, por ejemplo, cuando entradas en el Scrum Product Backlog cambian y se re-estiman. Por lo tanto, este plan debe ser revisado y actualizado en intervalos regulares, por ejemplo, después de cada Sprint.
 
-Para crear un plan de entregables se deben tener disponibles las siguientes cosas:
+\subsubsection{Release Plan Ágil}
+
+Un "Release Plan" ágil es, normalmente, un conjunto de historias de usuario (o épicas) agrupadas por "releases" o versiones del producto que se ponen a disposición de los usuarios \footnote{Release plan, jmbeas, 2011; Agile Estimating and Planning, Mike Cohn}. En otras palabras, es una planificación a media distancia como una proyección hacia adelante en una serie de sprints \footnote{Release Planning, Retiring the Term but not the Technique, Mike Cohn, 2012.}. Esta planificación es algo valiosa de hacer cuando se usa el marco Scrum, pero no es requerido por el "núcleo Scrum" o el "Scrum originario" \footnote{Gone are Release Planning and the Release Burndown, Ralph Jocham and Henk Jan Huizer in Community Publications, Scrum.org, Saturday, October 01, 2011; Ken Schwaber and Jeff Sutherland Release Updated Scrum Guide, David Bulkin, Infoq.com on Jul 27, 2011}. Se puede utilizar Scrum con éxito sin necesidad de utilizar “Release Planning”.
+
+Hay que remarcar que bajo el marco Scrum, si se hace un Release Plan, debería ser un documento minimalista (buscando el principio de simplicidad), pensado para MVPs (producto de mínimo valor) o entregas frecuentes (respetando el valor de software funcionando), abierto a modificaciones constantes (adaptabilidad y desarrollo evolutivo), consensuado con el equipo (transparencia) y desarrollado por el PO en colaboración con el cliente y con el equipo de desarrollo (priorizando la conversación y no la relación contractual).
+
+Luego hay que tener en cuenta que para crearlo se deben tener disponibles las siguientes cosas:
 
 \begin{enumerate}
 \item Un Product Backlog priorizado y estimado.
 \item La velocidad estimada del Equipo Scrum.
 \item Las condiciones de satisfacción (metas para la agenda, el alcance, los recursos)
 \end{enumerate}
+
 
 \subsection{Métricas}
 
