@@ -4,28 +4,36 @@ Scrum es aconsejable para ser óptimo en equipos chicos y proyectos pequeños, c
 
 \section{Equipos de características}
 
-Abordar el problema de proyectos grandes con "Equipos Scrum de características" consiste en la conformación de equipos totalmente multi-funcionales con un enfoque "Whole Team"\footnote{En un enfoque Whole Team todos pueden hacer, hasta cierta medida, alguna tarea de otro\cite{Juan-Gabardini-2015}.}, capaces de operar en todos los niveles de la arquitectura del producto con el fin de ofrecer las características centradas en el cliente. O sea que cada equipos trabaja sobre determinadas características de producto (Features) o PBIs desarrollando todos los niveles del sistema a desarrollar (end-to-end). En este sentidos, los equipos son homogéneos entre sí pero heterogéneos internamente, con integrantes de habilidades diversas y características profesionales multidisciplinares. Para lograr esto se debe conformar una organización de aprendizaje donde los equipos practican el aprendizaje continuo, donde aprenden para abarcar los componentes arquitectónicos.
+Abordar el problema de proyectos grandes con "Equipos Scrum de características" consiste en la conformación de equipos totalmente multi-funcionales con un enfoque "Whole Team"\footnote{En un enfoque Whole Team todos pueden hacer, hasta cierta medida, alguna tarea de otro\cite{Juan-Gabardini-2015}.}, capaces de operar en todos los niveles de la arquitectura del producto con el fin de ofrecer las características centradas en el cliente (ver figura \ref{fig:ScrumTeamsByFeatures}). O sea que cada equipos trabaja sobre determinadas características de producto (Features) o PBIs desarrollando todos los niveles del sistema a desarrollar (end-to-end). En este sentidos, los equipos son homogéneos entre sí pero heterogéneos internamente, con integrantes de habilidades diversas y características profesionales multidisciplinares. Para lograr esto se debe conformar una organización de aprendizaje donde los equipos practican el aprendizaje continuo, donde aprenden para abarcar los componentes arquitectónicos.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.99\textwidth]{ScrumTeamsByFeaturesAndByComponents}
-  \caption{Equipos de Características y Equipos de Componentes.}
-  Equipos de Características (izquierda) y Equipos de Componentes (derecha)
+  \includegraphics[width=0.80\textwidth]{ScrumTeamsByFeatures}
+  \caption{Esquema de Equipos de Características}
   \centering
-  \label{fig:ScrumTeamsByFeaturesAndByComponents} %\ref{fig:ScrumTeamsByFeaturesAndByComponents}
+  \label{fig:ScrumTeamsByFeatures} %\ref{fig:ScrumTeamsByFeatures}
 \end{figure}
 
 En esta arquitectura de organización es necesario coordinar el trabajo de los diferentes equipos. Los Scrum Master deben reunirse con regularidad, promoviendo la transformación a través de una lista visible de los impedimentos de organización. Los Scrum Master, además deberán estar familiarizados con biografía relacionada a este problema de escalabilidad como "Scaling Lean and Agile Development" \cite{Larman-Vodde-2008}.
 
 \section{Equipos de componentes}
 
-Abordar el problema de proyectos grandes con "Equipos Scrum de componentes" (ver figura \ref{fig:ScrumTeamsByFeaturesAndByComponents}) consiste en que cada equipo sólo es responsable de la ejecución de ciertos componentes dedicados en el sistema de los cuales el equipo es dueño de su desarrollo. Desde esta perspectiva se pueden tener equipos dedicados por capas (capa front-end, capa de servicios, capa de persistencia) y por componentes de arquitectura de software (diferentes componentes como librerías, servicios o subsistemas).
+Abordar el problema de proyectos grandes con "Equipos Scrum de componentes" (ver figura \ref{fig:ScrumTeamsByComponent}) consiste en que cada equipo sólo es responsable de la ejecución de ciertos componentes dedicados en el sistema de los cuales el equipo es dueño de su desarrollo. Desde esta perspectiva se pueden tener equipos dedicados por capas (capa front-end, capa de servicios, capa de persistencia) y por componentes de arquitectura de software (diferentes componentes como librerías, servicios o subsistemas).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{ScrumTeamsByComponent}
+  \caption{Esquema de Equipos de Características}
+  \centering
+  \label{fig:ScrumTeamsByComponent} %\ref{fig:ScrumTeamsByComponent}
+\end{figure}
 
 Para terminar una PBI o historia de usuario hay en la mayoría de los casos la necesidad de dividir las historias en partes más pequeñas que podrían ser implementadas dentro de un solo componente. Además se genera dependencias entre los diferentes equipos haciendo necesario procesos de integración periódica y coordinación de equipos. En muchos casos, una sola historia de usuario no se puede implementar dentro de un único sprint y, en su defecto, depende de los resultados de otras historias desarrolladas por otro equipo que aún no están disponibles. A esto se lo llama "pipeline" y debe evitarse en lo posible o gestionarse apropiadamente.
 
 La ventaja de utilizar equipos de componentes es que es más fácil asegurar una determinada arquitectura del sistema. Por ejemplo si se quiere asegurar una Arquitectura SOA o una de Microservicios que está orientada a componentes. Esta idea está, entre otras cosas, basada en la "Ley de Conway"\footnote{Conway's Law \cite{Conway-1968} no es exactamente una ley, sino que es más bien una observación que Conway publicó en 1968.} que sugiere que las organizaciones pueden replicar su arquitectura en los productos que ellas producen \cite{Martin-Fowler-2014}. 
 
 Por otro lado, puede tener como desventaja que las personas se pueden especializar sólo en pequeñas partes del sistema y el conocimiento global sobre el sistema en su conjunto podría perderse \cite{Scrum-Institute-2015}. En este caso podría tener lugar una optimización local, ya que el equipo a veces puede tomar decisiones que están optimizadas para el componente individual, pero las mejores soluciones desde una perspectiva del sistema total podrían haber sido desestimadas u obviadas.
+
 
 \section{Equipos mixtos}
 
