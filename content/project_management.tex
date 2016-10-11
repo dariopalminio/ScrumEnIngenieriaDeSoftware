@@ -75,9 +75,21 @@ Resumidamente, la gestión de proyecto se orienta al producto y su ciclo de vida
 
 \subsection{Gestión de riesgos}
 
-Si bien la gestión de riesgos no es parte de scrum y un facilitador no se encarga de la gestión al modo tradicional como la gestión de riesgos, sí debería velar por mitigar los problemas que surjan en el proyecto y apoyar, en consecuencia, a la gestión de riesgos. En este sentido, no solo se encargaría de ayudar a desbloquear issues y reducir impedimentos para que el sistema de trabajo fluya, sino que también puede preocuparse de prever issues para anticiparse a los problemas y controlar así, de antemano y en la medida de lo posible, los riesgos asociados a bloqueos del flujo de trabajo que atentan contra los objetivos del proyecto.
+Si bien la gestión de riesgos no es parte de scrum y un facilitador no se encarga de la gestión al modo tradicional como la gestión de riesgos, sí debería velar por mitigar los problemas que surjan en el proyecto y apoyar, en consecuencia, a la gestión de riesgos. En este sentido, no solo se encargaría de ayudar a desbloquear problemas y reducir impedimentos para que el sistema de trabajo fluya, sino que también puede preocuparse de prever issues para anticiparse a los problemas y controlar así, de antemano y en la medida de lo posible, los riesgos asociados a bloqueos del flujo de trabajo que atentan contra los objetivos del proyecto. Lo difícil es lograr una gestión de riesgos ágil en vez de una gestión pesada, dificultosa y que demande mucho esfuerzo de gestión. En esta vía, es preferible mantener un simple registro de riesgos con información concisa. Los datos principales a registrar de un riesgo, además de su nombre, pueden ser: descripción, probabilidad (probability), impacto (severity), criticidad (criticality), acciones de mitigación, dueño y estado.
 
-Lo difícil es lograr una gestión de riesgos ágil en vez de una gestión pesada, dificultosa y que demande mucho esfuerzo de gestión. En esta vía, es preferible mantener un simple registro de riesgos con información concisa. Los datos principales a registrar de un riesgo, además de su nombre, pueden ser: descripción, probabilidad (probability), impacto (severity), criticidad (criticality), acciones de mitigación, dueño y estado.
+Algo simple que se puede lograr trabajando con criticidad es usar tres valores en la probabilidad de ocurrencia y en el impacto (1, 2 y 3). El impacto representa la severidad de la ocurrencia de un problema asociado al riesgo o el tiempo perdido (size of loss). Por otro lado, la criticidad representa la prioridad del riesgo o el grado en que ese riesgo afecta negativamente al proyecto (exposure). El mismo será resultado del producto entre la probabilidad y el impacto. En consecuencia, la criticidad podría ser: 1, 2, 3, 4, 6, 9.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.40\textwidth]{RiskProblemDiagram}
+  \caption{Diagrama de riesgos, problemas e ítems del proyecto (PBIs).}
+  \centering
+  \label{fig:RiskProblemDiagram} %\ref{fig:RiskProblemDiagram}
+\end{figure}
+
+Las herramientas gráficas que se pueden usar para dar visibilidad de los riesgos son: a) la “matriz de riesgos”; b) el “histórico de criticidad”; c) o el gráfico de curva de riesgo quemado (Risk Burn-down Chart).
+
+La gestión de riesgos no es independiente de la gestión de impedimento o de problemas (issues o problem). Muchos de los problemas surgidos en el proyecto están asociados a riesgos identificados. Por tal motivo, la gestión de riesgos es útil, porque podemos mitigar los problemas de antemano. Por dicha razón, puede ser valioso llevar un registro de los issues y su relación con los riesgos. Siempre sin perder de vista no caer en el énfasis de la documentación ni en el afán de reportar. Se debe buscar la simplicidad y el foco en el flujo de trabajo sin impedimentos.
 
 \begin{figure}[h]
   \centering
@@ -86,13 +98,6 @@ Lo difícil es lograr una gestión de riesgos ágil en vez de una gestión pesad
   \centering
   \label{fig:RiskFlowDiagram} %\ref{fig:RiskFlowDiagram}
 \end{figure}
-
-Algo simple que se puede lograr trabajando con criticidad es usar tres valores en la probabilidad de ocurrencia y en el impacto (1, 2 y 3). El impacto representa la severidad de la ocurrencia de un problema asociado al riesgo o el tiempo perdido (size of loss). Por otro lado, la criticidad representa la prioridad del riesgo o el grado en que ese riesgo afecta negativamente al proyecto (exposure). El mismo será resultado del producto entre la probabilidad y el impacto. En consecuencia, la criticidad podría ser: 1, 2, 3, 4, 6, 9.
-
-Las herramientas gráficas que se pueden usar para dar visibilidad de los riesgos son: a) la “matriz de riesgos”; b) el “histórico de criticidad”; c) o el gráfico de curva de riesgo quemado (Risk Burn-down Chart).
-
-La gestión de riesgos no es independiente de la gestión de impedimento o de problemas o “issues”. Muchos de los problemas surgidos en el proyecto están asociados a riesgos identificados. Por tal motivo, la gestión de riesgos es útil, porque podemos mitigar los problemas de antemano. Por dicha razón, puede ser valioso llevar un registro de los issues y su relación con los riesgos. Siempre sin perder de vista no caer en el énfasis de la documentación ni en el afán de reportar. Se debe buscar la simplicidad y el foco en el flujo de trabajo sin impedimentos.
-
 Las herramientas gráficas útiles para dicha gestión son: “Tablero de Obstáculos” (obstacle board) o el "Calendario de Obstáculos" (Issues calendars).
 
 
