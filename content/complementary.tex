@@ -105,7 +105,7 @@ Veamos los siguientes ejemplos:
 \item \textbf{Technical Story:}
 “Cada historia tiene que ser valorada por los usuarios. Pero eso sería un error."\footnote{\cite{Cohn-2004}} Pues en realidad, una historia de usuario describe la funcionalidad que será valiosa para un usuario o comprador de un sistema o software \footnote{\cite{Cohn-2004}}. Hay historias que especifican aspectos técnicos que no son valiosos para el usuario sino más bien para el cliente o comprador (la valoración es transitiva y no directa). Historias técnicas pueden ser valorados por los compradores que contemplan la compra del producto, pero no serían valorados por los usuarios reales. Pero esto no es lo que podemos llamar una "Technical Story" sino que es una Story con aspectos técnicos que tiene valor para el cliente. Para Scott Ambler, en Agile Modeling, una Story es una definición de muy alto nivel de un requerimiento que puede ser funcional o no, por ejemplo de un requerimiento técnico \footnote{\cite{Scott-Ambler-2015}}, algo así: "\textbf{COMO} usuario \textbf{QUIERO} que las transcripciones estén disponibles en línea a través de un navegador estándar \textbf{PARA QUE} me permita acceder desde cualquier lugar"\footnote{\cite{Scott-Ambler-2015}}.
 
-Cuando se habla de "Technical Story" se referencia a aquella historia técnica que sólo es valorada por los desarrolladores. Estas historias son las que se quieren evitar y considerar como Technical Story que podría ser una tarea técnica, tarea de investigación o tarea por deuda técnica. Este tipo de historias se centran en la tecnología y las ventajas para los programadores. Es muy posible que las ideas detrás de estas historias sean buenas, pero en cambio deben ser escritas para que los beneficios a los clientes o usuarios sean evidentes. Esto permitirá que el cliente priorizar inteligentemente estas historias en el calendario de desarrollo \footnote{\cite{Cohn-2004}}.
+Cuando se habla de "Technical Story" se referencia a aquella historia técnica que sólo es valorada por los desarrolladores. Estas historias son las que se quieren evitar y considerar como Technical Story que podría ser una tarea técnica, tarea de investigación o tarea por deuda técnica. Este tipo de historias se centran en la tecnología y las ventajas para los programadores. Es muy posible que las ideas detrás de estas historias sean buenas, pero en cambio deben ser escritas para que los beneficios a los clientes o usuarios sean evidentes. Esto permitirá, al cliente, priorizar inteligentemente estas historias en el calendario de desarrollo \footnote{\cite{Cohn-2004}}.
 
 Para la Agile Alliance una Story no se corresponde en general a un "componente técnico" o de la "interfaz de usuario", pues a pesar de que a veces puede ser un atajo útil hablar de por ejemplo "la historia de diálogo de búsqueda", pantallas, cuadros de diálogo y botones, no son historias de usuario \footnote{\cite{Scrum-Alliance-2015}}.
 
@@ -214,8 +214,8 @@ Ver figura \ref{fig:ScrumKanbanBoard}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{ScrumKanbanBoard}
-  \caption{Tablero Kanban para Scrum}
+  \includegraphics[width=0.6\textwidth]{ScrumKanbanBoard}
+  \caption{Ejemplo de un tablero Kanban para Scrum.}
   \centering
   \label{fig:ScrumKanbanBoard} %\ref{fig:ScrumKanbanBoard}
 \end{figure}
@@ -226,8 +226,8 @@ Un Scrum board, Kamban Board o taskboard físico (Ver figura \ref{fig:ScrumBoard
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{ScrumBoard}
-  \caption{Tablero Scrum}
+  \includegraphics[width=0.6\textwidth]{ScrumBoard}
+  \caption{Ejemplo de un tablero Scrum.}
   \centering
   \label{fig:ScrumBoard} %\ref{fig:ScrumBoard}
 \end{figure}
@@ -239,7 +239,7 @@ El Tablero de Obstáculos (ver figura \ref{fig:ObstacleBoard}) es una herramient
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{ObstacleBoard}
-  \caption{Tablero de Obstáculos}
+  \caption{Ejemplo de un tablero de Obstáculos.}
   \centering
   \label{fig:ObstacleBoard} %\ref{fig:ObstacleBoard}
 \end{figure}
@@ -265,16 +265,24 @@ Un gráfico de trabajo pendiente o "Burndown charts"\footnote{El Burndown muestr
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{Burndown_chart}
-  \caption{Gráfico Burndown}
+  \caption{Ejemplo de un gráfico Burndown con un sprint de dos semanas y 20 tareas comprometidas.}
   \centering
   \label{fig:Burndown_chart} %\ref{fig:Burndown_chart}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Burndown-chart_example}
+  \caption{Ejemplo de cómo llevar un Burndown con un sprint de 5 días y quedando 3 storypoints por quemar.}
+  \centering
+  \label{fig:Burndown-chart_example} %\ref{fig:Burndown-chart_example}
 \end{figure}
 
 Se pueden utilizan dos gráficos de esfuerzo pendiente:
 
 \begin{enumerate}
 
-\item \textbf{Burndown de Sprint:} Días u horas pendientes para completar las tareas de la iteración (sprint burndown chart), realizado a partir de la lista de tareas de la iteración. Normalmente se utiliza para saber cuánto falta para terminar las historias comprometidas en un Sprint. Es un diagrama de dos ejes: en el eje X el tiempo en días de duración del sprint, en el eje Y la cantidad de trabajo comprometida con el cliente durante el sprint en las unidades que se hayan acordado.
+\item \textbf{Burndown de Sprint:} Días u horas pendientes para completar las tareas de la iteración (sprint burndown chart), realizado a partir de la lista de tareas o historias de la iteración. Normalmente se utiliza para saber cuánto falta para terminar las historias comprometidas en un Sprint. Es un diagrama de dos ejes: en el eje X el tiempo en días de duración del sprint, en el eje Y la cantidad de trabajo comprometido con el cliente durante el sprint en las unidades que se hayan acordado, story points o tareas (ver figuras \ref{fig:Burndown_chart} y \ref{fig:Burndown-chart_example}).
 
 \item \textbf{Burndown de Proyecto:} Días pendientes para completar los requisitos del producto o proyecto (product burndown chart), realizado a partir de la lista de requisitos priorizada (Product Backlog).
 
@@ -287,10 +295,11 @@ El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\textwidth]{Burnup_chart}
-  \caption{Gráfico Burnup}
+  \caption{Ejemplo de un gráfico Burnup de tareas comprometidas en un sprint de dos semanas.}
   \centering
   \label{fig:Burnup_chart} %\ref{fig:Burnup_chart}
 \end{figure}
+
 
 \subsection{Gráficos de Velocidad}
 
@@ -301,7 +310,7 @@ El gráfico de velocidad muestra todas las unidades estimadas en el plan y acept
 \begin{figure}[h]
   \centering
   \includegraphics[width=1\textwidth]{VelocityChartAndAverage}
-  \caption{Diagrama de Velocidad y Diagrama de Velocidad con Velocidad Promedio}
+  \caption{Diagrama de Velocidad y Diagrama de Velocidad con Velocidad Promedio.}
   \centering
   \label{fig:VelocityChartAndAverage} %\ref{fig:VelocityChartAndAverage}
 \end{figure}
@@ -356,3 +365,4 @@ La integración continua (Continuous Integration\footnote{Continuous Integration
 Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
 
 Trabajar bajo el marco ágil y no trabajar con Continuous Integration ni Continuous Delivery puede conducir a un trabajo poco ingenieril y menos eficiente.
+
