@@ -149,8 +149,12 @@ La estructura de un criterio de aceptación presentado como escenario puede ser 
   \item \textbf{Then}  [resultado] And [otro resultado]...
   \end{itemize}
 \end{itemize}
-  
-\newpage
+
+\subsection{BDD}
+
+Una manera de ayudar al desarrollo ágil a partir de requerimientos es usar el desarrollo conducido por comportamiento (Behavior Driven Development o BDD), el cual es un proceso de desarrollo por el que se busca comenzar a partir de un lenguaje común que une la parte técnica y la de negocio, y desde ese lenguaje común se parte hacia el Testing y, posteriormente, al desarrollo. El proceso consta básicamente en escribir las historias de usuario, escribir los escenarios (o criterios de aceptación en forma de escenarios) y automatizar las pruebas de aceptación de los escenarios.
+
+
 \section{Técnicas de Estimación}
 
 \subsection{Estimación relativa}
@@ -272,7 +276,7 @@ Un gráfico de trabajo pendiente o "Burndown charts"\footnote{El Burndown muestr
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{Burndown-chart_example}
+  \includegraphics[width=0.99\textwidth]{Burndown-chart_example}
   \caption{Ejemplo de cómo llevar un Burndown con un sprint de 5 días y quedando 3 storypoints por quemar.}
   \centering
   \label{fig:Burndown-chart_example} %\ref{fig:Burndown-chart_example}
@@ -351,18 +355,17 @@ Mejorar los diseños y las estimaciones debido a que todos tienen un conocimient
 La revisión de a pares o "peer review" es una práctica intrínseca de la actividad científica en un sistema de evaluación del trabajo científico, donde los miembros de la comunidad revisan los trabajos de sus pares\footnote{Formalmente el proceso de revisión por pares del trabajo científico fue iniciado en 1753 por la “Royal Society of London”.}. Por este motivo, implementar este tipo de prácticas en el desarrollo de software hace que sea una actividad ingenieril. El beneficio es lograr una mejor calidad y una reducción de defectos. Según Boehm "el 60 por ciento de los defectos de código se pueden eliminar durante las revisiones de a pares"\footnote{\cite{Boehm-2001}}. Así como en ciencia se revisan los trabajos de investigación antes de ser publicados, en ingeniería de software se revisa el código antes de ser desplegado.\newline
 La práctica consiste en que una vez que el programador desarrolló un trabajo de codificación, solicite ante un colega compañero o un conjunto de ellos la inspección del código. Si se encuentran errores u observaciones, el desarrollador deberá mejorarlo y hasta que no tenga el visto afirmativo el código, no será desplegado o integrado al producto. Hay que tener en cuenta que para que la revisión por pares sea realmente productiva, debe ser ejecutada con el máximo de rigor, aunque implique retrasar despliegues de producto y no cumplir con los plazos comprometidos por el equipo. Cuando se aplica Scrum, el máximo de rigor incluye, además de la calidad del trabajo, prestar particular importancia al cumplimiento de la definición de terminado (DoD).
 
-\subsection{Test Driven Development}
+\subsection{TDD}
 
 El "Test Driven Development" (TDD) o "desarrollo guiado por pruebas"\footnote{\cite{Jurado-2010}} es una práctica, técnica de desarrollo ágil y técnica de programación que hace foco en el comportamiento especificado de unidades de software\footnote{[Wikipedia 2014]} como disparador para el desarrollo de pruebas. O sea, basándose en especificaciones, esta práctica tiene como táctica escribir primero las pruebas (código de prueba) y después el código (código de producto) para luego realizar ciclos de "refactorización" \cite{Kent-Beck-2003}. Con este enfoque se pretende, entre otras cosas, que el diseño sea el código mismo (código de producto) y que las pruebas concretas (código de prueba) sirvan de documentación. Esta técnica se complementa con la automatización de pruebas. En todo ese conjunto de pruebas concretas, las pruebas de unidad se usan para validar métodos individuales y conjuntos de métodos. En consecuencia, en este tipo de desarrollos, se logran sistemas con un gran conjunto de pruebas (muchas líneas de código en pruebas).\newline
 Si tenemos que asignar un lema a este enfoque es "la prueba en primer lugar" y su afirmación filosófica principal sería que "el diseño emerge del refactoring originado por pruebas".
 
-\subsection{Integración contínua}
+\subsection{Integración continua}
 
 La integración continua (Continuous Integration\footnote{Continuous Integration fue propuesto inicialmente por Martin Fowler.}) es una práctica de ingeniería de software y modelo informático que consiste en hacer integraciones automáticas de un proyecto, compilación y ejecución de pruebas, lo más a menudo posible para así poder detectar fallos cuanto antes.
 
-\subsection{Continuous Delivery}
+\subsection{Entrega continua}
 
-Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
+El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
 
 Trabajar bajo el marco ágil y no trabajar con Continuous Integration ni Continuous Delivery puede conducir a un trabajo poco ingenieril y menos eficiente.
-
