@@ -1,6 +1,6 @@
 \chapter{Complementos de Scrum}
 
-Scrum no tiene como objetivo dar instrucciones precisas a los equipos sobre la forma concreta en la que deben llevar a cabo su desarrollo. Scrum espera que los equipos hagan lo que sea necesario para ellos para entregar el producto de calidad. Las prácticas y herramientas de desarrollo cambian y mejoran de manera continua y los buenos equipos trabajarán constantemente en pos de obtener el mejor uso de las mismas. Desde esta perspectiva, se puede consensuar en un anillo de complementos útiles que rodea el núcleo de Scrum y que pueden potenciar el trabajo ágil y la práctica de ingeniería. Estos complementos son métodos y técnicas complementarias a Scrum, sugerencias y recomendaciones, lecciones aprendidas y conceptos aledaños. En este capítulos trataremos estos temas.
+Scrum no tiene como objetivo dar instrucciones precisas a los equipos sobre la forma concreta en la que deben llevar a cabo su desarrollo. Con este marco se espera que los equipos hagan lo que sea necesario para ellos, en función de entregar el producto de calidad. Las prácticas y herramientas de desarrollo cambian y mejoran de manera continua y los buenos equipos trabajarán constantemente en pos de obtener el mejor uso de las mismas. Desde esta perspectiva, se puede consensuar en un anillo de complementos útiles que rodea al núcleo de Scrum y que pueden potenciar el trabajo ágil y la práctica de ingeniería. Estos complementos son métodos y técnicas complementarias a Scrum, sugerencias y recomendaciones, lecciones aprendidas y conceptos aledaños. En este capítulos trataremos estos temas.
 
 % Malas prácticas, consejos, tecnicas complementarias, casos de estudios
 
@@ -21,7 +21,12 @@ Scrum no tiene como objetivo dar instrucciones precisas a los equipos sobre la f
 %Técnicas de Programación
 
 \newpage
-\section{Gamification y Dinámicas De Grupo}
+\section{Dinámicas de grupo}
+\subsection{Coordinar el silencio}
+
+Una técnica para lograr silencio en un grupo numeroso es pedir silencio cuando se levanta la mano, los que ven la mano levantada tienen que callarse y levantar a su vez la mano. Cuando cualquiera ve a alguien con la mano levantada se debe callar y a su vez levantar la mano. Este comportamiento se termina propagando rápidamente en todos los integrantes hasta que se logra el silencio. Es una técnica muy útil en la reuniones cuando las personas se dispersan comunicándose en forma caótica o cuando alguna actividad de conversación libre se extiende del tiempo necesario.
+
+\subsection{Gamification y dinámicas de grupo}
 
 Un facilitador ágil (SM, AM, Agile Coach, etc.) debería facilitar los cambios culturales, la cohesión de equipos, el trabajo colaborativo, la creatividad y la innovación. Para ello, puede traer a la mano, de su cartera de juegos, dinámicas de grupo que son herramientas de Gamification (Game Thinking). Estas dinámicas son actividades en forma de juegos que ayudan a llegar a un resultado grupal de una manera divertida, comprometida, colaborativa, activa, motivadora, visual (Visual Thinking), experimental (Design Thinking) y creativa (Creative Thinking). Hay que considerar que estas dinámicas deben reforzar las actividades de ingeniería y no reemplazarlas.
 
@@ -37,7 +42,7 @@ ROI = (IP - CP) / CP
 
 Donde IP es el Ingresos del Proyecto, entendido como beneficios económicos esperados estimados, y CP es el Costo del Proyecto o costo de desarrollo.
 
-\subsection{Business Value versus complejidad}
+\subsection{Valor de negocio versus complejidad}
 
 Se puede hacer uso de medir Business Value Points para hacer un seguimiento del valor de negocio entregado mediante diagramas de Business Value Delivered (Ver figura \ref{fig:BusinessValueDiagrams}) o Business Value BurnUp\footnote{El Business Value BurnUp es un diagrama de BV entregado acumulado por cada Sprint \cite{Scrum-Alliance-2005}}. Además, también es útil para ayudar en la priorización de historias de usuario, pues logrando hacer un diagrama de Business versus Complexity (Ver figura \ref{fig:BusinessValueDiagrams}) podemos tener una visión del peso en complejidad de cada historia (US) o PBI en contraste con el valor de negocio que aporta y, en base a esto, poder hacer priorizaciones en las sesiones de planificación.
 
@@ -184,16 +189,13 @@ Las Cartas de Poker de Planificación que más se usan son las de Fibonacci y la
 \end{enumerate}
 
 \newpage
-\section{Técnicas de comunicación y monitoreo}
+\section{Técnicas de Monitoreo Visual}
 
-\subsection{Coordinar el silencio}
-
-Una técnica para lograr silencio en un grupo numeroso es pedir silencio cuando se levanta la mano, los que ven la mano levantada tienen que callarse y levantar a su vez la mano. Cuando cualquiera ve a alguien con la mano levantada se debe callar y a su vez levantar la mano. Este comportamiento se termina propagando rápidamente en todos los integrantes hasta que se logra el silencio. Es una técnica muy útil en la reuniones cuando las personas se dispersan comunicándose en forma caótica o cuando alguna actividad de conversación libre se extiende del tiempo necesario.
-
+Para que el equipo se auto-regule debe monitorear constantemente su trabajo y sus resultados. Aquí se muestran algunas herramientas de monitoreo visual.
 
 \subsection{Gestión visual}
 
-La gestión visual es la utilización de elementos y técnicas visuales, como complemento de Scrum, para la organización del trabajo y la comunicación o irradiación visual del trabajo. Esto es útil para soporte del equipo y para brindar transparencia hacia interesados externos al equipo.
+La gestión visual es la utilización de elementos y técnicas visuales, como complemento, para la organización del trabajo y la comunicación o irradiación visual del trabajo. Esto es útil para soporte del equipo y para brindar transparencia hacia interesados externos al equipo.
 Es aconsejable que los irradiadores de información presenten las siguientes características:
 
 \begin{enumerate}
@@ -357,7 +359,7 @@ La práctica consiste en que una vez que el programador desarrolló un trabajo d
 
 \subsection{TDD}
 
-El "Test Driven Development" (TDD) o "desarrollo guiado por pruebas"\footnote{\cite{Jurado-2010}} es una práctica, técnica de desarrollo ágil y técnica de programación que hace foco en el comportamiento especificado de unidades de software\footnote{[Wikipedia 2014]} como disparador para el desarrollo de pruebas. O sea, basándose en especificaciones, esta práctica tiene como táctica escribir primero las pruebas (código de prueba) y después el código (código de producto) para luego realizar ciclos de "refactorización" \cite{Kent-Beck-2003}. Con este enfoque se pretende, entre otras cosas, que el diseño sea el código mismo (código de producto) y que las pruebas concretas (código de prueba) sirvan de documentación. Esta técnica se complementa con la automatización de pruebas. En todo ese conjunto de pruebas concretas, las pruebas de unidad se usan para validar métodos individuales y conjuntos de métodos. En consecuencia, en este tipo de desarrollos, se logran sistemas con un gran conjunto de pruebas (muchas líneas de código en pruebas).\newline
+El "Test Driven Development" (TDD) o "desarrollo guiado por pruebas"\footnote{\cite{Jurado-2010}} es una práctica, técnica de desarrollo ágil y técnica de programación que hace foco en el comportamiento especificado de unidades de software\footnote{[Wikipedia 2014]} como disparador para el desarrollo de pruebas. O sea, basándose en especificaciones, esta práctica tiene como táctica escribir primero las pruebas (código de prueba) y después el código (código de producto) para luego realizar ciclos de "refactorización" \cite{Kent-Beck-2003}. Con este enfoque se pretende, entre otras cosas, que el diseño sea el código mismo (código de producto) y que las pruebas concretas (código de prueba) sirvan de documentación. Esta técnica se complementa con la automatización de pruebas. En todo ese conjunto de pruebas concretas, las pruebas de unidad se usan para validar métodos individuales y conjuntos de métodos. En consecuencia, en este tipo de desarrollos, se logran sistemas con un gran conjunto de pruebas (muchas líneas de código en pruebas). Por eso hay que considerar que, si bien se pueden lograr productos de calidad, demanda un costo considerable.\newline
 Si tenemos que asignar un lema a este enfoque es "la prueba en primer lugar" y su afirmación filosófica principal sería que "el diseño emerge del refactoring originado por pruebas".
 
 \subsection{Integración continua}
@@ -369,3 +371,4 @@ La integración continua (Continuous Integration\footnote{Continuous Integration
 El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
 
 Trabajar bajo el marco ágil y no trabajar con Continuous Integration ni Continuous Delivery puede conducir a un trabajo poco ingenieril y menos eficiente.
+
