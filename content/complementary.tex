@@ -296,17 +296,25 @@ Se pueden utilizan dos gráficos de esfuerzo pendiente:
 
 \subsubsection{Gráfico Burn-Up}
 
-El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo realizado como parte de la Sprint. \cite{SBOK-2013}} (figura \ref{fig:Burnup_chart}) es muy similar al Burndown, con la diferencia de que se parte del cero, y se va marcando la cantidad de trabajo completado en el Sprint. En este gráfico la curva va hacia arriba acercándose a una línea que representa el alcance comprometido. En este tipo de gráfico es más fácil visualizar los cambios de alcance y ver la diferencia entre estimado y real.
+El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo realizado como parte de la Sprint. \cite{SBOK-2013}} (figura \ref{fig:Burnup_chart}) es muy similar al Burndown, con la diferencia de que se parte del cero, y se va marcando la cantidad de trabajo completado en el Sprint. En este gráfico la curva va hacia arriba acercándose a una línea que representa el alcance comprometido. En este tipo de gráfico es más fácil visualizar los cambios de alcance y ver la diferencia entre estimado y real (ver \ref{fig:Burnup-chart_example}).
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{Burnup_chart}
+  \includegraphics[width=0.85\textwidth]{Burnup_chart}
   \caption{Ejemplo de un gráfico Burnup de tareas comprometidas en un sprint de dos semanas.}
   \centering
   \label{fig:Burnup_chart} %\ref{fig:Burnup_chart}
 \end{figure}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.90\textwidth]{Burnup-chart_example}
+  \caption{Ejemplo de cómo llevar un Burnup con un sprint de 5 días y 10 puntos quemados al cuarto día.}
+  \centering
+  \label{fig:Burnup-chart_example} %\ref{fig:Burnup-chart_example}
+\end{figure}
 
+\newpage
 \subsection{Gráficos de Velocidad}
 
 \subsubsection{Velocity Chart}
@@ -322,6 +330,7 @@ El gráfico de velocidad muestra todas las unidades estimadas en el plan y acept
 \end{figure}
 
 También se puede incluir la velocidad promedio (ver gráfico de la derecha \ref{fig:VelocityChartAndAverage}).
+
 
 \newpage
 \section{Técnicas de Programación}
@@ -371,4 +380,3 @@ La integración continua (Continuous Integration\footnote{Continuous Integration
 El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
 
 Trabajar bajo el marco ágil y no trabajar con Continuous Integration ni Continuous Delivery puede conducir a un trabajo poco ingenieril y menos eficiente.
-
