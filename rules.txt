@@ -12,13 +12,15 @@ Reglas a seguir para escribir y editar el libro:
 
 Herramientas libres a usar:
 - Sistema Operativo: Ubuntu 12.04 LTS.
-- Lenguaje de texto: LaTeX (Formato ".tex").
-- Editor de texto: LaTeXila, editor LaTeX para GNOME desktop. Es free/libre software (GPL 3+ license).
+- Lenguaje de texto: LaTeX (Formato ".tex") versión: 2.0.
+- Editor de texto: LaTeXila, editor LaTeX para GNOME desktop. Es free/libre software (GPL 3+ license) versión 2.4.0.
 - Librerías de LaTeX: librerías para Ubuntu gedit-latex-plugin y texlive-full.
-- Editor de diagramas: Dia-gnome 0.97.2 licencia GPL (C) 1998-2009 The Free Software Foundation and the authors (Formato ".dia").
+- Editor de Diagramas: Dia-gnome 0.97.2 licencia GPL (C) 1998-2009 The Free Software Foundation and the authors (Formato ".dia").
+- Editor de Diagramas: Draw.io (Google Drawings),
+- Editor de Diagramas: online cacoo.com.
+- Editor de imágenes: GIMP 2.8.
 - Editor de imágenes: Draw LibreOffice 3.5.7.2. libre (Formato ".odg").
 - Cliente de gestión de versiones: Git.
-
-Las fuentes del libro se pueden descargar desde:
+- Repositorio de las fuentes: git github.com. Las fuentes del libro se pueden descargar desde:
 https://github.com/dariopalminio/ScrumEnIngenieriaDeSoftware
 
