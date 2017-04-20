@@ -87,6 +87,30 @@ En una organización grande, independientemente de Scrum, se suelen formar comun
 \end{figure}
 
 
+\subsection{Integración UX}
+
+Un desafío a la hora de hacer Scrum es incorporar UX en el desarrollo incremental por sprints. Se pueden adoptar, entre otras, dos estrategias principales: desarrollo UX distribuido y gobernado; o desarrollo UX centralizado (equipo externo).
+
+\subsubsection{Desarrollo UX Distribuido y Gobernado}
+
+Una estrategia es tener UXer, como miembros de equipo Scrum, distribuidos en cada equipo. Esto permite empoderamiento y velocidad, pero puede generar una UX poco unificada o con poca “integridad conceptual”. Para resolver este problema de unificación se puede acudir a la estandarización UX. La misma podría ser generada y mantenida por los equipos o mediante un equipo externo responsabilizado de la integridad conceptual y experiencia unificada (equipo de estandarización UX transversal) y usar un sistema de versionado de estándares que sirve como otra herramienta de coordinación.
+
+\subsubsection{Desarrollo UX Centralizado}
+
+Otra estrategia es tener un equipo externo de UX que agrupe a todos los UXer y que provea, como un equipo de servicios, los diseños UX a los equipos de desarrollo. Sin embargo, es probable que el equipo central se convierta en un “cuello de botella” para los equipos de desarrollo y, además, pueda generar más “dependencias” que deben ser abordadas. Para mitigar estos problemas, un modelo híbrido a menudo puede ser aplicado, además de mecanismos de coordinación entre el equipo central y los equipos restantes.
+
+\subsubsection{Mecanismo de coordinación de tarea UX en una historia}
+
+En ambas propuestas es necesario coordinar e integrar el flujo de trabajo UX con el flujo de desarrollo Scrum. Esto sucede principalmente porque el flujo de trabajo UX no suele entrar dentro de un sprint corto (dos semanas) para que las historias puedan ser finalizadas. Lo que se puede hacer, es que el trabajo UX sea previo al sprint (adelantado al sprint) como parte de la etapa de refinamiento, o como etapa previa al compromiso de planning de sprint. La historia no se termina de refinar o no se compromete en un sprint, hasta que no se considera el trabajo UX lo suficientemente maduro como para que sea abordada para desarrollo. Una manera de hacer esta sincronización es agregando una cláusula de completitud de tarea UX al DoR de la historia. Y, además, asociando a las historias tareas UX que, a su vez, tengan DoR y DoD propios. De este modo, una tarea UX no se considera terminada, para que su historia asociada sea abordada en un sprint, si no cumple su “DoD UX”. Además, para trabajar a sprint adelantado hay que considerara que antes del sprint 1 debería hacerse un sprint 0 (sprint metáfora y/o inception).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{UXtask-and-Story-in-Scrum}
+  \caption{Ejemplo de coordinación entre flujos de tarea UX e historia}
+  \centering
+  \label{fig:UXtask-and-Story-in-Scrum} %\ref{fig:UXtask-and-Story-in-Scrum}
+\end{figure}
+
 \subsection{DevOps}
 
 La integración a escala para que una Software Factory sea ágil y lleve adelante uno de sus principios, el Continuous Delivery, es lo que se denomina DevOps. DevOps es la integración de Ingeniería de Desarrollo de Software con la Ingeniería de Operaciones, que es todo el soporte IT y de plataforma para posibilitar que el proceso de desarrollo sea ágil, haciendo entregas frecuentes de calidad y logrando la colaboración entre el personal de desarrollo y el personal de operaciones a lo largo de todas las etapas del ciclo de vida de producción de software. DevOps es una parte central del agilismo en la entrega de software eficiente, por medio de la integración de equipos, metodologías ágiles, técnicas y stack tecnológico como una sola organización. El objetivo principal de DevOps es minimizar los cuellos de botella en el pipeline de entrega, haciéndolo más eficiente y ágil \footnote{\cite{DevOps-for-dummies-2015}}.
@@ -126,5 +150,4 @@ El marco de decisiones de procesos “Disciplined Agile Delivery” o DAD, brind
 \newline
 
 Todos estos modelos son solo eso, modelos que permiten escalar Scrum. No se deberían implementar como recetas a seguir o soluciones ideales a implantar. Para aplicarlos en una organización deben ser evaluados y, en caso de aplicar alguna de sus pautas, ajustados según contexto y necesidades. Se recomienda aplicar también el pensamiento sistémico, ingeniería de sistemas y perspectivas de otras disciplinas.
-
 
