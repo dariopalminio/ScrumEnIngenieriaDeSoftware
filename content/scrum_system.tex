@@ -56,6 +56,7 @@ Para el cumplimiento del rol Equipo de Desarrollo o desarrollador se deben tener
 \item Es responsable de gestionar su propio trabajo durante el Sprint.
 \item Buscar encontrar una cadencia sostenible para la entrega de incrementos potencialmente entregable de productos.
 \item No debe esperar a que le asignen tareas ya que debe seguir la forma "pull" de asignación que consiste en tomar tareas por sí mismo o por consenso de todo el equipo.
+\item Toma las mejores decisiones posibles para asegurar el progreso hacia la meta del Sprint, alineándose con el PO cuando esté disponible.
 \item Monitorea el progreso y el éxito con el resto de los roles del Scrum Team.
 \item Debe gestionar los riesgos y problemas junto con los demás roles. En esta vía debe levantar y buscar mitigar los riesgos técnicos.
 \item No debe ocultar impedimentos ni información.
@@ -75,11 +76,12 @@ Para el cumplimiento del rol PO se deben tener en cuenta las siguientes afirmaci
 
 \begin{itemize}
 \item Respeta, entiende y sigue los valores ágiles y de Scrum.
-\item Debe colaborar con el Scrum Master y con el Equipo de Desarrollo.
+\item Debe colaborar con el Scrum Master y con el Equipo de Desarrollo. Colabora con frecuencia con el equipo para poder tomar decisiones informadas para equilibrar el esfuerzo y el valor de los elementos pendientes del Backlog. También colabora con el equipo para que construyan incrementos teniendo en cuenta las preocupaciones del usuario final y las partes interesadas.
 \item Es quien busca determinar el mejor producto a conseguir.
 \item Es responsable de desarrollar una visión, comunicarla y promoverla.
 \item Dirige la estratégica del producto relacionada, entre otras cosas, a la penetración en el mercado, evolución y madurez del producto en el mercado y generación de nuevos mercados.
 \item Es responsable del caso de negocio, retorno de la inversión ROI y de los resultados empresariales, evaluando continuamente el impacto en el negocio y buscando maximizar el valor.
+\item Trata de que se libere software a menudo, actualizando los indicadores clave de producto (KPI) después de cada lanzamiento y usando esta información para ajustar el trabajo en el Backlog. De esta manera busca que el producto creado a través de Scrum sea exitoso.
 \item Es quien provee las "hipótesis requerimientos"\footnote{Bajo el marco Scrum los requerimientos inicialmente constan de hipótesis a ser evaluadas. Son hipótesis porque son dinámicas, no son requerimientos finales sino que son deseos del cliente a ser refinados hasta convertirse en verdaderamente requerimientos.}, por lo que es responsable de entenderlas, escribirlas y transmitirlas en forma eficaz.
 \item Es dueño del artefacto Product Backlog y responsable de su orden, priorización y detalle.
 \item Es recomendable que esté asignado a un solo Scrum Team con un porcentaje de asignación mayor o igual a un 70 por ciento.
@@ -180,9 +182,9 @@ El resultado de este proceso es un conjunto de PBIs estimados y comprometidos in
 \item \textbf{Scrum Diario:} la Daily Scrum o Stand-up meeting es una actividad o una reunión diaria obligatoria del Equipo Scrum, en el lugar de trabajo, con una duración fija, que sirve para coordinación y organización mediante una retroalimentación del estado de actividades de cada integrante del Equipo. Permite identificar impedimentos bloqueantes, actualizar artefactos, revisar el Sprint Backlog, ayudar a disminuir riesgos e identificar personas que pueden servir de ayuda a determinadas tareas. En esta reunión los miembros del equipo se reúnen, de pie, para informar de sus progresos en el Sprint y planificar las actividades del día. Para ello proporcionan respuestas a tres preguntas:
 
 \begin{itemize}
-\item{¿Qué hice ayer?}
-\item{¿Qué voy a hacer hoy?}
-\item{Si tengo obstáculos: ¿Qué impedimentos tengo?}
+\item{¿Qué hice ayer que ayudó a lograr el Objetivo del Sprint?}
+\item{¿Qué haré hoy para ayudar a lograr el Objetivo del Sprint?}
+\item{Si tengo obstáculos: ¿Veo algún impedimento que evite que logremos el Objetivo del Sprint?}
 \end{itemize}
 
 Es obligatorio que el Equipo asista a esta reunión y es aconsejable que esté el SM para facilitarla y servir de moderador. El PO puede asistir también para seguir el avance del trabajo durante la iteración, pero puede participar como oyente o no asistir. Sin embargo, si se quiere lograr un mejor trabajo de equipo y mayor integración con el PO, es aconsejable que siga la dinámica al igual que el Equipo.
@@ -207,7 +209,7 @@ En la reunión que se hace con el equipo se desarrollan las siguientes actividad
 
 \item \textbf{Retrospectiva:} es una actividad o una conversación de duración fija al final de cada Sprint para que el Equipo reflexione y busque mejoras procedimentales. En esta reunión se intentan responder tres preguntas relacionadas al "proceso": ¿qué se hizo mal?; ¿qué se hizo bien? y ¿que se puede mejorar?
 De esta reunión deberían quedar lecciones aprendidas y un listado de acciones a tomar para mejorar la forma de trabajar. Las acciones a tomar deben ser desarrolladas en el siguiente Sprint y analizadas en la retrospectiva del mismo.
-En esta reunión es obligatoria la asistencia del Equipo con el SM y la asistencia del PO es optativa, sin embargo, podría asistir si el equipo lo considera apropiado \footnote{\cite{Martin-Alaimo-2014}}.
+En esta reunión es obligatoria la asistencia del Equipo Scrum (con el SM y el PO).
 
 \end{itemize}
 
@@ -241,7 +243,7 @@ Un ejemplo de DoR puede ser el que sigue:
 
 \subsection{Definición de Terminado}
 
-Los ítems de artefactos fluyen por sus diferentes estados (o Stock en el flujo de Stock) a medida que cumplen con determinadas condiciones de cambio de estado. A estas condiciones que deben cumplir para cambiar de estado se las llama definición de terminado y funcionan como válvulas para que los ítems pasen de un Stock a otro Stock (o de un estado a otro). Por ejemplo para que un ítem pase del Stock de Sprint Backlog a Incremento de Producto Potencialmente Entregable debe cumplir una definición de terminado, "Definition of Done" o DoD. Normalmente se suele considerar que el DoD es una lista de actividades (checklist) que cada elemento de trabajo debe completar para poder ser considerado potencialmente entregable para un cliente dado y conforma un "entendimiento compartido de lo que significa que el trabajo esté completado"\footnote{\cite{Ken-Jeff-2013}}.
+Los ítems de artefactos fluyen por sus diferentes estados (o Stock en el flujo de Stock) a medida que cumplen con determinadas condiciones de cambio de estado. A estas condiciones que deben cumplir para cambiar de estado se las llama definición de terminado y funcionan como válvulas para que los ítems pasen de un Stock a otro Stock (o de un estado a otro). Por ejemplo para que un ítem pase del Stock de Sprint Backlog a Incremento de Producto Potencialmente Entregable debe cumplir una definición de terminado, "Definition of Done" o DoD. Normalmente se suele considerar que el DoD es una lista de actividades (checklist) que cada elemento de trabajo debe completar para poder ser considerado potencialmente entregable para un cliente dado y conforma un "entendimiento compartido de lo que significa que el trabajo esté completado"\footnote{\cite{Ken-Jeff-2013}}. La organización de desarrollo puede ser quien defina el DoD base estándar o es el propio equipo quien lo define y quien lo mejora.
 
 \section{Reglas y Consideraciones}
 
@@ -271,4 +273,3 @@ Además se establecen alguna consideraciones relacionadas a tiempos y tamaños. 
   \centering
   \label{fig:StoryForkflow-Flowchart_BW} 
 \end{figure}
-
