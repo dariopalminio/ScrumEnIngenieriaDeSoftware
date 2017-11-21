@@ -4,6 +4,7 @@
 
 Scrum es un sistema compuesto por la filosofía Scrum (SCRUM Philosophy), como parte del sistema cultural, y tres conjuntos de componentes interrelacionados que forman el "Núcleo del Sistema Scrum"\footnote{El núcleo de Scrum es determinado esencialmente por los organismos y autores que mantienen el scrum originario, o sea los autores (Ken y Jeff) y scrum.org mediante el libro Scrum Guide 2013\cite{Ken-Jeff-2013}.} (ver figura \ref{fig:ScrumSystemCore}). Los tres conjuntos de componentes son: roles, actividades y artefactos. Los roles conforman un sistema de roles que determina las responsabilidades de los actores integrantes, sus relaciones recíprocas, sus restricciones y la relación con los demás componentes. Las actividades conforman la parte principal del sistema de procesos Scrum (Proceso Scrum) que determina las relaciones de organización entre actividades, roles y artefactos. Y los artefactos conforman el conjunto de almacenes o componentes de trabajo. Todo el sistema busca asegurar una cadencia de trabajo que consta de una regularidad basada en iteraciones de tiempo fijo y ceremonias o actividades regulares que permiten la repetibilidad rítmica (predictibilidad del flujo de trabajo) bajo un grado de prestancia.
 
+\newpage
 A continuación se describirán estos componentes y sus relaciones.
 
 \begin{figure}[h]
@@ -13,7 +14,8 @@ A continuación se describirán estos componentes y sus relaciones.
   \centering
   \label{fig:ScrumSystemCore} %\ref{fig:ScrumSystemCore}
 \end{figure}
-
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \section{Estructura del Sistema Scrum}
 
@@ -36,6 +38,7 @@ Hay que tener en cuenta que este marco contempla solo estos tres roles principal
   \centering
   \label{fig:ScrumRolesSystem} %\ref{fig:ScrumRolesSystem}
 \end{figure}
+\FloatBarrier
 
 A continuación se listan los diferentes roles principales:
 
@@ -145,6 +148,7 @@ Se puede ver un resumen del foco de las responsabilidades de los roles en la fig
   \centering
   \label{fig:ScrumRolesResponsibility} %\ref{fig:ScrumRolesResponsibility}
 \end{figure}
+\FloatBarrier
 
 
 \section{Proceso Scrum}
@@ -158,16 +162,27 @@ En el proceso Scrum o sistema de flujo de actividades Scrum (ver figura \ref{fig
   \centering
   \label{fig:ScrumFlow} %\ref{fig:ScrumFlow}
 \end{figure}
+\FloatBarrier
 
 \subsection{Reuniones principales}
 
-Como mencioné, la ceremonias son la planificación, la daily, la revisión y la retrospectiva. Si bien el refinamiento está planteado como una actividad en la ejecución del sprint, también se considera importante sin ser una ceremonia oficial. A continuación se describen.
+Como mencioné, la ceremonias o eventos son la planificación, la daily, la revisión y la retrospectiva. Si bien el refinamiento está planteado como una actividad en la ejecución del sprint, también se considera importante sin ser una ceremonia oficial. A continuación se describen.
 
 \begin{itemize}
 
-\item \textbf{Planificación:} es una actividad o una conversación de duración fija al principio de cada Sprint para decidir sobre lo que se terminará y se demostrará en la revisión.
+\item \textbf{Planificación:} {es una actividad o una conversación de duración fija al principio de cada Sprint para decidir sobre lo que se terminará y se demostrará en la revisión.
 
-Esta reunión se divide generalmente en tres partes principales: una primera parte es estratégica relacionada al "qué", una segunda parte táctica relacionada al "cómo" y una tercera relacionada al acuerdo de cierre. 
+Esta reunión se divide generalmente en tres partes principales: una primera parte es estratégica o de negocio relacionada al "qué", una segunda parte táctica o técnica relacionada al "cómo" y una tercera relacionada al acuerdo de cierre. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Planning_diagram}
+  \caption{Evento de planeamiento}
+  \centering
+  \label{fig:Planning_diagram} %\ref{fig:Planning_diagram}
+\end{figure}
+\FloatBarrier
+}
 
 \begin{itemize}
 
@@ -182,6 +197,15 @@ El resultado de este proceso es un conjunto de PBIs estimados y comprometidos in
 \end{itemize}
 
 \item \textbf{Scrum Diario:} la Daily Scrum o Stand-up meeting es una actividad o una reunión diaria obligatoria del Equipo Scrum, en el lugar de trabajo, con una duración fija, que sirve para coordinación y organización mediante una retroalimentación del estado de actividades de cada integrante del Equipo. Permite identificar impedimentos bloqueantes, actualizar artefactos, revisar el Sprint Backlog, ayudar a disminuir riesgos e identificar personas que pueden servir de ayuda a determinadas tareas. En esta reunión los miembros del equipo se reúnen, de pie, para informar de sus progresos en el Sprint y planificar las actividades del día. Para ello proporcionan respuestas a tres preguntas:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Daily_diagram}
+  \caption{Daily}
+  \centering
+  \label{fig:Daily_diagram} %\ref{fig:Daily_diagram}
+\end{figure}
+\FloatBarrier
 
 \begin{itemize}
 \item{¿Qué hice ayer que ayudó a lograr el Objetivo del Sprint?}
@@ -209,9 +233,27 @@ En la reunión que se hace con el equipo se desarrollan las siguientes actividad
 
 \item \textbf{Revisión:} es una actividad o una conversación de duración fija al final de cada Sprint para dar retroalimentación sobre el avance del producto. En esta reunión se evalúa el incremento funcional potencialmente entregable construido por el Equipo en el proceso de desarrollo. Para lograr hacer esto el Equipo de Desarrollo junto al PO y los Stakeholder involucrados, revisan los resultados funcionales y operativos (producto utilizable) del Sprint. El objetivo es recibir una retroalimentación de lo construido y aprobar o rechazar los PBIs que pasaron la DoD y son potencialmente entregables, para lo que los Stakeholder prueban el producto construido y proveen su feedback. En este proceso pueden haber cambios o nuevas hipótesis de requisitos que surjan para agregarse en el Product Backlog.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Review_diagram}
+  \caption{Revisión}
+  \centering
+  \label{fig:Review_diagram} %\ref{fig:Review_diagram}
+\end{figure}
+\FloatBarrier
+
 \item \textbf{Retrospectiva:} es una actividad o una conversación de duración fija al final de cada Sprint para que el Equipo reflexione y busque mejoras procedimentales. En esta reunión se intentan responder tres preguntas relacionadas al "proceso": ¿qué se hizo mal?; ¿qué se hizo bien? y ¿que se puede mejorar?
-De esta reunión deberían quedar lecciones aprendidas y un listado de acciones a tomar para mejorar la forma de trabajar. Las acciones a tomar deben ser desarrolladas en el siguiente Sprint y analizadas en la retrospectiva del mismo.
+De esta reunión deberían quedar lecciones aprendidas y un listado de acciones a tomar para mejorar la forma de trabajar. Las acciones a tomar deben ser desarrolladas en el siguiente Sprint y analizadas en la retrospectiva del mismo. También se puede editar el DoD si se considera necesario adaptarlo.
 En esta reunión es obligatoria la asistencia del Equipo Scrum (con el SM y el PO).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Retrospective_diagram}
+  \caption{Retrospectiva}
+  \centering
+  \label{fig:Retrospective_diagram} %\ref{fig:Retrospective_diagram}
+\end{figure}
+\FloatBarrier
 
 \end{itemize}
 
@@ -226,6 +268,7 @@ Los artefactos ítems de trabajo fluyen desde que se definen en el Backlog de Pr
   \centering
   \label{fig:ScrumArtifactsStockFlow} 
 \end{figure}
+\FloatBarrier
 
 \subsection{Definición de preparado}
 
@@ -258,7 +301,7 @@ Además se establecen alguna consideraciones relacionadas a tiempos y tamaños. 
   \centering
   \label{fig:Timebox_segun_Scrum_2017} 
 \end{figure}
-
+\FloatBarrier
 
 \begin{figure}[h]
   \centering
@@ -267,6 +310,7 @@ Además se establecen alguna consideraciones relacionadas a tiempos y tamaños. 
   \centering
   \label{fig:TeamSize_by_Lawrence_Putnam} 
 \end{figure}
+\FloatBarrier
 
 \begin{figure}[h]
   \centering
@@ -275,3 +319,4 @@ Además se establecen alguna consideraciones relacionadas a tiempos y tamaños. 
   \centering
   \label{fig:StoryForkflow-Flowchart_BW} 
 \end{figure}
+\FloatBarrier
