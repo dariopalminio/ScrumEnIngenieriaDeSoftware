@@ -208,6 +208,19 @@ La estructura de un criterio de aceptación presentado como escenario puede ser 
   \end{itemize}
 \end{itemize}
 
+\subsubsection{Jerarquía en el backlog}
+
+Una decisión importante a la hora de trabajar con historias de usuario es hacer la estricta demarcación o no. La primera opción es ser estrictos y categorizarlas según si son historias de usuario o técnicas y, de este modo, podemos medir la velocity sobre historias reales y el capacity en trabajo técnico. También visualmente nos da una idea del balance de trabajo técnico versus historias de cara al usuario. Esto requiere más detalle y disciplina. La otra opción es tratarlas a todas como historias. De este modo podremos darnos cuenta si son técnicas o no según el rol que figure en el “COMO” de la redacción. Lo que sí es conveniente es redactar a todas con el formato de historia.
+Otras categorías a tener en cuenta son las abstracciones de alto nivel como son: los temas (theme) y las épicas (epic). Hacer este tipo de categorizaciones nos ayudará a hacer mejor el desglose de trabajo y ordenar mejor el backlog. De este modo, podremos agrupar por niveles desde temas en el superior, épicas que agrupan historias y las historias que agrupan tareas (ver fig. \ref{fig:Jerarquias_en_backlog}). Otra manera de agrupar sin usar épicas ni temas es simplemente agrupar por MVPs. Esto dependerá del equipo y el PO, de lo que les sea más cómodo y útil.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Jerarquias_en_backlog}
+  \caption{Jerarquía en el backlog.}
+  \centering
+  \label{fig:Jerarquias_en_backlog} %\ref{fig:Jerarquias_en_backlog}
+\end{figure}
+
 \subsection{BDD}
 
 Una manera de ayudar al desarrollo ágil a partir de requerimientos es usar el desarrollo conducido por comportamiento (Behavior Driven Development o BDD), el cual es un proceso de desarrollo por el que se busca comenzar a partir de un lenguaje común que une la parte técnica y la de negocio, y desde ese lenguaje común se parte hacia el Testing y, posteriormente, al desarrollo. El proceso consta básicamente en escribir las historias de usuario, escribir los escenarios (o criterios de aceptación en forma de escenarios) y automatizar las pruebas de aceptación de los escenarios.
