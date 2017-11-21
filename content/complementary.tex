@@ -54,7 +54,7 @@ Otro ejemplo es el refinamiento o “refinement” que no es una ceremonia ofici
 
 También podemos considerar hacer demostraciones “Demo” al PO previas a la review, como instancias donde el equipo junto al PO controlan el DoD y los criterios de aceptación, para controlar una historia antes de que se llegue a la review. De este modo se llega a la review con certeza de cuáles historias se concluyeron satisfactoriamente y cuáles no, evitando que la review se transforme en una instancia de aprobación de historias.
 
-El monitoreo constante de feedback (Monitor) puede transformarse en un proceso pautado, en el cual el equipo se autogestiona para realizar inspección y adaptación constante, monitoreando las principales métricas del producto, KPIs y registros de actividad del producto funcionando en operaciones. Esto es radicalmente importante para pasar de ser un equipo reactivo a proactivo. Aunque también se debe contemplar ser lo suficientemente efectivo en las acciones reactivas de solución de contingencias en operaciones (resolución de fallos o bugs en operaciones). Y para ello se puede tener un proceso consensuado de cómo manejar las OPCON de forma eficiente.
+El monitoreo constante de feedback ("Monitor" o Continuous Monitoring) puede transformarse en un proceso pautado, en el cual el equipo se autogestiona para realizar inspección y adaptación constante, monitoreando las principales métricas del producto, KPIs y registros de actividad del producto funcionando en operaciones. Esto es radicalmente importante para pasar de ser un equipo reactivo a proactivo. Aunque también se debe contemplar ser lo suficientemente efectivo en las acciones reactivas de solución de contingencias en operaciones (resolución de fallos o bugs en operaciones). Y para ello se puede tener un proceso consensuado de cómo manejar las OPCON de forma eficiente.
 
 Trabajar con Scrum se puede sentir, en ocasiones, la disciplina de la cadencia como sofocante. En algunos contextos puede ser producente tener un respiro para que el equipo trabaje en algo fuera del foco del producto o para trabajar en actividades como refinar el backlog, capacitaciones, innovación, planificaciones, teambuilding, discovery, etcétera. Para eso se usa el concepto de “break”, un lapso de tiempo para hacer estas actividades sin contar como sprint. Una especie de interludio inter-sprints.
 
@@ -397,6 +397,14 @@ Hay diferentes técnicas que pueden ser utilizadas en el proceso de desarrollo d
 Se usa 'Pomodoro'\footnote{La Técnica Pomodoro es un método para la administración del tiempo desarrollado por Francesco Cirillo a fines de los años 1980\cite{Cirillo-Francesco-1980}.} como una técnica de gestión del tiempo y se basa en la hipótesis de que las pausas frecuentes en el trabajo pueden mejorar la agilidad mental. Por este motivo, la técnica consiste en dividir el tiempo dedicado a un trabajo en intervalos (time-boxing) de 25 minutos (llamados 'pomodoros') separados por descansos. Los primero tres descansos son de 5 minutos y el descanso después del cuarto pomodoro es de 15 minutos, para luego repetir la secuencia en forma cíclica. Durante el intervalo pomodoro el trabajo debe ser focalizado, por lo que no se deben admitir distracciones o trabajos ajenos al trabajo principal. 
 Esta es una técnica útil en el desarrollo ágil y en la programación en pareja (pair programming) además de otros contextos de trabajo.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{Pomodoro}
+  \caption{Esquema pomodoro}
+  \centering
+  \label{fig:Pomodoro} %\ref{fig:Pomodoro}
+\end{figure}
+
 \subsection{Programación de a pares}
 
 La programación de a pares, “pairing” o “pair programming” consiste en que dos programadores participen conjuntamente en un esfuerzo combinado de desarrollo en un puesto de trabajo. La misma se puede extender al desarrollo de a pares (análisis, diseño, codificación, pruebas, diseño de interfaces de usuario, diseño gráfico, etc.).
@@ -432,9 +440,15 @@ La integración continua (Continuous Integration\footnote{Continuous Integration
 
 \subsection{Entrega continua}
 
-El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción.
+El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción. Trabajar bajo el marco ágil y no trabajar con testing continuo, integración continua ni entrega continua puede conducir a un trabajo poco ingenieril y menos eficiente. Es parte de reducir el time to market y el tiempo de despliegue, facilitar el flujo entre el desarrollo y despliegue, reduciéndolo lo máximo posible y manteniendo calidad.
 
-Trabajar bajo el marco ágil y no trabajar con Continuous Integration ni Continuous Delivery puede conducir a un trabajo poco ingenieril y menos eficiente.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{Continuous_delivery_flow}
+  \caption{Flujo de delivery}
+  \centering
+  \label{fig:Continuous_delivery_flow} %\ref{fig:Continuous_delivery_flow}
+\end{figure}
 
 \newpage
 \section{Metodologías amigas}
