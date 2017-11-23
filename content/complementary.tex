@@ -1,25 +1,8 @@
 \chapter{Complementos de Scrum}
 
-Originariamente Scrum no tiene como objetivo dar instrucciones precisas a los equipos sobre la forma concreta en la que deben llevar a cabo su desarrollo. El Scrum propuesto por la Scrum Guide de Scrum.org es bastante simple y básico (ver fig. \ref{fig:Scrum_Flow_basic_ScrumGuide2017}). Con este marco se espera que los equipos hagan lo que sea necesario para ellos, en función de entregar el producto de calidad. 
+Originariamente Scrum no tiene como objetivo dar instrucciones precisas a los equipos sobre la forma concreta en la que deben llevar a cabo su desarrollo. El Scrum propuesto por la Scrum Guide de Scrum.org es bastante simple y básico (ver fig. \ref{fig:Scrum_Flow_basic_ScrumGuide2017}). Con este marco se espera que los equipos hagan lo que sea necesario para ellos, en función de entregar el producto de calidad. Esto significa mejorar Scrum o ir más allá.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Scrum_Flow_basic_ScrumGuide2017}
-  \caption{Flujo de Scrum básico según la Guía de Scrum de Scrum.org de 2017}
-  \centering
-  \label{fig:Scrum_Flow_basic_ScrumGuide2017} %\ref{fig:Scrum_Flow_basic_ScrumGuide2017}
-\end{figure}
-\newpage
-
-Las prácticas y herramientas de desarrollo cambian y mejoran de manera continua y los buenos equipos trabajarán constantemente en pos de obtener el mejor uso de las mismas. Es así como los equipos a medida que maduran agregan ceremonias y actividades necesarias para su contexto conformando un flujo de Scrum avanzado y adaptado a su realidad (ver fig. \ref{fig:Scrum_Flow_advanced}). Además, estos equipos adoptan prácticas ágiles e ingenieriles necesarias para desarrollar software de calidad.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.99\textwidth]{Scrum_Flow_advanced}
-  \caption{Flujo de Scrum avanzado ejemplo}
-  \centering
-  \label{fig:Scrum_Flow_advanced} %\ref{fig:Scrum_Flow_advanced}
-\end{figure}
+Las prácticas y herramientas de desarrollo cambian y mejoran de manera continua y los buenos equipos trabajarán constantemente en pos de obtener el mejor uso de las mismas. Es así como los equipos a medida que maduran agregan ceremonias y actividades necesarias para su contexto conformando un flujo de Scrum Extendido y adaptado a su realidad (ver fig. \ref{fig:Scrum_Flow_Extended-Scrum}). Además, estos equipos adoptan prácticas ágiles e ingenieriles necesarias para desarrollar software de calidad.
 
 Desde esta perspectiva, se puede consensuar un anillo de complementos útiles que rodea al núcleo de Scrum y que pueden potenciar el trabajo ágil y la práctica de ingeniería. Estos complementos son métodos y técnicas complementarias a Scrum, sugerencias y recomendaciones, lecciones aprendidas y conceptos aledaños. En este capítulos trataremos estos temas.
 
@@ -42,11 +25,19 @@ Desde esta perspectiva, se puede consensuar un anillo de complementos útiles qu
 %Técnicas de Programación
 
 \newpage
-\section{Potenciando Scrum}
+\section{Scrum Extendido}
 
 La guía de Scrum propone un marco simple y algo estructurado y, aunque funciona bien como contenedor para otras técnicas, metodologías y prácticas, hacer Scrum es al menos seguir ese marco. Sin embargo, debemos usar lo necesario que en nuestro contexto nos ayude a solucionar los problemas y cumplir los objetivos que nos planteamos. Por tal motivo, debemos ser libres de tomar lo que consideramos relevante de scrum, o mezclarlo con otros métodos o expandirlo con otras ceremonias, técnicas y prácticas.
 
 En mi experiencia he visto como equipos han necesitado robustecer Scrum con otras ceremonias, actividades y procesos como la inception, el refinamiento, demos internas, Monitoreo constante de feedback, proceso de OPCON, break, etcétera. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Scrum_Flow_Extended-Scrum}
+  \caption{Flujo de Extended Scrum}
+  \centering
+  \label{fig:Scrum_Flow_Extended-Scrum} %\ref{fig:Scrum_Flow_Extended-Scrum}
+\end{figure}
 
 Por ejemplo, cuando un equipo ya constituido comienza con un nuevo producto, es aconsejable tener un proceso inmediatamente previo a comenzar los sprints para definir o poner a todo el equipo en la misma página respecto a la visión del producto, los objetivos y para poder hacer una primera alimentación formal y colaborativa del backlog. En esta reunión es cuando se hace el kickoff, se definen los tipos de usuarios, experiencia de usuarios a alto nivel, visión del producto, features principales, posibles temas o épicas, un posible roadmap, y las historias sobre las cuales se puede comenzar a trabajar. A este proceso se lo puede llamar “inception”.
 
@@ -59,6 +50,23 @@ El monitoreo constante de feedback ("Monitoring" o Continuous Monitoring) puede 
 Trabajar con Scrum se puede sentir, en ocasiones, la disciplina de la cadencia como sofocante. En algunos contextos puede ser producente tener un respiro para que el equipo trabaje en algo fuera del foco del producto o para trabajar en actividades como refinar el backlog, capacitaciones, innovación, planificaciones, teambuilding, discovery, etcétera. Para eso se usa el concepto de “break”, un lapso de tiempo para hacer estas actividades sin contar como sprint. Una especie de interludio inter-sprints.
 
 En síntesis, debemos ser libres de adaptar Scrum o potenciarlo como consideremos apropiado. Ser libres de experimentar.
+
+\subsection{Definición de preparado}
+
+Otro ornamento ya mencionado anteriormente pero no explicado es el "Definition of Ready" o DoR. La definición de preparado es un tipo de Definición de Terminado particular (previo al desarrollo) que, si bien no es parte de la guía de Scrum original, es particularmente útil. Pues, se corresponde con las condiciones para que una historia (PBI) pueda pasar a formar parte de un Sprint Backlog. Si una historia no cumple con su DoR no puede ser tomado en una planificación para ser ítem de trabajo del Sprint planeado, ya que es un ítem que no está suficientemente preparado para ser comprometido para el desarrollo. Es decir necesita refinamiento. O sea que, la definición de preparado permite entonces tener un punto de acuerdo entre el PO y el Equipo, permitiendo conocer cuándo una historia de usuario está realmente lista para evaluar su factibilidad de desarrollo en una reunión de planeamiento y ser llevada a un Sprint.
+
+Un ejemplo de DoR puede ser el que sigue:
+
+\begin{enumerate}
+\item{Historia de usuario definida.}
+\item{Cumple el criterio INVEST (INVEST es tratado posteriormente).}
+\item{Hay un contexto de negocio claro.}
+\item{Criterios de aceptación definidos, claros y comprobables.}
+\item{Identificación de dependencias con otras historias de usuario.}
+\item{Hay una idea clara de cómo se puede demostrar la historia en una review.}
+\item{El equipo tiene el conocimiento para analizarla.}
+\end{enumerate}
+
 
 \newpage
 \section{Dinámicas de grupo}

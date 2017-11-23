@@ -23,7 +23,17 @@ Scrum está pensado como un sistema de trabajo para equipos con tres roles princ
 
 Cuando los integrantes del sistema Scrum ejercen los roles mencionados en un flujo de trabajo o proceso Scrum, trabajan sobre tres artefactos esenciales: el Product Backlog (lo que queda por hacer), el Sprint Backlog (lo que se va a hacer) y el Incremento de Producto (lo que logramos hacer). Estos artefactos son tratados en un flujo de trabajo en el cual se construyen productos en forma incremental, en una serie de ciclos cortos de tiempo llamados Sprints. 
 
-En cada ciclo Sprint del flujo de trabajo se practican seis actividades Scrum: refinamiento de producto, planificación, reunión diaria o Daily, desarrollo, revisión de producto y retrospectiva. La actividad de refinamiento de producto (Refinement) no suele tener un nombre unificado; pues, se la suele llamar "Backlog Grooming"\footnote{No se aconseja usar el término Grooming debido a que según el diccionario Oxford English Dictionary tiene connotaciones sexuales.} (aunque no se aconseja usar la palabra grooming), Manteniemiento de Backlog o Refinamiento (Refinement). Salvo el desarrollo, las actividades se consideran reuniones o ceremonias Scrum. El desarrollo no es una reunión Scrum ya que constituye la actividad de producción del producto o servicio. O sea que es donde se produce el incremento de producto.
+En cada ciclo Sprint del flujo de trabajo se practican seis actividades Scrum: refinamiento de producto, planificación, reunión diaria o Daily, desarrollo, revisión de producto y retrospectiva. La actividad de refinamiento de producto (Refinement) no suele tener un nombre unificado; pues, se la suele llamar "Backlog Grooming"\footnote{No se aconseja usar el término Grooming debido a que según el diccionario Oxford English Dictionary tiene connotaciones sexuales.} (aunque no se aconseja usar la palabra grooming), Manteniemiento de Backlog o Refinamiento (Refinement). Salvo el desarrollo, las actividades se consideran reuniones o ceremonias Scrum. El desarrollo o ejecución no es una reunión Scrum ya que constituye la actividad de producción del producto o servicio. O sea que es donde se produce el incremento de producto.
+
+La síntesis del flujo de Scrum es como el mostrado en la figura siguiente:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.95\textwidth]{Scrum_Flow_basic_ScrumGuide2017}
+  \caption{Flujo de Scrum básico según la Guía de Scrum de Scrum.org de 2017}
+  \centering
+  \label{fig:Scrum_Flow_basic_ScrumGuide2017} %\ref{fig:Scrum_Flow_basic_ScrumGuide2017}
+\end{figure}
 
 \section{Sistema de Roles}
 
@@ -33,7 +43,7 @@ Hay que tener en cuenta que este marco contempla solo estos tres roles principal
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.80\textwidth]{ScrumRolesSystem}
+  \includegraphics[width=0.60\textwidth]{ScrumRolesSystem}
   \caption{Diagrama del Sistema de Roles Scrum}
   \centering
   \label{fig:ScrumRolesSystem} %\ref{fig:ScrumRolesSystem}
@@ -187,7 +197,7 @@ Esta reunión se divide generalmente en tres partes principales: una primera par
 \begin{itemize}
 
 \item \textbf{Planificación relacionada al "Qué":} La primera parte se propone responder a: ¿Qué trabajo será realizado? En esta parte se desarrolla la definición de lo que se necesita hacer, de cuáles hipótesis del Cliente se desean desarrollar. En este proceso se crean los ítems de Product Backlog o PBIs y los Criterio de Aceptación. Los PBIs son generalmente escritos por el PO y están diseñados para asegurar que las hipótesis de requisitos del Cliente estén claramente representadas y puedan ser plenamente comprendidas por todos los Stakeholders y los desarrolladores del equipo.
-En la dinámica de la reunión, el PO cuenta cuáles son los PBIs disponibles que pasan el criterio de completitud o DoR (una definición de listo o refinado), para ser desarrollados en el Sprint y los explica para que sean comprendidos por el Equipo. Mientras sucede esto los integrantes del equipo hacen todas las preguntas que consideren necesarias para comprender los detalles de lo que se desea realizar y puedan, así, entregar una estimación del trabajo a comprometer. Luego de estimar se procede a una negociación entre el PO y el Equipo de cuáles son los PBIs que el Equipo se compromete a desarrollar para transformar en un incremento de producto potencialmente entregable. En este proceso el SM se encarga de facilitar la ceremonia, moderar y tratar de asegurar de que todos los Stakeholder del proyecto que sean necesarios para para aclarar detalles estén presentes o sean contactados para hacer las respectivas aclaraciones.
+En la dinámica de la reunión, el PO cuenta cuáles son los PBIs disponibles que pasan cierto criterio de completitud, para ser desarrollados en el Sprint y los explica para que sean comprendidos por el Equipo. Mientras sucede esto los integrantes del equipo hacen todas las preguntas que consideren necesarias para comprender los detalles de lo que se desea realizar y puedan, así, entregar una estimación del trabajo a comprometer. Luego de estimar se procede a una negociación entre el PO y el Equipo de cuáles son los PBIs que el Equipo se compromete a desarrollar para transformar en un incremento de producto potencialmente entregable. En este proceso el SM se encarga de facilitar la ceremonia, moderar y tratar de asegurar de que todos los Stakeholder del proyecto que sean necesarios para para aclarar detalles estén presentes o sean contactados para hacer las respectivas aclaraciones.
 El resultado de este proceso es un conjunto de PBIs estimados y comprometidos inicialmente para ser trabajados en el Sprint.
 
 \item \textbf{Planificación relacionada al "Cómo":} En la segunda parte de la planificación se propone responder a: ¿Cómo será realizado el trabajo? Esta parte es táctica y por lo tanto más técnica por lo que no es necesaria la presencia del Product Owner, pero debe estar disponible para contestar preguntas y clarificar dudas surgidas sobre la marcha. En esta reunión el Equipo discute cómo implementará los PBIs, diseñando inicialmente, en forma general y abstracta (acuerdo de alto nivel), las soluciones y definiendo tareas implicadas. 
@@ -269,22 +279,6 @@ Los artefactos ítems de trabajo fluyen desde que se definen en el Backlog de Pr
   \label{fig:ScrumArtifactsStockFlow} 
 \end{figure}
 \FloatBarrier
-
-\subsection{Definición de preparado}
-
-La definición de preparado, "Definition of Ready" o DoR es un tipo de Definición de Terminado particular (previo al desarrollo) que, si bien no es parte de la guía de Scrum original, es particularmete útil. Pues, se corresponde con las condiciones para que un PBI pueda pasar a formar parte de un Sprint Backlog. Si un PBI no cumple con su DoR no puede ser tomado en una planificación para ser ítem de trabajo del Sprint planeado, ya que es un ítem que no está suficientemente preparado para ser comprometido para el desarrollo. O sea que, la definición de preparado permite entonces tener un punto de acuerdo entre el PO y el Equipo, permitiendo conocer cuándo una historia de usuario está realmente lista para evaluar su factibilidad de desarrollo en una reunión de planeamiento y ser llevada a un Sprint.
-
-Un ejemplo de DoR puede ser el que sigue:
-
-\begin{enumerate}
-\item{Historia de usuario definida.}
-\item{Cumple el criterio INVEST (INVEST es tratado posteriormente).}
-\item{Hay un contexto de negocio claro.}
-\item{Criterios de aceptación definidos, claros y comprobables.}
-\item{Identificación de dependencias con otras historias de usuario.}
-\item{Hay una idea clara de cómo se puede demostrar la historia en una review.}
-\item{El equipo tiene el conocimiento para analizarla.}
-\end{enumerate}
 
 \subsection{Definición de Terminado}
 
