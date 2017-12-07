@@ -55,7 +55,7 @@ Luego hay que tener en cuenta que para crearlo se deben tener disponibles las si
 \begin{enumerate}
 \item Un Product Backlog priorizado y estimado.
 \item La velocidad estimada del Equipo Scrum.
-\item Las condiciones de satisfacción (metas para la agenda, el alcance, los recursos)
+\item Las condiciones de satisfacción (metas para la agenda, el alcance, los recursos) o impacto deseado.
 \end{enumerate}
 
 \subsection{Gestión de proyecto orientada a producto}
@@ -99,6 +99,7 @@ La gestión de riesgos no es independiente de la gestión de impedimento o de pr
   \centering
   \label{fig:RiskFlowDiagram} %\ref{fig:RiskFlowDiagram}
 \end{figure}
+
 Las herramientas gráficas útiles para dicha gestión son: “Tablero de Obstáculos” (obstacle board) o el "Calendario de Obstáculos" (Issues calendars).
 
 
@@ -106,11 +107,23 @@ Las herramientas gráficas útiles para dicha gestión son: “Tablero de Obstá
 
 Las métricas son una combinación de atributos cuantificables pertinentes que comunican información relevante acerca de la calidad de nuestros productos y nuestra productividad\footnote{\cite{INCOSE-2005}}. Para la ingeniería del software, las métricas proporcionan una indicación de la calidad de algún tipo de representación del software basadas en un conjunto de medidas indirectas\footnote{\cite{Roger-Pressman-2002}}. O sea que las mismas están relacionadas a unidades de medida e indicadores que ayudan a medir, descubrir y tomar decisiones para mejorar, corregir problemas, hacer estimaciones, controlar calidad, evaluar productividad y hacer control de proyectos. Intentar medir para mejorar nuestra comprensión de entidades particulares es tan poderoso en ciencia, en ingeniería de software como en cualquier disciplina.
 
-Bajo el marco Scrum ayuda al equipo a medir su propio desempeño para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyectos para poder medir el avance del proyecto, revisar la productividad, el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluación de desempeño de empleados.} del equipo y poder hacer comparaciones relativas entre evolución de diferentes equipos. 
+Bajo el marco Scrum, ayuda al equipo a medir su propio desempeño en el proceso de trabajo para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyectos para poder medir el avance del proyecto en cuanto a impacto de negocio (no a seguir un plan), revisar la productividad de valor y el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluación de desempeño de empleados.} del equipo en cuanto a madurez. Además hay indicadores de calidad de producto que nos pueden indicar aspectos claves de prestancia y salud de un producto. 
 
-\subsubsection{Unidades de medida}
+En síntesis, se pueden categorizar las métricas en tres aspectos: proceso de trabajo, calidad de producto e impacto de negocio.
 
-Para poder usar métricas y medir es necesario unidades de medida. Las más usadas son:
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{Metrics_KPIs}
+  \caption{KPIs.}
+  \centering
+  \label{fig:Metrics_KPIs} %\ref{fig:Metrics_KPIs}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\subsubsection{Unidades de medida relativas}
+
+Para poder usar métricas y medir es necesario unidades de medida. Con Scrum se suelen comenzar a usar unidades relativas en los casos en que se necesita medir de antemano o estimar o cuando se quiere medir algo no determinístico o tangible como el esfuerzo o complejidad. Las más usadas son:
 
 \begin{enumerate}
 
@@ -124,9 +137,9 @@ El Business Value o BV es el valor añadido que la historia aporta al negocio\fo
 
 \end{enumerate}
 
-\subsubsection{Indicadores}
+\subsection{Métricas del proceso de trabajo}
 
-Hay muchos indicadores que nos pueden ser de utilidad, como por ejemplo los siguientes\footnote{Scott y Jeff \cite{Scott-Jeff-2013} y la  Scrumalliance en un artículo llamado "Velocity, How to Calculate and Use Velocity to Help Your Team and Your Projects", por Catia Oliveira (6 February 2014).}:
+Los equipos de desarrollo, para mejorar, deben buscar su estabilidad, sostenibilidad y su proceso de trabajo limpio. En este sentido hay muchos indicadores clave del proceso de trabajo, de rendimiento, internos y del equipo, que nos pueden ser de utilidad para monitorear el proceso de desarrollo y que nos permita la inspección y adaptación constante, como por ejemplo los siguientes\footnote{Scott y Jeff \cite{Scott-Jeff-2013} y la  Scrumalliance en un artículo llamado "Velocity, How to Calculate and Use Velocity to Help Your Team and Your Projects", por Catia Oliveira (6 February 2014).}:
 
 \begin{enumerate}
 
@@ -170,11 +183,7 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
 
 %Otras: Percentage of Adopted Work, Percentage of Found Work, Accuracy of Estimation, Accuracy of Forecast, Targeted Value Increase (TVI+), Success at Scale
 
-\item {\textbf{Business Value Delivered:}
-Un indicador relevante es el valor de negocio entregado. Se pueden contabilizar los BV entregados en cada Sprint.
-}
-
-\item {\textbf{Happiness Metric:}
+\item {\textbf{Team Happiness:}
 Un estudio de Harvard muestra que la felicidad aumenta la producción de cualquier tipo de trabajo, pues "la gente feliz es 12 \% más productiva"\footnote{\cite{U-K-University-2014}}. Además, un principio de la agilidad es desarrollar en torno a individuos motivados. En base a esto podemos intentar medir la felicidad Sprint a Sprint\footnote{\cite{Jeff-2014}}. 
 
 La felicidad del equipo es un indicativo de la salud del equipo en relación a su capacidad de entrega de valor. Para medir la felicidad del equipo podemos hacer encuestas o responder las siguientes preguntas:
@@ -188,7 +197,8 @@ La felicidad del equipo es un indicativo de la salud del equipo en relación a s
   \caption{Medida de satisfacción}
   \centering
   \label{fig:HappinessMetric} %\ref{fig:HappinessMetric}
-\end{figure}
+  \end{figure}
+  \FloatBarrier
 
   Otra escala para medir felicidad puede ser de siete puntos. Por ejemplo a la pregunta... ¿Cómo calificaría su felicidad en este momento? Se puede responder con 1 que es totalmente triste, 2 es muy triste , 3 es triste, 4 es ni feliz ni triste, 5 es bastante feliz, 6 es muy feliz y 7 es completamente feliz\footnote{\cite{U-K-University-2014}}.
   }
@@ -198,12 +208,57 @@ La felicidad del equipo es un indicativo de la salud del equipo en relación a s
 
 Cuando tenemos la información de cada miembro del equipo, el equipo puede hacer una lluvia de ideas de cómo hacer para mejorar y aumentar la felicidad en el siguiente Sprint y darle curso y seguimiento a las acciones propuestas.
 
-También se puede medir la felicidad de los Stakeholder como indicador de grado de satisfacción que indica qué tan contentos estuvieron con los resultados del Sprint y con la Review. Este relevamiento relacionado a la percepción de valor entregado se puede hacer en la misma Review.
-
 }
 
+\item {\textbf{Delivery rate:}
+La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery.
+}
 
 \end{enumerate}
 
 
-Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil).
+\subsection{Métricas de impacto de negocio}
+
+La verdadera medida de éxito en Scrum es el incremento de producto que es valioso para el cliente. Pero… ¿Cómo medir qué es valioso para el cliente?
+Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores se los suele llamar KPI's y en el caso de negocio podemos interpretarlos como indicadores claves de impacto del producto. Algunos son los siguientes.
+
+
+  \begin{description}    
+
+  \item {\textbf{Business Value Delivered:} Valor de negocio entregado. Se pueden contabilizar los BV entregados en cada Sprint.
+} 
+ 
+  \item {\textbf{SHSAT:} Grado de satisfacción de los Stakeholders. Se puede medir la felicidad de los Stakeholder como indicador de grado de satisfacción que indica qué tan contentos estuvieron con los resultados del Sprint y con la Review. Este relevamiento relacionado a la percepción de valor entregado se puede hacer en la misma Review.
+}
+
+  \item {\textbf{CSAT:} Customer Satisfaction es el índice de grado de satisfacción de los usuarios o clientes.
+}
+
+  \item {\textbf{NPS:} El Puntaje Neto de Promotores (Net Promoter Score) mide la lealtad general de los clientes hacia un producto o servicio (fidelización). Mide qué probabilidades hay de que el cliente recomiende la compañía y, de forma indirecta, la propensión del consumidor a seguir siéndolo y resistir irse a la competencia.
+}
+
+  \item {\textbf{Cost Savings:} Grado de disminución de costos.
+}
+
+  \item {\textbf{Revenue:} Beneficios obtenidos.
+}
+
+  \item {\textbf{Funne:} El Funne o Full Compliance es el promedio de usuarios que terminan de usar nuestra aplicación con éxito.
+}
+
+  \item {\textbf{Volume of Use:} Cuantos usuarios usan nuestra aplicación.
+}
+  \item {\textbf{Penetration:} Cuantos usuarios, de los que ya son clientes, usan nuestra aplicación del volumen total que usan dicho servicio en relación a todos los canales. Esto marca la parte del “Volume of Use” que crece por que los usuarios dejan de usar otros canales.
+}
+
+  \item {\textbf{Market Share:} Cuantos usuarios, de los usuarios que no son clientes, fueron captados. O sea, que cantidad de usuarios nuevos captados de la competencia o del mercado. Esto marca si el “Volume of Use” crece por captación de nuevos usuarios.
+}
+
+\end{description}
+
+\subsection{Métricas ágiles}
+
+Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil). Los KPI's no se deben convertir en objetivos que deben lograrse ni en herramienta de control de empleados.
+
+
+
