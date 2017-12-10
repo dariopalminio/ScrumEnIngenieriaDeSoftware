@@ -102,18 +102,16 @@ La gestión de riesgos no es independiente de la gestión de impedimento o de pr
 
 Las herramientas gráficas útiles para dicha gestión son: “Tablero de Obstáculos” (obstacle board) o el "Calendario de Obstáculos" (Issues calendars).
 
+\chapter{Métricas}
+%\subsection{Métricas}
 
-\subsection{Métricas}
+¿Para qué medir? Si no medimos no podemos adaptarnos bajo un marco empírico como propone Scrum. Medimos en forma transparente, en procesos de inspección y adaptación. Las métricas ayudan al equipo a medir su propio desempeño en el proceso de trabajo para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyecto/producto para poder medir el progreso en cuanto a impacto de negocio (no a seguir un plan), tomar decisiones de negocio, revisar la productividad de valor y el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluación de desempeño de empleados.} del equipo en cuanto a madurez. Además hay indicadores de calidad de producto que nos pueden indicar aspectos claves de prestancia y salud de un producto. Se puede ver a las métricas como parte del monitoreo de salud del equipo, del sistema de trabajo, del producto y negocio; y parte del sistema de estabilización de la empresa y del sistema de mejora continua.
 
-Las métricas son una combinación de atributos cuantificables pertinentes que comunican información relevante acerca de la calidad de nuestros productos y nuestra productividad\footnote{\cite{INCOSE-2005}}. Para la ingeniería del software, las métricas proporcionan una indicación de la calidad de algún tipo de representación del software basadas en un conjunto de medidas indirectas\footnote{\cite{Roger-Pressman-2002}}. O sea que las mismas están relacionadas a unidades de medida e indicadores que ayudan a medir, descubrir y tomar decisiones para mejorar, corregir problemas, hacer estimaciones, controlar calidad, evaluar productividad y hacer control de proyectos. Intentar medir para mejorar nuestra comprensión de entidades particulares es tan poderoso en ciencia, en ingeniería de software como en cualquier disciplina.
-
-Bajo el marco Scrum, ayuda al equipo a medir su propio desempeño en el proceso de trabajo para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyectos para poder medir el avance del proyecto en cuanto a impacto de negocio (no a seguir un plan), revisar la productividad de valor y el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluación de desempeño de empleados.} del equipo en cuanto a madurez. Además hay indicadores de calidad de producto que nos pueden indicar aspectos claves de prestancia y salud de un producto. 
-
-En síntesis, se pueden categorizar las métricas en cuatro aspectos: trabajo en equipo, proceso de trabajo, calidad de producto e impacto de negocio (ver fig. \ref{fig:Metrics_KPIs}).
+En síntesis, se pueden categorizar a las métricas en cuatro aspectos: trabajo en equipo (team), proceso de trabajo (process), calidad de producto (quality) e impacto de negocio (Impact) [ver fig. \ref{fig:Metrics_KPIs}].
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.70\textwidth]{Metrics_KPIs}
+  \includegraphics[width=0.85\textwidth]{Metrics_KPIs}
   \caption{Modelo de 4 categoría de métricas o KPIs.}
   \centering
   \label{fig:Metrics_KPIs} %\ref{fig:Metrics_KPIs}
@@ -164,6 +162,12 @@ Indicador moral de equipo dice cómo está la moral en tu equipo. La moral del e
   \end{enumerate}
 }
 
+\item {\textbf{Team Stability:} Se considera que se logra buena colaboración con equipos estables. Por ese motivo, bajo el marco ágil, se prioriza a los equipos estables por sobre los proyectos\footnote{The Disciplined Agile (DA) Framework}. Es decir que se recomienda mantener a los equipos estables y evitar mezclar personas entre equipos o desarmar equipos para asignar a otros proyectos (la rotación). Los equipos estables tienden a conocer mejor su capacidad, lo que permite cierta capacidad de predicción y mayor sinergia. Los miembros del equipo deben dedicarse a un solo equipo siempre que sea posible. Pero esto no siempre se logra por la rotación laboral o necesidades de la empresa. Por eso es útil medir el aspecto de “Team Stability” o  de rotación. Pues hay que mantener una rotación baja saludable.
+}
+
+\item {\textbf{Team Skill Balance:} 
+Si existe un desbalance de conocimientos y de esfuerzo en el equipo puede provocar la fatiga de algunos integrantes, problemas por eslabones débiles (en contingencias, entrevistas, solución de problemas, etc.), dependencias sobre alguna persona o desavenencias por percepción de inequidad de esfuerzos. Un indicador de balance de competencias del equipo (Team Skill Balance Average) podría ayudar a que el equipo sea capaz de trabajar como una unidad integrada. Cada integrante debe ser un poco más multifuncional, colaborando en tareas o actividades que no son su fuerte o especialidad. 
+}
 
 \end{enumerate}
 
@@ -219,6 +223,24 @@ La tasa de entrega es un indicador que nos puede servir para ver la evolución d
 
 \end{enumerate}
 
+\subsection{Métricas de Calidad de Producto}
+
+Bajo el marco ágil buscamos la excelencia técnica y en esa vía buscamos productos de calidad excelente. Pues bien, como se imaginan, tendremos que medir de algún modo la calidad de nuestro producto, ya sea calidad interna o del producto operando. Podemos citar algunos indicadores.
+
+  \begin{enumerate}    
+
+  \item {\textbf{Test Coverage:} La cobertura de prueba es una herramienta útil para encontrar partes no probadas de una base de código, lo cual nos ayuda a saber si se están realizando pruebas suficientes para apoyar el aseguramiento de calidad.
+}
+
+  \item {\textbf{Escaped defects:}
+Un defecto escapado es un defecto que no fue encontrado por el equipo en el proceso de desarrollo y que escapó al control de calidad interno del equipo. Por lo general, esos problemas son incidentes en operaciones (OPCON), es decir que los encuentran los usuarios finales una vez que la versión de release fue publicada y puesta a su disposición. Su cálculo más simple es cantidad en un período dado (por ejemplo cantidad de OPCON por sprint).
+}
+
+  \item {\textbf{Performance:}
+Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar problemas o posibles mejoras. En el caso de aplicaciones web hay una infinidad de indicadores que se pueden usar (“Fiability”, “Uptime”, “Loading time”, “Average Application Response Time”, “Peak Response Time”, “Error Rate”). El equipo debe elegir los necesarios para el contexto de operatividad y objetivos de negocio.
+}
+
+  \end{enumerate}
 
 \subsection{Métricas de impacto de negocio}
 
