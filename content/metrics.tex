@@ -102,7 +102,7 @@ Esta definición es la clásica y es algo genérica. Hay tres formas más espec�
 
   \end{enumerate}
 
-Cuando se definió el marco de trabajo, como algo mínimo de cosas para que funcione, se dejó lo más simple posible. Debido a ello, el concepto de Velocity sí es partes del marco de trabajo, pero Working capacity no lo es, aunque es ampliamente usado \footnote{Erich Buhler, Agilib.org 2015, Proyecto Mercury 2015 (LAN), \cite{Erich-Buhler-Coach-2015}.}.
+Cuando se definió el marco de trabajo, como algo mínimo de cosas para que funcione, se dejó lo más simple posible. Debido a ello, el concepto de Velocity es partes del marco de trabajo aceptada por la comunidad, pero Working capacity no lo es del todo aceptado, aunque es ampliamente usado.
 }
 
 \item {\textbf{Focus Factor:} El factor de foco revela el foco que el equipo ha tenido para entregar valor y su prestancia. El mismo es la relación entre la Velocity y la capacidad de trabajo: ( Velocity / Work Capacity ) x 100\%. La misma debe permanecer en la vecindad de 80 \% en promedio para un equipo saludable. Estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previsibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad, aunque esto no indica necesariamente que están trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia.}
@@ -117,6 +117,9 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
 %Otras: Percentage of Adopted Work, Percentage of Found Work, Accuracy of Estimation, Accuracy of Forecast, Targeted Value Increase (TVI+), Success at Scale
 
 \item {\textbf{Delivery rate:} La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery.
+}
+
+\item {\textbf{Métricas de flujo:} Scrum no prescribe métricas, por lo que bien podrían usarse métricas de flujo en vez de las basadas en SP, tomando cosas del método kanban. Algunas de ellas son el Throughput, Lead time (Lt) y Cycle time (Ct). Siendo el Throughput la velocidad, como número medio de unidades procesadas en un tiempo determinado. El Lead time es el tiempo total en que una unidad pasa por el sistema de trabajo. El Cycle time es el tiempo real de trabajo sobre una unidad sin los tiempos de cola o espera.
 }
 
 \end{enumerate}
@@ -135,7 +138,7 @@ Un defecto escapado es un defecto que no fue encontrado por el equipo en el proc
 }
 
   \item {\textbf{Performance:}
-Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar problemas o posibles mejoras. En el caso de aplicaciones web hay una infinidad de indicadores que se pueden usar (“Fiability”, “Uptime”, “Loading time”, “Average Application Response Time”, “Peak Response Time”, “Error Rate”). El equipo debe elegir los necesarios para el contexto de operatividad y objetivos de negocio.
+Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar problemas o posibles mejoras. En el caso de aplicaciones web hay una infinidad de indicadores que se pueden usar (“Fiability”, “Uptime”, “Loading time”, “Average Application Response Time”, “Peak Response Time”, “Error Rate”, etc.). El equipo debe elegir los necesarios para el contexto de operatividad y objetivos de negocio.
 }
 
   \end{enumerate}
@@ -143,8 +146,7 @@ Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar p
 \subsection{Métricas de impacto de negocio}
 
 Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso para el cliente, para entregar valor de forma temprana. Pero… ¿Cómo medir qué es valioso para el cliente?
-Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores se los suele llamar KPI's y en el caso de negocio podemos interpretarlos como indicadores claves de impacto del producto. Algunos son los siguientes.
-
+Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como indicadores claves de impacto del producto. Algunos son los siguientes.
 
 
   \begin{description}    
@@ -195,3 +197,6 @@ Scrum no prescribe métricas de negocio o indicadores clave de impacto de negoci
 \subsection{Métricas ágiles}
 
 Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil). Los KPI's no se deben convertir en objetivos que deben lograrse ni en herramienta de control de empleados.
+
+
+
