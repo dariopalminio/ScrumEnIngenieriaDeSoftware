@@ -111,7 +111,7 @@ Cuando se definió el marco de trabajo, como algo mínimo de cosas para que func
 Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su capacidad de resolver con éxito la complejidad requerida.
 }
 
-\item {\textbf{Effectiveness:} La efectividad de un sprint medida como historias o features entregadas versus comprometidas.
+\item {\textbf{Effectiveness:} La efectividad de un sprint medida como historias o features entregadas (aceptadas) versus las elegidas en la planning (las que se tomaron en el sprint). También se podría medir la efectividad relacionada a si se cumplió con el objetivo del sprint.
 }
 
 %Otras: Percentage of Adopted Work, Percentage of Found Work, Accuracy of Estimation, Accuracy of Forecast, Targeted Value Increase (TVI+), Success at Scale
@@ -145,8 +145,10 @@ Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar p
 
 \subsection{Métricas de impacto de negocio}
 
-Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso para el cliente, para entregar valor de forma temprana. Pero… ¿Cómo medir qué es valioso para el cliente?
-Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como indicadores claves de impacto del producto. Algunos son los siguientes.
+Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso. Pero, ¿qué es valioso y para quién? Cabe aclarar, que valor de negocio no se refieren solo a valor monetario, también puede ser de valor intangible, como el posicionamiento de una marca o el valor dado por mejorar la experiencia del usuario, siendo un beneficio para el usuario o cliente y, en consecuencia, también para la compañía. El valor es lo valioso para la compañía y para el cliente. Si estamos centrados en el cliente debemos pensar en qué es valioso para él. Pues bien, ¿cómo medir qué es valioso?
+Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si realmente estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como "indicadores claves de impacto" del producto. Lo importante de los indicadores que elijamos es que deben estar alineados a la visión y objetivos que hayamos definido para el producto.
+Algunos son los siguientes.
+
 
 
   \begin{description}    
@@ -154,10 +156,10 @@ Scrum no prescribe métricas de negocio o indicadores clave de impacto de negoci
   \item {\textbf{Business Value Delivered:} Valor de negocio entregado. Se pueden contabilizar los Business Value o BV entregados en cada Sprint. El VB es el valor añadido que la feature/historia aporta al negocio\footnote{\cite{Pointet-Botton-2012}}. A semejanza del SP, el Business Value Point o BVP sirve como estimación del valor de negocio en forma relativa y sumativa que hace el PO. También hay que tener en cuenta que es una unidad subjetiva que depende de qué PO o equipo de personas hace la estimación de medida.
 } 
  
-  \item {\textbf{SHSAT:} Grado de satisfacción de los Stakeholders. Se puede medir la felicidad de los Stakeholder como indicador de grado de satisfacción que indica qué tan contentos estuvieron con los resultados del Sprint y con la Review. Este relevamiento relacionado a la percepción de valor entregado se puede hacer en la misma Review.
+  \item {\textbf{Sh-SAT:} Grado de satisfacción de los Stakeholders. Se puede medir la felicidad de los Stakeholder como indicador de grado de satisfacción que indica qué tan contentos estuvieron con los resultados del Sprint y con la Review. Este relevamiento relacionado a la percepción de valor entregado se puede hacer en la misma Review.
 }
 
-  \item {\textbf{CSAT:} Customer Satisfaction es el índice de grado de satisfacción de los usuarios o clientes. Porcentaje de usuarios que respondieron "sí" para encontrar el servicio o producto útil en la encuesta de comentarios en comparación con el número total de encuestados.
+  \item {\textbf{C-SAT:} Customer Satisfaction es el índice de grado de satisfacción de los usuarios o clientes. Porcentaje de usuarios que respondieron "sí" para encontrar el servicio o producto útil en la encuesta de comentarios en comparación con el número total de encuestados.
 }
 
   \item {\textbf{NPS:} El Puntaje Neto de Promotores (Net Promoter Score) mide la lealtad general de los clientes hacia un producto o servicio (fidelización). Mide qué probabilidades hay de que el cliente recomiende la compañía y, de forma indirecta, la propensión del consumidor a seguir siéndolo y resistir irse a la competencia.
@@ -191,12 +193,16 @@ Scrum no prescribe métricas de negocio o indicadores clave de impacto de negoci
   \label{fig:kpis_dashboard_gov_au} %\ref{fig:kpis_dashboard_gov_au}
   \end{figure}
   \FloatBarrier
-  
+
+  \item {\textbf{ROI:} El ROI (Return Over Investment) es tanto una técnica como una métrica e indica el retorno de una inversión, es decir, la cifra que evalúa el rendimiento del capital en una acción. Pues, nos permite cuantificar económicamente el beneficio. Su fórmula es: ROI = (IP - CP) / CP; Donde IP es el ingresos del proyecto o período, entendido como beneficios económicos esperados estimados, y CP es el Costo del proyecto o período como costo de desarrollo.
+}
+
 \end{description}
+
+Cabe recalcar que pueden haber muchos otros KPI's y que los que elijamos actúan como una brújula que nos posibilita decidir si debemos continuar con el mismo rumbo o tenemos que cambiarlo.
 
 \subsection{Métricas ágiles}
 
 Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil). Los KPI's no se deben convertir en objetivos que deben lograrse ni en herramienta de control de empleados.
-
 
 
