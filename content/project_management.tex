@@ -1,30 +1,32 @@
 \chapter{Gestión de proyectos}
 
-Scrum puede verse como un marco ágil de gestión de proyectos para el desarrollo incremental de productos, valiéndose de equipos autoorganizados. 
+Scrum está orientado a productos, pues: "es un marco de trabajo para desarrollar, entregar y mantener productos complejos"\footnote{Scrum Guide 2017 (Scrum.org).}. Sin embargo, en las organizaciones de gestión tradicional, los productos se desarrollan mediante la administración de proyectos. Entonces, bajo ese enfoque orientado a proyectos, Scrum puede verse como un marco ágil de gestión de proyectos para el desarrollo iterativo e incremental de productos, valiéndose de equipos autoorganizados. 
 
-
+Es en esta vía que en esta sección vine a ofrecer una interpretación y perspectiva comparativa y conciliadora con un enfoque de proyectos, no dejando de recordar que Scrum (según la Scrum Guide 2017) no trata sobre proyectos. Es el PMI con la Agile Alliance quienes formalizan la idea de Agilidad y el uso de Scrum en la gestión de proyectos de alta incertidumbre, mediante la Agile Practice Guide\footnote{Agile Practice Guide, PMI and Agile Alliance, 2017.}.
 
 \subsection{Proyecto Scrum}
 
-Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). 
+Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). Con Scrum se puede implementar este proceso en una forma ágil.
 
 \subsection{Planificación}
 
-En la administración de proyectos es necesario planificar y dicha actividad se suele hacer en la fase de inicio ("Starting phase" o "Project Start"). Pero, a diferencia de la metodología clásica (ver figura \ref{fig:PMIProject}) en que la planificación estaba siempre al inicio y el desarrollo en la fase de ejecución, en el marco Scrum la planificación se distribuye durante todo el ciclo de vida del proyecto y en la fase de ejecución se hace el desarrollo incremental de productos (por incrementos de producto) en iteraciones cortas (Sprint) donde cada iteración tiene su respectiva planificación (ver figura \ref{fig:ScrumProject}) y su incremento de producto, en caso de haberlo logrado (idealmente producto integrado y funcionando de cara al usuario o cliente).
+En la administración de proyectos es necesario planificar y dicha actividad se suele hacer en la fase de inicio ("Starting phase" o "Project Start"). Pero, a diferencia de la metodología clásica predictiva (ver figura \ref{fig:PMIProject}) en que la planificación estaba siempre al inicio y el desarrollo en la fase de ejecución, en el marco Scrum la planificación se distribuye durante todo el ciclo de vida del proyecto y en la fase de ejecución se hace el desarrollo iterativo e incremental de productos (por incrementos de producto) en iteraciones cortas, llamadas Sprint, donde cada iteración tiene su respectiva planificación (ver figura \ref{fig:ScrumProject}) y su incremento de producto, en caso de haberlo logrado (idealmente producto integrado y funcionando de cara al usuario o cliente).
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.90\textwidth]{ScrumProject}
+  \includegraphics[width=0.80\textwidth]{ScrumProject}
   \caption{Proyecto Scrum}
   \centering
   \label{fig:ScrumProject} %\ref{fig:ScrumProject}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Entonces podemos decir que en Scrum se piensa en muchos planes periódicos (a corto plazo). Los mismo pueden estar en un plan mayor a largo plazo pero de carácter flexible. También se puede realizar un plan global de entregables en base a los incrementos de producto estimados. Pero, desde esta perspectiva, hay que considerar que aunque se trabaje con planificaciones, los planes no son contratos a respetar a rajatabla.
+En un sentido, es como si un proyecto se dividiera en muchos pequeñitos, donde “cada Sprint puede considerarse un proyecto con un horizonte no mayor de un mes”\footnote{Scrum Guide 2017 (Scrum.org).}. Entonces, podemos decir que en Scrum se piensa en muchos planes periódicos (a corto plazo). Los mismo pueden estar en un plan mayor a largo plazo, aunque de carácter flexible e interactivo. También se puede realizar un plan global de entregables en base a los incrementos de producto estimados. Pero, desde esta perspectiva, hay que considerar que aunque se trabaje con planificaciones, los planes no son contratos a respetar a rajatabla.
 
 \subsubsection{Inicio de proyecto}
 
-En la etapa de inicio de proyecto ("Project Start") se puede hacer una “inception”, aunque esta técnica no es parte de Scrum. En una inception se hace un plan versátil alto nivel a corto plazo (un roadmap o release plan) para poder guiar e iniciar el desarrollo bajo el esquema Scrum.
+En la etapa de inicio del proyecto ("Project Start") se puede hacer una “inception”, aunque esta técnica no es parte de Scrum. En una inception se hace un plan versátil a alto nivel y a corto plazo (un roadmap o release plan) para poder guiar e iniciar el desarrollo bajo el esquema Scrum. La inception puede estar precedida por alguna etapa de descubrimiento y definición del producto, donde se realizan las priorizaciones iniciales de valor y objetivos estratégicos del producto. En todo caso, se recomienda que estos resultados representan parte de la salida de la inception. El equipo debe saber como partir trabajando con Scrum después de esta etapa, con objetivos iniciales claros, un backlog y una priorización inicial.
 
 %Triangle of Project Management or iron triangle
 \subsection{Triángulo de la gestión de proyectos}

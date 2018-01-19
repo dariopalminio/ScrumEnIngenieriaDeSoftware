@@ -127,18 +127,36 @@ Bajo el marco ágil buscamos la excelencia técnica y en esa vía buscamos produ
 
   \begin{enumerate}    
 
-  \item {\textbf{Test Coverage:} La cobertura de prueba es una herramienta útil para encontrar partes no probadas de una base de código, lo cual nos ayuda a saber si se están realizando pruebas suficientes para apoyar el aseguramiento de calidad.
+  \item {\textbf{Maintainability:} Hay métricas asociadas a la mantenibilidad, como lo son: test Coverage, CLOC, issues, complexity,  etcétera. 
+  
+    \begin{enumerate}    
+    \item {\textbf{Test coverage:}
+Por ejemplo la cobertura de prueba es una herramienta útil para encontrar partes no probadas de una base de código, lo cual nos ayuda a saber si se están realizando pruebas suficientes para apoyar el aseguramiento de calidad.
+}
+  \end{enumerate}
 }
 
-  \item {\textbf{Escaped defects:}
-Un defecto escapado es un defecto que no fue encontrado por el equipo en el proceso de desarrollo y que escapó al control de calidad interno del equipo. Por lo general, esos problemas son incidentes en operaciones (OPCON), es decir que los encuentran los usuarios finales una vez que la versión de release fue publicada y puesta a su disposición. Su cálculo más simple es cantidad en un período dado (por ejemplo cantidad de OPCON por sprint).
+  \item {\textbf{Reliability:} La fiablilidad es una medida de qué tan robusta es una aplicación. Puede ser medida con otros KPI indirectos como defectos escapados (Escaped defects), tasa de errores (Error rate) o tiempo medio entre fallos (mean time between failures).
+  
+  \begin{enumerate}    
+    \item {\textbf{Escaped defects:}
+Un defecto escapado es un defecto que no fue encontrado por el equipo en el proceso de desarrollo y que escapó al control de calidad interno del equipo. Por lo general, esos problemas son incidentes en operaciones (OPCON), es decir que los encuentran los usuarios finales una vez que la versión de release fue publicada y puesta a su disposición. Su cálculo más simple es cantidad en un período dado (por ejemplo cantidad de OPCON por sprint). Como mencionamos antes, es una medida de fiabilidad, cuanto menos defectos más fiable.
 }
+  \end{enumerate}
+  }
+
 
   \item {\textbf{Performance:}
-Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar problemas o posibles mejoras. En el caso de aplicaciones web hay una infinidad de indicadores que se pueden usar (“Fiability”, “Uptime”, “Loading time”, “Average Application Response Time”, “Peak Response Time”, “Error Rate”, etc.). El equipo debe elegir los necesarios para el contexto de operatividad y objetivos de negocio.
+Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar problemas o posibles mejoras. En el caso de aplicaciones web hay una infinidad de indicadores que se pueden usar como: “Availability”, “Uptime”, “Loading time”, “Average Application Response Time”, “Peak Response Time”, “Error Rate”, etcétera. El equipo debe elegir los necesarios para el contexto de operatividad y objetivos de negocio.
+}
+
+  \item {\textbf{Security:}
+  Métricas relacionadas a seguridad como: "Dynamic analysis issues" o "Static analysis issues".
 }
 
   \end{enumerate}
+
+Estas métricas listadas son solo una guía para investigar otras y analizar cuáles pueden ser necesarias para algún caso particular.
 
 \subsection{Métricas de impacto de negocio}
 
@@ -166,13 +184,13 @@ Algunos son los siguientes.
 El Time-To-Market es el tiempo que toma un nuevo producto/servicios desde que fue ideado o comenzó a ser conceptualizado, hasta que llega al mercado, disponible al cliente. El TTM es fundamental para el negocio en un entorno empresarial global altamente competitivo, ya que a un tiempo más corto ganamos una ventaja competitiva. La agilidad ayuda a entregar valor en forma temprana, por lo que este KPI debería mejorar en una empresa ágil.
 }
 
+  \item {\textbf{Revenue:} Beneficios o ingresos obtenidos. Se suele medir los ingresos en un periodo dado. Hay que tener en cuenta que esta medida puede ser multifactorial, o sea que el resultado de su aumento o disminución puede ser causado por otros agentes (como marketing). Por este motivo, tener un enfoque reduccionista basado exclusivamente en el beneficio no necesariamente se correlaciona con el valor realmente entregado.
+}
+
   \item {\textbf{Cost Savings:} Grado de reducción de costos. Hay productos/servicios que impactan en la disminución de costos, prescindiendo de recursos, insumos o servicios que representan un costo para la organización.
 }
 
-  \item {\textbf{Revenue:} Beneficios obtenidos.
-}
-
-  \item {\textbf{Completion rate:} La tasa de finalización mide el porcentaje de usuarios que finaliza con éxito o generan un resultado exitosamente. Se calcula dividiendo el número total de interacciones completadas con éxito por el número total de interacciones iniciadas. También se puede conocer como Funne o Full Compliance.
+  \item {\textbf{Completion rate:} La tasa de finalización mide el porcentaje de usuarios que finaliza con éxito o generan un resultado exitosamente. Se calcula dividiendo el número total de interacciones completadas con éxito por el número total de interacciones iniciadas. También se puede conocer como tasa de conversión ("Conversion Rate" en web site) o "Full Compliance", como el porcentaje de visitantes a un sitio web que cumplen el objetivo del sitio. 
 }
 
   \item {\textbf{Volume of Use:} Cuantos usuarios usan nuestra aplicación.
