@@ -8,7 +8,7 @@ Es en esta vía que en esta sección vine a ofrecer una interpretación y perspe
 
 Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). Con Scrum se puede implementar este proceso en una forma ágil.
 
-\subsection{Planificación}
+\subsection{Planificación y ciclo de vida}
 
 En la administración de proyectos es necesario planificar y dicha actividad se suele hacer en la fase de inicio ("Starting phase" o "Project Start"). Pero, a diferencia de la metodología clásica predictiva (ver figura \ref{fig:PMIProject}) en que la planificación estaba siempre al inicio y el desarrollo en la fase de ejecución, en el marco Scrum la planificación se distribuye durante todo el ciclo de vida del proyecto y en la fase de ejecución se hace el desarrollo iterativo e incremental de productos (por incrementos de producto) en iteraciones cortas, llamadas Sprint, donde cada iteración tiene su respectiva planificación (ver figura \ref{fig:ScrumProject}) y su incremento de producto, en caso de haberlo logrado (idealmente producto integrado y funcionando de cara al usuario o cliente).
 
@@ -24,9 +24,65 @@ En la administración de proyectos es necesario planificar y dicha actividad se 
 
 En un sentido, es como si un proyecto se dividiera en muchos pequeñitos, donde “cada Sprint puede considerarse un proyecto con un horizonte no mayor de un mes”\footnote{Scrum Guide 2017 (Scrum.org).}. Entonces, podemos decir que en Scrum se piensa en muchos planes periódicos (a corto plazo). Los mismo pueden estar en un plan mayor a largo plazo, aunque de carácter flexible e interactivo. También se puede realizar un plan global de entregables en base a los incrementos de producto estimados. Pero, desde esta perspectiva, hay que considerar que aunque se trabaje con planificaciones, los planes no son contratos a respetar a rajatabla.
 
+\subsubsection{Niveles de planificación}
+
+En resumen se puede decir que se suelen usar tres niveles de planificación (ver fig. \ref{fig:planning_level}), de los cuales dos son prescriptos por Scrum: Daily y Sprint Planning. La Daily es la planificación a corto plazo, diaria. La Sprint Planning es la planificación a mediano plazo donde se planifica la iteración. En la práctica, se puede utilizar una planificación a largo plazo (Long-term Planning) de la cual se puede obtener un Roadmap o un Release Plan. Esta última puede iniciarse al inicio del proyecto y refinarse en los refinamientos o como una actividad parte de la ejecución.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{planning_level}
+  \caption{Niveles de planificación}
+  \centering
+  \label{fig:planning_level} %\ref{fig:planning_level}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
 \subsubsection{Inicio de proyecto}
 
-En la etapa de inicio del proyecto ("Project Start") se puede hacer una “inception”, aunque esta técnica no es parte de Scrum. En una inception se hace un plan versátil a alto nivel y a corto plazo (un roadmap o release plan) para poder guiar e iniciar el desarrollo bajo el esquema Scrum. La inception puede estar precedida por alguna etapa de descubrimiento y definición del producto, donde se realizan las priorizaciones iniciales de valor y objetivos estratégicos del producto. En todo caso, se recomienda que estos resultados representan parte de la salida de la inception. El equipo debe saber como partir trabajando con Scrum después de esta etapa, con objetivos iniciales claros, un backlog y una priorización inicial.
+En la etapa de inicio del proyecto ("Project Start") se puede hacer una “inception”, aunque esta técnica no es parte de Scrum. En una inception se hace un plan versátil a alto nivel y a largo plazo (por ejemplo un roadmap de no más de un año), una especie de borrador, para poder guiar e iniciar el desarrollo bajo el esquema Scrum. La inception puede estar precedida por alguna etapa de descubrimiento y definición del producto, donde se realizan las priorizaciones iniciales de valor y objetivos estratégicos del producto. En todo caso, se recomienda que estos resultados representan parte de la salida de la inception. El equipo debe saber como partir trabajando con Scrum después de esta etapa, con objetivos iniciales claros, un backlog, una priorización inicial, definición de usuarios y posiblemente un roadmap.
+
+\subsection{Roadmap}
+
+El roadmap (hoja de ruta) de un producto es un plan de alto nivel que describe como el producto va a ir evolucionando en el futuro, de algo simple a algo complejo. Nos permite proyectar en el tiempo donde queremos que esté el producto en el futuro. El objetivo del roadmap es ser una especie de borrador para comunicar, mostrar, reflexionar sobre el futuro del producto, alinear la estrategia y guiar la construcción del mismo. Es una herramienta de planificación dinámica e interactiva, no un contrato para trabajar orientados a deadline.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{Roadmap_template}
+  \caption{Roadmap ejemplo}
+  \centering
+  \label{fig:Roadmap_template} %\ref{fig:Roadmap_template}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\subsection{Planificación de entregables}
+
+Con este marco de trabajo no es necesario hacer una entrega final (o "releasing") ya que se pueden hacer entregas paulatinas. En cada Sprint se puede entregar valor según lo planificado dentro del mismo sprint (planning). Además, para hacer diversas entregas intermedias planificadas se puede crear un plan de muy alto nivel para múltiples Sprints durante una planificación de lanzamientos llamado "Release Plan". Este plan de entregables o de lanzamientos es una guía con la que se pretende reflejar las expectativas sobre qué funcionalidad se implementará y cuándo, aproximadamente, se completará \footnote{\cite{Scrum-Institute-2015}}. También sirve como una base para monitorear el progreso dentro del proyecto. Pero siempre hay que considerar que no es un plan equivalente a un plan clásico, los hitos de releases no deberían ser compromisos rígidos y contractuales y, además, el desarrollo del proyecto no debería centrarse en respetar el plan. Por este motivo el plan de lanzamiento no es un plan estático o rígido; pues, se cambia durante todo el proyecto cuando nuevos requerimientos o conocimientos están disponible y, por ejemplo, cuando entradas PBIs en el Scrum Product Backlog cambian y se re-estiman. Por lo tanto, este plan debe ser revisado y actualizado colaborativamente en intervalos regulares, por ejemplo, después de cada Sprint (en refinamientos o reuniones acordadas).
+
+\subsubsection{Plan de entregas ágil}
+
+Un plan de entregas o "Release Plan" ágil es, normalmente, un conjunto de historias de usuario (o épicas) agrupadas por "releases" (versiones del producto) que se ponen a disposición de los usuarios \footnote{Release plan, jmbeas, 2011; Agile Estimating and Planning, Mike Cohn} o agrupadas por Sprints (ver fig. \ref{fig:Release_plan}). En otras palabras, es una planificación a media distancia como una proyección hacia adelante en una serie de sprints \footnote{Release Planning, Retiring the Term but not the Technique, Mike Cohn, 2012.}. Esta planificación es algo valiosa de hacer cuando se usa el marco Scrum, pero no es requerido por el "núcleo Scrum" o el "Scrum originario" \footnote{Gone are Release Planning and the Release Burndown, Ralph Jocham and Henk Jan Huizer in Community Publications, Scrum.org, Saturday, October 01, 2011; Ken Schwaber and Jeff Sutherland Release Updated Scrum Guide, David Bulkin, Infoq.com on Jul 27, 2011}. Se puede utilizar Scrum con éxito sin necesidad de utilizar “Release Planning”.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{Release_plan}
+  \caption{Release plan en Sprints ejemplo}
+  \centering
+  \label{fig:Release_plan} %\ref{fig:Release_plan}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Hay que remarcar que bajo el marco Scrum, si se hace un Release Plan, debería ser un documento minimalista (buscando el principio de simplicidad), pensado para MVPs (producto de mínimo valor) o entregas frecuentes (respetando el valor de software funcionando), abierto a modificaciones constantes (adaptabilidad y desarrollo evolutivo), consensuado con el equipo (transparencia) y desarrollado por el PO en colaboración con el cliente y con el equipo de desarrollo (priorizando la conversación y no la relación contractual).
+
+Luego hay que tener en cuenta que para crearlo se deben tener disponibles las siguientes cosas:
+
+\begin{enumerate}
+\item Un Product Backlog priorizado y estimado.
+\item La velocidad estimada del Equipo Scrum.
+\item Las condiciones de satisfacción (metas para la agenda, el alcance, los recursos) o impacto deseado.
+\end{enumerate}
 
 %Triangle of Project Management or iron triangle
 \subsection{Triángulo de la gestión de proyectos}
@@ -41,33 +97,13 @@ Bajo el marco de Scrum se cambia la idea relacionada al triángulo clásico de l
   \label{fig:ScrumProjectManagementTriangle} %\ref{fig:ScrumProjectManagementTriangle}
 \end{figure}
 
-\subsubsection{Priorización trade-off}
+\subsection{Priorización trade-off}
 
 La ventaja de esta aproximación es que en vez de focalizarnos en plazos con fechas de entrega, nos centramos en desarrollar valor. ¿Cual es el máximo valor que podemos desarrollar en un tiempo dado? Aquí entra el concepto de priorización trade-off, que se lleva a cabo en la ejecución del proyecto (o construcción de un producto). Trade-off es un acuerdo en el cual se deja algo fuera para priorizar otra cosa que se desea más. Pues, ante cambios, se prioriza un ítem reemplazando por otro de esfuerzo semejante para cumplir con entregar valor. Si en una iteración llega un cambio rompe fila, entonces vemos qué podemos sacar del sprint con mismo peso de esfuerzo. Lo mismo si queremos cumplir con un objetivo deseado en un tiempo planificado y necesitamos introducir un nuevo trabajo, pues revisaremos qué podemos sacar de esfuerzo semejante y cuyo valor podemos despriorizar en relación al cambio deseado.
 
 Como vemos, aquí el enfoque viró rotundamente en relación a la administración clásica. En vez de asfixiar a los equipos para que lleguen a cumplir con una fecha, por lo general impuesta arbitrariamente, se les permite tener cierta autonomía (con un responsable de negocio) para que prioricen qué valor de negocio pueden entregar, para un objetivo planeado, con colaboración y participación del equipo mismo.
 
-Bien, para que haya trade-off debe haber planificación. Pues siguiendo la disciplina de Scrum se planifica bastante, solo que en forma interactiva y dinámica.
-
-\subsection{Planificación de entregables}
-
-Con este marco de trabajo tampoco es necesario hacer una entrega final (o "releasing") ya que se pueden hacer entregas paulatinas. En cada Sprint se puede entregar valor según lo planificado dentro del mismo sprint (planning). Además, para hacer diversas entregas intermedias planificadas se puede crear un plan de muy alto nivel para múltiples Sprints durante una planificación de lanzamientos (por ejemplo en una inception) llamado "Release Plan". Este plan de entregables o de lanzamientos es una guía con la que se pretende reflejar las expectativas sobre qué funcionalidad se implementará y cuándo, aproximadamente, se completará \footnote{\cite{Scrum-Institute-2015}}. También sirve como una base para monitorear el progreso dentro del proyecto. Pero siempre hay que considerar que no es un plan equivalente a un plan clásico, los hitos de releases no deberían ser compromisos rígidos y contractuales y, además, el desarrollo del proyecto no debería centrarse en respetar el plan. Por este motivo el plan de lanzamiento no es un plan estático o rígido; pues, se cambia durante todo el proyecto cuando nuevos requerimientos o conocimientos están disponible y, por ejemplo, cuando entradas PBIs en el Scrum Product Backlog cambian y se re-estiman. Por lo tanto, este plan debe ser revisado y actualizado colaborativamente en intervalos regulares, por ejemplo, después de cada Sprint (en refinamientos o reuniones acordadas).
-
-\subsubsection{Plan de entregas ágil}
-
-Un plan de entregas o "Release Plan" ágil es, normalmente, un conjunto de historias de usuario (o épicas) agrupadas por "releases" o versiones del producto que se ponen a disposición de los usuarios \footnote{Release plan, jmbeas, 2011; Agile Estimating and Planning, Mike Cohn}. En otras palabras, es una planificación a media distancia como una proyección hacia adelante en una serie de sprints \footnote{Release Planning, Retiring the Term but not the Technique, Mike Cohn, 2012.}. Esta planificación es algo valiosa de hacer cuando se usa el marco Scrum, pero no es requerido por el "núcleo Scrum" o el "Scrum originario" \footnote{Gone are Release Planning and the Release Burndown, Ralph Jocham and Henk Jan Huizer in Community Publications, Scrum.org, Saturday, October 01, 2011; Ken Schwaber and Jeff Sutherland Release Updated Scrum Guide, David Bulkin, Infoq.com on Jul 27, 2011}. Se puede utilizar Scrum con éxito sin necesidad de utilizar “Release Planning”.
-
-Hay que remarcar que bajo el marco Scrum, si se hace un Release Plan, debería ser un documento minimalista (buscando el principio de simplicidad), pensado para MVPs (producto de mínimo valor) o entregas frecuentes (respetando el valor de software funcionando), abierto a modificaciones constantes (adaptabilidad y desarrollo evolutivo), consensuado con el equipo (transparencia) y desarrollado por el PO en colaboración con el cliente y con el equipo de desarrollo (priorizando la conversación y no la relación contractual).
-
-Luego hay que tener en cuenta que para crearlo se deben tener disponibles las siguientes cosas:
-
-\begin{enumerate}
-\item Un Product Backlog priorizado y estimado.
-\item La velocidad estimada del Equipo Scrum.
-\item Las condiciones de satisfacción (metas para la agenda, el alcance, los recursos) o impacto deseado.
-\end{enumerate}
-
-\subsection{Gestión de proyecto orientada a producto}
+\subsection{Gestión orientada a producto}
 
 El verdadero objetivo de Scrum es conseguir un producto mínimo viable o MVP en manos de los futuros clientes cuán rápido sea posible y obtener sus comentarios como feedback temprano\footnote{\cite{Jeff-Sutherland-2016}}. MVP es una estrategia para el aprendizaje de forma iterativa sobre sus clientes para poner a prueba las hipótesis fundamentales del negocio \footnote{\cite{Greg-Gehrich-2012}}. Es un incremento de producto, subconjunto del 20\% de features que representan parte del 80\% de valor\footnote{\cite{Jeff-Sutherland-2016}}. Las features del MVP representan conceptualmente al producto final completo y se prueba con un grupo de usuarios "early adopters". Las pruebas deben ser medibles y se hacen sobre las hipótesis fundamentales del producto como negocio.
 
@@ -104,7 +140,7 @@ Algo simple que se puede lograr trabajando con criticidad es usar tres valores e
 
 Las herramientas gráficas que se pueden usar para dar visibilidad de los riesgos son: a) la “matriz de riesgos”; b) el “histórico de criticidad”; c) o el gráfico de curva de riesgo quemado (Risk Burn-down Chart).
 
-La gestión de riesgos no es independiente de la gestión de impedimento o de problemas (issues o problem). Muchos de los problemas surgidos en el proyecto están asociados a riesgos identificados. Por tal motivo, la gestión de riesgos es útil, porque podemos mitigar los problemas de antemano. Por dicha razón, puede ser valioso llevar un registro de los issues y su relación con los riesgos. Siempre sin perder de vista no caer en el énfasis de la documentación ni en el afán de reportar. Se debe buscar la simplicidad y el foco en el flujo de trabajo sin impedimentos.
+La gestión de riesgos no es independiente de la gestión de impedimento o de problemas (issues o problem). Muchos de los problemas surgidos en el proyecto están asociados a riesgos identificados. Por tal motivo, la gestión de riesgos es útil, porque podemos mitigar los problemas de antemano. Por dicha razón, puede ser valioso llevar un registro de los issues y su relación con los riesgos. Siempre sin perder de vista no caer en el énfasis de la documentación ni en el afán de reportar. Si considera necesario no formalizar en registros esta gestión, no lo haga, puede ser un trabajo desperdiciado. Se debe buscar la simplicidad y el foco en el flujo de trabajo sin impedimentos.
 
 \begin{figure}[h]
   \centering
@@ -114,4 +150,3 @@ La gestión de riesgos no es independiente de la gestión de impedimento o de pr
   \label{fig:RiskFlowDiagram} %\ref{fig:RiskFlowDiagram}
 \end{figure}
 
-Las herramientas gráficas útiles para dicha gestión son: “Tablero de Obstáculos” (obstacle board) o el "Calendario de Obstáculos" (Issues calendars).
