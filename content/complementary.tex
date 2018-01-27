@@ -123,13 +123,16 @@ Las historias representan un concepto verificable y simple, que el Product Owner
 \textbf{COMO} <ROL> \textbf{QUIERO} <FUNCIONALIDAD> \textbf{PARA QUE} <BENEFICIO>\newline
 
 Por ejemplo:
-
 %Example of User Story
-\begin{itemize}
-\item \textbf{COMO} ScrumMaster 
-\item \textbf{QUIERO} que las reuniones no se extiendan más de un tiempo consensuado 
-\item \textbf{PARA QUE} no se pierda el foco.
-\end{itemize}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{UserStory_ejemplo}
+  \caption{Escritura de historias ejemplo}
+  \centering
+  \label{fig:StoryHierarchy} %\ref{fig:UserStory_ejemplo}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 La historia de usuario no es exactamente un requerimiento, pero puede considerarse como el título de una hipótesis de requerimiento como recordatorio de algo relevante a conversar con el usuario o cliente. En consecuencia lo relevante es su evolución como conversación \footnote{\cite{UNTREF-2014}}.
 
@@ -159,7 +162,16 @@ Las historias de usuario bien escritas son esenciales para el desarrollo ágil y
 
 \subsubsection{¿Qué NO es una Historia de Usuario?}
 
-Si no cumple con el criterio INVEST es bastante probable que no sea una Story. Por ejemplo una tarea puramente técnica (que le interesa sólo al desarrollador), un refactoring técnico o un Spike no cumplen con INVEST y en su generalidad no son Story. 
+Si no cumple con el criterio INVEST es bastante probable que no sea una User Story. Por ejemplo una tarea puramente técnica (que le interesa sólo al desarrollador), un refactoring técnico, deuda técnica, una mejora técnica o un Spike no cumplen con INVEST y en su generalidad no son User Story. Sin embargo, a todas las historias que no son tareas o spike las podemos tratar como Story, haciendo la distinción entre User Story y Technical Story (ver fig. \ref{fig:StoryHierarchy}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{StoryHierarchy}
+  \caption{Clasificación de historias}
+  \centering
+  \label{fig:StoryHierarchy} %\ref{fig:StoryHierarchy}
+\end{figure}
+
 Veamos los siguientes ejemplos:
 
 \begin{itemize}
@@ -172,9 +184,9 @@ Cuando se habla de "Technical Story" se referencia a aquella historia técnica q
 Para la Agile Alliance una Story no se corresponde en general a un "componente técnico" o de la "interfaz de usuario", pues a pesar de que a veces puede ser un atajo útil hablar de por ejemplo "la historia de diálogo de búsqueda", pantallas, cuadros de diálogo y botones, no son historias de usuario \footnote{\cite{Scrum-Alliance-2015}}.
 
 \item \textbf{Spike:}
-No es una User Story ya que es una tarea de investigación y/o experimentación en formato time-boxing, por lo que no cumple con ser probable ni estimable (no cumple con dos criterios INVEST); puede ser considerada una historia de investigación\footnote{\cite{Cohn-2004}}, como por ejemplo: \textbf{COMO} desarrollador \textbf{QUIERO} investigar sobre PERFORMANCE \textbf{PARA QUE} luego se pueda mejorar la prestancia de la aplicación.\newline
+No es una User Story ya que es una tarea de investigación y/o experimentación en formato time-boxing, por lo que no cumple con ser probable ni estimable (no cumple con dos criterios INVEST); puede ser redactada como una historia de investigación\footnote{\cite{Cohn-2004}}, como por ejemplo: \textbf{COMO} desarrollador \textbf{QUIERO} investigar sobre PERFORMANCE \textbf{PARA QUE} luego se pueda mejorar la prestancia de la aplicación. Un Spike debe ser una tarea corta, preferentemente se trata de que no dure más de 6 horas.\newline
 
-\item \textbf{Refactoring Task:}
+\item \textbf{Refactoring:}
 Es una tarea técnica de reingeniería, mejora técnica (Improvement) o deuda técnica (Technical Debt), que no es valuable o su valoración es a futuro o en relación a un atributo de calidad que puede no estar directamente solicitado por el cliente o no impacta en beneficio inmediato para el cliente, ya que podría estar resolviendo una "deuda técnica"\footnote{Deuda técnica es la incurrida involuntariamente debido a trabajos de baja calidad o deuda incurrida intencionalmente (McConnell, Ward Cunningham) y que consta en arquitectura no escalable, defectos en el código, documentación inservible o desactualizada, problemas para migrar o actualizar funcionalidades o problemas por falta de mantenimiento.}. Esto no quiere decir que no pueda haber una "story de refactoring" que puede proporcionar valor en forma indirecta mediante el "aumento de la calidad o la reducción de los incidentes en el largo plazo". Puede ser categorizada como historia técnica.
 Un ejemplo es: \textbf{COMO} desarrollador \textbf{QUIERO} hacer un refactory del servicio X \textbf{PARA QUE} se pueda mejorar su arquitectura, lograr código más elegante, más sencillo y asegurar la mantenibilidad de la aplicación.\newline
 
