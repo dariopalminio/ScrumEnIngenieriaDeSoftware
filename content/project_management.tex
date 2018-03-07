@@ -6,7 +6,31 @@ Es en esta vía que en esta sección vine a ofrecer una interpretación y perspe
 
 \subsection{Proyecto Scrum}
 
-Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver figura \ref{fig:PMIProject}). Con Scrum se puede implementar este proceso en una forma ágil.
+Un proyecto, en ingeniería de software, es un esfuerzo temporal que se lleva a cabo para crear un sistema, software o resultado único\footnote{Se parafrasea la definición del PMBOOK \cite{PMBOK-2004}.}. Los proyectos son organizados, en una empresa u organización, por el proceso de administración de proyectos. Según este proceso, el ciclo de vida de los proyectos se puede dividir en tres fases: inicio, ejecución y cierre (ver fig. \ref{fig:PMIProject}). Con Scrum se puede implementar este proceso en una forma ágil, haciendo 
+el inicio de forma lean, iterando el desarrollo en sprints de ejecución hasta llegar a un cierre donde el producto se mantiene, se traspasa o discontinua (ver fig. \ref{fig:PhasesOfAProject}). 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{PhasesOfAProject}
+  \caption{Ciclo de vida de un proyecto Scrum.}
+  \centering
+  \label{fig:PhasesOfAProject} %\ref{fig:PhasesOfAProject}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+\subsection{Inicio}
+
+En una organización ágil, en la fase de inicio del proyecto se inicia un producto o servicio mediante dos actividades principales: el descubrimiento (discovery) y la incepción (inception). Tengo entendido que estas etapas no están formalizadas en el marco ágil, aunque en la práctica, y en la mía en particular, sí se suelen emplear y son aceptadas en diferentes corrientes del movimiento ágil. En este contexto, es deseable que el inicio del proyecto alimente al desarrollo con Scrum con un primer backlog y cierta claridad para comenzar con baja incertidumbre el primer sprint. 
+
+\subsubsection{Descubrimiento}
+
+En el desarrollo lean nos debemos enfocar en traer al cliente al proceso de desarrollo del producto para que se construya algo que, además de querer pagarlo, lo quiera y tenga experiencias de usuario memorables. El descubrimiento (discovery) se enfoca en iniciar un desarrollo lean y es parte, en la organización, del descubrimiento de iniciativas de proyectos. Pues, es aquí donde nace el proyecto. En una organización lean, donde se implementa el método científico en el negocio mediante lean startup u otro método, es donde nacen las primeras “macro hipótesis” como parte de la iniciativa del proyecto. Es en este momento en donde se asocia, aunque sea temporalmente, alguna “métrica de éxito” (KPI) que nos permita validar la macro hipótesis. En esta etapa se comienza a entender y definir al cliente y se hace una investigación de cliente (customer research) para ello. Para esto se comienza a analizar el viaje del cliente en el producto o servicio (Customer Journey). También se revisan temas de factibilidad técnica. El resultado de esta fase será la entrada para la etapa de inception. En la organización es la etapa donde se genera la definición de la oportunidad de negocio en una evaluación de oportunidad (opportunity assessment) o caso de negocio (business case) que sirve de entrada para evaluación de iniciativas de proyectos (en la PMO si existiera) y presupuestación (en caso que se trabaje bajo presupuestación).
+
+\subsubsection{Incepción}
+
+En la incepción (inception) es donde se responde el por qué, qué y cómo, a alto nivel, para posibilitar el desarrollo posterior. Al inicio se hace el lanzamiento del producto o servicio (Kickoff), aclarando el porqué se hace el producto, el contexto, la visión y buscando lograr el compromiso de los interesados. Se dilucida a alto nivel las necesidades del cliente, las características del producto o servicio a alto nivel, una arquitectura o metáfora del producto a alto nivel, supuestos y estimaciones relativas iniciales. En aproximadamente una semana de trabajo, el equipo va a entender los objetivos del producto, al usuario o cliente objetivo, el alcance y una guía inicial o roadmap para el desarrollo evolutivo. De aquí saldrá el backlog inicial para comenzar a trabajar con Scrum, en la etapa de ejecución del proyecto, con el sprint 1. En resumen, el objetivo principal de la inception es lograr que el equipo converse, defina y entienda, colaborativamente, lo que se va a desarrollar \footnote{\cite{Caroli-2017}}.
 
 \subsection{Planificación y ciclo de vida}
 
@@ -37,10 +61,6 @@ En resumen se puede decir que se suelen usar tres niveles de planificación (ver
 \end{figure}
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
-
-\subsubsection{Inicio de proyecto}
-
-En la etapa de inicio del proyecto ("Project Start") se puede hacer una “inception”, aunque esta técnica no es parte de Scrum. En una inception se hace un plan versátil a alto nivel y a largo plazo (por ejemplo un roadmap de no más de un año), una especie de borrador, para poder guiar e iniciar el desarrollo bajo el esquema Scrum. La inception puede estar precedida por alguna etapa de descubrimiento y definición del producto, donde se realizan las priorizaciones iniciales de valor y objetivos estratégicos del producto. En todo caso, se recomienda que estos resultados representan parte de la salida de la inception. El equipo debe saber como partir trabajando con Scrum después de esta etapa, con objetivos iniciales claros, un backlog, una priorización inicial, definición de usuarios y posiblemente un roadmap.
 
 \subsection{Roadmap}
 
@@ -105,7 +125,20 @@ Como vemos, aquí el enfoque viró rotundamente en relación a la administració
 
 \subsection{Gestión orientada a producto}
 
-El verdadero objetivo de Scrum es conseguir un producto mínimo viable o MVP en manos de los futuros clientes cuán rápido sea posible y obtener sus comentarios como feedback temprano\footnote{\cite{Jeff-Sutherland-2016}}. MVP es una estrategia para el aprendizaje de forma iterativa sobre sus clientes para poner a prueba las hipótesis fundamentales del negocio \footnote{\cite{Greg-Gehrich-2012}}. Es un incremento de producto, subconjunto del 20\% de features que representan parte del 80\% de valor\footnote{\cite{Jeff-Sutherland-2016}}. Las features del MVP representan conceptualmente al producto final completo y se prueba con un grupo de usuarios "early adopters". Las pruebas deben ser medibles y se hacen sobre las hipótesis fundamentales del producto como negocio.
+El verdadero objetivo de Scrum es conseguir un producto mínimo viable o MVP en manos de los futuros clientes cuán rápido sea posible y obtener sus comentarios como feedback temprano\footnote{\cite{Jeff-Sutherland-2016}}. MVP es una estrategia para el aprendizaje de forma iterativa sobre sus clientes para poner a prueba las hipótesis fundamentales del negocio \footnote{\cite{Greg-Gehrich-2012}}. Es un incremento de producto, subconjunto del 20\% de features que representan parte del 80\% de valor\footnote{\cite{Jeff-Sutherland-2016}}. Las features del MVP representan conceptualmente al producto final completo (aunque no sea el producto final) y se prueba con un grupo de usuarios tempranos o "early adopters". Las pruebas deben ser medibles y se hacen sobre las hipótesis fundamentales del producto como negocio.
+Originariamente el MVP es el primer producto mínimo viable. Luego, en la práctica y por simplicidad explicativa, se denominan MPV a cualquier incremento funcional y evolutivo del producto como un todo (ver fig. \ref{fig:MVPs}).
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{MVPs}
+  \caption{Evolución de una bicicleta}
+  \centering
+  \label{fig:MVPs} %\ref{fig:MVPs}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
 
 Por otro lado hay otro concepto que se maneja en el ámbito de la agilidad, el MMP (Minimal Marketable Product). El MMP es el producto con el más pequeño posible conjunto de features y que crea la experiencia del usuario deseada, y por lo tanto puede ser comercializado y vendido, tempranamente, con éxito.
 
