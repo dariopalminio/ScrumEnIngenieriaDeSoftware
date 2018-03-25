@@ -2,7 +2,7 @@
 
 \section{Proceso de desarrollo}
 
-Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de hacer ingeniería de software además de agilidad. Hay diferentes procesos de ingeniería y podemos tomar el siguiente: descubrimiento y definición de requerimientos (Discovery \& Requirements), análisis y diseño (Analysis \& Design), implementación y pruebas (Implementation \& Testing), integración y pruebas (Integration \& Testing), despliegue (Delivery) y monitoreo (Monitoring). Hay que considerar que el proceso de Ingeniería de Software sobre una pieza de Software (feature o historia), si bien es secuencial, tiene las fases que se solapan. 
+Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de hacer ingeniería de software además de agilidad. Hay diferentes procesos de ingeniería y podemos tomar el siguiente: descubrimiento y definición de requerimientos (Discovery \& Requirements), análisis y diseño (Analysis \& Design), implementación y pruebas (Implementation \& Testing), integración y pruebas (Integration \& Testing), despliegue (Delivery) y "operación y monitoreo" (Operation \& Monitoring). En la última fase se contempla operaciones, monitoreo y el análisis de datos. Operaciones en cuanto a aseguramiento de la operatividad y rendimiento del software. El monitoreo de datos es el seguimiento a determinadas acciones que podemos cuantificar y que nos arrojaran datos relevantes para la estrategia (KPIs). Y el análisis de datos es la base de la optimización de la estrategia, que nos permite modificar, continuar o establecer nuevas directrices, sin perder de vista el objetivo final del software o producto. Dicho esto, hay que considerar que el proceso de Ingeniería de Software sobre una pieza de Software (feature o historia), si bien es secuencial, tiene las fases que se solapan (ver fig. \ref{fig:PhasesOfSoftwareEngineering}). 
 
 \begin{figure}[h]
   \centering
@@ -11,6 +11,8 @@ Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de h
   \centering
   \label{fig:PhasesOfSoftwareEngineering} %\ref{fig:PhasesOfSoftwareEngineering}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 Correr este proceso bajo un marco ágil como Scrum, con prácticas ágiles es lo que podemos llamar Ingeniería de Software Ágil (Agile Software Engineering). Además es conveniente introducir la idea de prácticas continuas, es decir refinamiento continuo (análisis y diseño con trabajo UX continuo), testing continuo (continuous testing), integración continua (continuous integration), despliegue o entrega continua (continuous deployment \& continuous delivery) y monitoreo continuo (continuous monitoring). 
 Dicho esto, tenemos que tener en cuenta cómo unir y ajustar el proceso de Ingeniería de Software con el marco de trabajo Scrum. En este sentido es que se plantea ejecutar las fases del proceso de ingeniería, sobre historias de usuario, dentro del tren de sprints. En un equipo extremadamente autónomo y ágil, todas las fases se pueden desarrollar bajo el tren de sprints de Scrum.
@@ -22,6 +24,8 @@ Dicho esto, tenemos que tener en cuenta cómo unir y ajustar el proceso de Ingen
   \centering
   \label{fig:AgileSoftwareEngineering} %\ref{fig:AgileSoftwareEngineering}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 De este modo, se integra el testing en fases más tempranas del desarrollo, por lo que QA no retrasa al equipo de desarrollo, porque QA está dentro del equipo y se trabaja con testing continuo. Los mismo sucede con UX y Operaciones.
 
@@ -36,9 +40,24 @@ Como ya he mencionado, es deseable que el SM vele por la excelencia técnica de 
   \centering
   \label{fig:TechnicalPractices} %\ref{fig:TechnicalPractices}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Se puede hacer un esquema de flujo semejante con los aspecto tecnológico, herramientas, correspondientes a cada fase.
+Se puede hacer un esquema de flujo semejante con los aspecto tecnológico, de herramientas, correspondientes a cada fase.
+
+Hay que tener en cuenta que para que el flujo de desarrollo de software fluya limpio y cadencioso, la experiencia del desarrollo debe ser memorable y fluida sobre una plataforma e infraestructura que la facilite. Es por esto que un equipo de desarrollo tiene interdependencia con equipos de operaciones e infraestructura y es parte del desafío de un equipo de alto rendimiento disminuir la brecha, empoderarse y facilitar la integración de ese área de conocimiento.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Infrastructure}
+  \caption{Plataforma e infraestructura}
+  \centering
+  \label{fig:Infrastructure} %\ref{fig:Infrastructure}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \section{En síntesis}
 
 Hacer ingeniería de software ágil es desarrollar software de valor, de modo iterativo e incremental, con un producto o servicio que evoluciona, donde los requisitos y soluciones evolucionan con el tiempo, haciendo entregas frecuentes de calidad y valor, trabajando con equipos auto-organizados y multidisciplinarios que mejoran, inmersos en un proceso compartido de toma de decisiones interactiva y dinámica. Y, lo más importante, es considerar que la ingeniería es, además de una práctica científica, una práctica humana. Construir software se trata de relaciones humanas en un sistema social. Por eso, hay que construir relaciones humanas de valor, que habiliten la entrega continua de valor.
+

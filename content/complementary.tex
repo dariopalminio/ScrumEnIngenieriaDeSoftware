@@ -38,6 +38,8 @@ En mi experiencia he visto como equipos han necesitado robustecer Scrum con otra
   \centering
   \label{fig:Scrum_Flow_Extended-Scrum} %\ref{fig:Scrum_Flow_Extended-Scrum}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 Por ejemplo, cuando un equipo ya constituido comienza con un nuevo producto, es aconsejable tener un proceso inmediatamente previo a comenzar los sprints para definir o poner a todo el equipo en la misma página respecto a la visión del producto, los objetivos y para poder hacer una primera alimentación formal y colaborativa del backlog. En esta reunión es cuando se hace el kickoff, se definen los tipos de usuarios, experiencia de usuarios a alto nivel, visión del producto, features principales, posibles temas o épicas, un posible roadmap, y las historias sobre las cuales se puede comenzar a trabajar. A este proceso se lo puede llamar “inception”.
 
@@ -89,6 +91,8 @@ No hay nada mejor para iniciar un equipo ágil que comenzar con motivación, foc
   \centering
   \label{fig:Lienzo_de_constitucion_de_equipo_agil} %\ref{fig:Lienzo_de_constitucion_de_equipo_agil}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 En esta dinámica, mediante un lienzo de cinco regiones, completamos la identidad del equipo, su propósito como tal, los valores del equipo, los acuerdos de trabajo (working agreement) y el método de trabajo. La identidad del equipo puede constar de un nombre y un avatar. También se pueden escribir los nombres de cada integrante para que queden registrados como acta de constitución. El propósito debería ser simple y claro, que cohesione la finalidad del equipo. Aquí podemos recordar que es deseable que se constituyan equipos a los cuales se les da trabajo o se les trae productos o proyectos y no al revés, armar equipos para un proyecto en particular para luego desarmarlos. Es recomendable orientarse a productos o servicios con equipos estables que a proyectos. Respecto a los valores, además de hacer énfasis en los valores ágiles y los de Scrum, el equipo puede definir sus propios valores o agregar valores a seguir. Los acuerdos de trabajo son esenciales para marcar las reglas del equipo como acuerdos de convivencia. Aquí se puede agregar la hora de comienzo de la daily, por ejemplo. Y por último, en método de trabajo se aclara el uso de Scrum, la duración del sprint y se pueden especificar algunas prácticas a seguir.
 
@@ -110,6 +114,8 @@ Se puede hacer uso de medir Business Value Points para hacer un seguimiento del 
   \centering
   \label{fig:BusinessValueDiagrams} %\ref{fig:BusinessValueDiagrams}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \newpage
 \section{Técnicas para requerimientos}
@@ -300,26 +306,48 @@ El tablero Scrum/Kanban o "Scrum Kanban Board" es una técnica de comunicación 
 
 \subsubsection{Ejemplo de un Scrum kanban board}
 
-Ver figura \ref{fig:ScrumKanbanBoard}.
+Los tableros se usan para reflejar el sprint backlog de una manera que sea útil para el equipo. Un buen tablero refleja el flujo real de trabajo y los respectivos WIP asociados a las etapas de trabajo (columnas). Hay equipos que tienen dos tableros: uno para el flujo de historias (story board) y otro para el flujo de las tareas (task board) (ver fig. \ref{fig:SprintBoard_01}). Esta manera permite tener una verdadera visibilidad del flujo de las historias, por un lado, y sus correspondientes tareas, por otro. Otros equipos tienen las historias y tareas integradas en un solo tablero (ver fig. \ref{fig:StoryAndTaskBoard_integrated_01}). La estructura y estándar de colores y nomenclaturas dependerá de cada equipo.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{ScrumKanbanBoard}
+  \includegraphics[width=0.8\textwidth]{ScrumKanbanBoard}
   \caption{Ejemplo de un tablero Kanban para Scrum.}
   \centering
   \label{fig:ScrumKanbanBoard} %\ref{fig:ScrumKanbanBoard}
 \end{figure}
-
-\subsubsection{Ejemplo de un Scrum board}
-
-Un Scrum board, Kamban Board o taskboard físico (Ver figura \ref{fig:ScrumBoard}) es una tabla donde se colocan Post-it representando tareas.
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{ScrumBoard}
-  \caption{Ejemplo de un tablero Scrum.}
+  \includegraphics[width=0.8\textwidth]{StoryBoard_01}
+  \caption{Ejemplo de un tablero Kanban para historias.}
   \centering
-  \label{fig:ScrumBoard} %\ref{fig:ScrumBoard}
+  \label{fig:StoryBoard_01} %\ref{fig:StoryBoard_01}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{SprintBoard_01}
+  \caption{Esquema de un Sprint backlog.}
+  \centering
+  \label{fig:SprintBoard_01} %\ref{fig:SprintBoard_01}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\subsubsection{Ejemplo de un sprint backlog integrado simple}
+
+Un tablero de tareas (taskboard) físico (Ver figura \ref{fig:StoryAndTaskBoard_integrated_01}) es una tabla donde se colocan Post-its representando tareas, que pueden estar asociadas a historias. Este se puede integrar al de historias aunque simplifica el flujo real de la historia ya que se centra en las tareas (ver fig. \ref{fig:StoryAndTaskBoard_integrated_01}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{StoryAndTaskBoard_integrated_01}
+  \caption{Ejemplo de un tablero integrado de historia y tareas.}
+  \centering
+  \label{fig:StoryAndTaskBoard_integrated_01} %\ref{fig:StoryAndTaskBoard_integrated_01}
 \end{figure}
 
 \subsection{Tablero de obstáculos}
@@ -333,6 +361,8 @@ El Tablero de Obstáculos (ver figura \ref{fig:ObstacleBoard}) es una herramient
   \centering
   \label{fig:ObstacleBoard} %\ref{fig:ObstacleBoard}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Calendario de obstáculos}
 
@@ -345,6 +375,8 @@ El calendario de obstáculos es una herramienta visual útil para mostrar los pr
   \centering
   \label{fig:CalendarIssues} %\ref{fig:CalendarIssues}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Gráficos de esfuerzo pendiente}
 
@@ -359,6 +391,8 @@ Un gráfico de trabajo pendiente o "Burndown charts"\footnote{El Burndown muestr
   \centering
   \label{fig:Burndown_chart} %\ref{fig:Burndown_chart}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \begin{figure}[h]
   \centering
@@ -367,6 +401,8 @@ Un gráfico de trabajo pendiente o "Burndown charts"\footnote{El Burndown muestr
   \centering
   \label{fig:Burndown-chart_example} %\ref{fig:Burndown-chart_example}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 Se pueden utilizan dos gráficos de esfuerzo pendiente:
 
@@ -389,6 +425,8 @@ El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo
   \centering
   \label{fig:Burnup_chart} %\ref{fig:Burnup_chart}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \begin{figure}[h]
   \centering
@@ -397,6 +435,8 @@ El gráfico de trabajo realizado o Burn-up\footnote{El Burnup muestra el trabajo
   \centering
   \label{fig:Burnup-chart_example} %\ref{fig:Burnup-chart_example}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \newpage
 \subsection{Gráficos de velocidad}
@@ -412,6 +452,8 @@ El gráfico de velocidad muestra todas las unidades estimadas en el plan y acept
   \centering
   \label{fig:VelocityChartAndAverage} %\ref{fig:VelocityChartAndAverage}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 También se puede incluir la velocidad promedio (ver gráfico de la derecha \ref{fig:VelocityChartAndAverage}).
 
@@ -433,6 +475,8 @@ Esta es una técnica útil en el desarrollo ágil y en la programación en parej
   \centering
   \label{fig:Pomodoro} %\ref{fig:Pomodoro}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Programación de a pares}
 
@@ -478,6 +522,8 @@ El Continuous Delivery es un enfoque de ingeniería de software en el que los eq
   \centering
   \label{fig:Continuous_delivery_flow} %\ref{fig:Continuous_delivery_flow}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \newpage
 \section{Metodologías amigas}
@@ -504,14 +550,14 @@ Scrum se puede complementar y mejorar agregando aspectos del método Kanban. Par
   \centering
   \label{fig:Scrum-Kanban-Board-to-Development} %\ref{fig:Scrum-Kanban-Board-to-Development}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Ampliar Kanban con Scrum, Scrumban}
 
 Una metodología amiga de Scrum es Scrumban. Se trata de una pseudo-metodología mixta y flexible entre Scrum y el método Kanban. Combina las la flexibilidad de Kanban y las características básicas de Scrum. Por un lado, se toma de Kanban lo de mantener un trabajo continuo, exponer el flujo de trabajo, el tablero de trabajo persistente, auto-asignaciones de tareas solamente por el sistema del tomar y jalar (pull), limitar el trabajo en curso y buscar optimizar el flujo teniendo en cuenta la métrica “cycle time”. Por otro, se agrega de Scrum la ceremonia de planning, la retrospectiva como reunión de mejora contínua (Kaizen), el trabajo en ciclos o iteraciones sin ser limitativo o restrictivo de trabajo y la priorización, que se recomienda hacer en cada planificación. Dentro de la flexibilidad que brinda, hace optativo el usar otras partes o prácticas de Scrum. Bajo esta metodología no es necesario estimar, puede ser algo optativo, ya que no se necesita calcular el trabajo que entra en una iteración porque el trabajo es continuo. Aunque sí se pueden estimar tiempos de entrega y/o tamaños de paquetes de trabajo. Por otro lado, al ser el trabajo contínuo y no tener un compromiso formal de trabajo comprometido en una iteración, los cambios y re-priorizaciones pueden hacerse en cualquier momento. 
  
 También es muy flexible el tipo de roles de los miembros del equipo debido a que no prescribe roles específicos ni es necesaria la multidisciplinariedad que recomienda Scrum. Sin embargo en los equipos Kanban o Scrumban han emergido las figuras de Product Owner y Flow Master (facilitador equivalente a un Scrum Master). En Scrumban el Flow Master es, además de un facilitador ágil, un facilitador del flujo del proceso. Usando la facilitación visual hay que tener en cuenta que, como se mencionó antes y al igual que en Kanban, el tablero permanece persistente, mientras que sólo cambian las tareas y sus prioridades. A diferencia de Scrum, donde el tablero de sprint se renueva en cada iteración. Relacionado a la planificación, en Scrumban se planifica focalizados en los releases y no es obligadamente necesario hacerse en la planning de cada iteración; pues, la planificación se puede realizar solo bajo demanda. Este método es muy útil principalmente para procesos de ritmo rápido, para startups, proyectos que requieren fabricación de productos constante, equipos y proyectos con ambientes muy dinámicos y cambiantes, equipos de solución de problemas de contingencias en producción, equipos de mantenimiento, soporte o desarrollo de infraestructura. También es útil para integrar (coordinar y sincronizar) otros equipos de soporte a los equipos Scrum, por ejemplo bajo el marco DevOps. En estos casos, los equipos soporte pueden usar Scrumban y los de desarrollo Scrum.
-
-
 
 \begin{figure}[h]
   \centering
@@ -520,3 +566,5 @@ También es muy flexible el tipo de roles de los miembros del equipo debido a qu
   \centering
   \label{fig:Scrumban-Board-to-Development} %\ref{fig:Scrumban-Board-to-Development}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
