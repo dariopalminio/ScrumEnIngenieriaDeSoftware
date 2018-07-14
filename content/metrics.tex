@@ -161,15 +161,24 @@ Estas métricas listadas son solo una guía para investigar otras y analizar cu�
 \subsection{Métricas de impacto de negocio}
 
 Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso. Pero, ¿qué es valioso y para quién? Cabe aclarar que, el valor de negocio no se refiere solo a valor monetario, también puede ser de valor intangible, como el posicionamiento de una marca o el valor dado por mejorar la experiencia del usuario, siendo un beneficio para el usuario o cliente y, en consecuencia, también para la compañía. El valor es lo valioso para la compañía y para el cliente. Si estamos centrados en el cliente debemos pensar en qué es valioso para él. Pues bien, ¿cómo medir qué es valioso?
-Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si realmente estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como "indicadores claves de impacto" del producto. Lo importante de los indicadores que elijamos es que deben estar alineados a la visión y objetivos que hayamos definido para el producto.
+Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si realmente estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como "indicadores claves de impacto" del producto. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{KPIs}
+  \caption{Métricas vs. KPIs}
+  \centering
+  \label{fig:KPIs} %\ref{fig:KPIs}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Lo importante de los indicadores que elijamos es que deben estar alineados a la visión y objetivos que hayamos definido para el producto.
 Algunos son los siguientes.
 
 
 
-  \begin{description}    
-
-  \item {\textbf{Business Value Delivered:} El valor de negocio entregado es un valor relativo y se puede contabilizar como Business Value o BV entregados en cada Sprint. El VB es el valor añadido que la feature/historia aporta al negocio\footnote{\cite{Pointet-Botton-2012}}. A semejanza del SP, el Business Value Point o BVP sirve como estimación del valor de negocio en forma relativa y sumativa que hace el PO. También hay que tener en cuenta que es una unidad subjetiva que depende de qué PO o equipo de personas hace la estimación de medida.
-} 
+  \begin{description}
  
   \item {\textbf{Sh-SAT:} Grado de satisfacción de los Stakeholders. Se puede medir la felicidad de los Stakeholder como indicador de grado de satisfacción que indica qué tan contentos estuvieron con los resultados del Sprint, con la Review o producto. Este relevamiento relacionado a la percepción de valor entregado se puede hacer en la misma Review. Este es un KPI indirecto e interno del equipo de trabajo.
 }
@@ -249,7 +258,7 @@ Algunos son los siguientes.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 
-Cabe recalcar que pueden haber muchos otros KPI’s (CPS, CLTV, etc.) y que, los que elijamos, sean lo justo y necesario; y actúen como una brújula, que nos posibilite decidir si debemos continuar con el mismo rumbo o tenemos que cambiarlo.
+Cabe recalcar que pueden haber muchos otros KPI’s, como pueden ser: MAU (Monthly Active Users), DAU (Daily Active Users), User Stickiness, ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), Churn Rate, CPS, CLTV, etcétera. También que, los que elijamos, sean lo justo y necesario; y actúen como una brújula, que nos posibilite decidir si debemos continuar con el mismo rumbo o tenemos que cambiarlo.
 
 \subsection{Dashboard}
 
@@ -273,8 +282,31 @@ Las métricas o KPIs, que intervienen en la consecución de los objetivos, son r
   \end{figure}
   \FloatBarrier
   
+  Se recomienda que el equipo mantenga un monitoreo de sus dashboard visible y fácilmente accesible por cualquier stakeholder interesado (como la fig. \ref{fig:MonitorDeKPIs}).
+  
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{MonitorDeKPIs}
+  \caption{Monitoreo de Dashboards}
+  \centering
+  \label{fig:MonitorDeKPIs} %\ref{fig:MonitorDeKPIs}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
 En próximos capítulos vamos a ver irradiadores visuales que pueden servir como dashboard simples para uso bajo el marco Scrum.
 
 \subsection{Métricas ágiles}
 
-Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil). Los KPI's no se deben convertir en objetivos que deben lograrse ni en herramienta de control de empleados.
+Por último, hay que tener en cuenta que para que las métricas estén bajo un marco Scrum deben respetar los principios de la agilidad. La medida principal es el software funcionando. Las métricas deben ser un medio de comunicación efectiva e impulsar la transparencia. Deben servir al equipo para que se auto-organize en procesos de corrección de desvíos y mejora contínua, apoyando la reflexión sobre cómo ser más efectivos. Y, principalmente, se debe buscar siempre la simplicidad. Las métricas que agregan complejidad innecesaria o sobre-información no son acordes a la agilidad. Lo difícil es encontrar el equilibrio entre un Scrum minimalista y hacer ingeniería. Si no medimos, no podemos hacer análisis del sistema de trabajo, o sistema productivo, para mejorar con datos empíricos como lo requiere el trabajo ingenieril; pero si medimos excesivamente, podemos estar generando desperdicio (burocracia y trabajo no relevante) y ruido informativo (datos que no generan información útil). Los KPI's no se deben convertir en objetivos que deben lograrse por el solo hecho de cumplir un plan ni en herramienta de control de empleados. Las métricas son parte del proceso de aprendizaje, de los ciclos de inspección y adaptación, es decir, de aplicar el método científico en la empresa (lean startup).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth]{LeanStartup}
+  \caption{Métricas en Lean Startup}
+  \centering
+  \label{fig:LeanStartup} %\ref{fig:LeanStartup}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
