@@ -3,14 +3,14 @@
 
 ¿Para qué medir? Si no medimos no podemos adaptarnos bajo un marco empírico como propone Scrum. Medimos en forma transparente, en procesos de inspección y adaptación. Las métricas ayudan al equipo a evaluar su propio desempeño en el proceso de trabajo, para poder hacer cambios basados en hechos. También es un soporte a la gestión de proyecto/producto para poder medir el progreso en cuanto a impacto de negocio (no a seguir un plan), tomar decisiones de negocio, revisar la actividad de generación de valor y el desempeño\footnote{Las métricas se pueden usar para medir desempeño, pero no se deben utilizar en forma punitiva ni tampoco en sistemas de evaluación de desempeño de empleados.} del equipo en cuanto a grado de madurez o evolución. Además hay indicadores de calidad de producto que nos pueden señalar aspectos claves de prestancia y salud de un producto. Se puede ver a las métricas como parte del monitoreo de salud del equipo, sistema de trabajo, producto y negocio; y parte del sistema de estabilización de la empresa y del sistema de mejora continua y aprendizaje.
 
-En síntesis, se pueden categorizar a las métricas en cuatro aspectos: trabajo en equipo (team), proceso de trabajo (process), calidad de producto (quality) e impacto de negocio (Impact) [ver fig. \ref{fig:Metrics_KPIs}].
+En síntesis, se pueden categorizar a las métricas en cuatro aspectos: 1) métricas de equipo (team metrics); 2) métricas de proceso de trabajo (process metrics); 3) métricas de calidad de producto (product metrics); 4) métricas de resultados de negocio (outcome metrics) [ver fig. \ref{fig:Agile_Metrics_Model}].
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.85\textwidth]{Metrics_KPIs}
+  \includegraphics[width=0.85\textwidth]{Agile_Metrics_Model}
   \caption{Modelo de 4 categoría de métricas o KPIs.}
   \centering
-  \label{fig:Metrics_KPIs} %\ref{fig:Metrics_KPIs}
+  \label{fig:Agile_Metrics_Model} %\ref{fig:Agile_Metrics_Model}
 \end{figure}
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
@@ -93,6 +93,8 @@ Esta definición es la clásica y es algo genérica. Hay tres formas más espec�
 
   \begin{enumerate}
   
+  \item {\textbf{Capacity done:} la capacidad hecha aceptada por el PO, es el trabajo total potencialmente entregable aceptado que incluye Historias de Usuario e Historias Técnicas. Se suele usar cuando se hace la distinción entre Historias de Usuario y técnicas.}
+  
   \item {\textbf{Capacidad en puntos ideales:} La capacidad puede ser una idealización basada en la velocidad promedio, o sea, los puntos de la historia que se pueden considerar gastar en la próxima carrera de velocidad.\footnote{\cite{Satish-Thatte-2013}}}
 
   \item {\textbf{Capacidad en horas:} La capacidad puede ser calculada en horas basados en la cantidad de miembros y la cantidad de horas efectivas de trabajo en un Sprint. Por ejemplo en un equipo de 8 miembros, con 6 horas de trabajo efectivo y un Sprint de 10 días, la capacidad en horas es igual a 480 hs (8 x 6 hs x 10).}
@@ -100,17 +102,62 @@ Esta definición es la clásica y es algo genérica. Hay tres formas más espec�
   \end{enumerate}
 
 Cuando se definió el marco de trabajo, como algo mínimo de cosas para que funcione, se dejó lo más simple posible. Debido a ello, el concepto de Velocity es partes del marco de trabajo aceptada por la comunidad, pero Working capacity no lo es del todo aceptado, aunque es ampliamente usado.
+
+
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Metricas_de_Proceso_Velocity_Capacity_AverageVelocity}
+  \caption{Gráfico de velocidad, capacidad y velocidad promedio}
+  \centering
+  \label{fig:Metricas_de_Proceso_Velocity_Capacity_AverageVelocity} %\ref{fig:Metricas_de_Proceso_Velocity_Capacity_AverageVelocity}
+  \end{figure}
+  \FloatBarrier
+  
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Metricas_de_Proceso_Tabla_Datos_Velocity}
+  \caption{Datos del gráfico de velocidad, capacidad y velocidad promedio}
+  \centering
+  \label{fig:Metricas_de_Proceso_Tabla_Datos_Velocity} %\ref{fig:Metricas_de_Proceso_Tabla_Datos_Velocity}
+  \end{figure}
+  \FloatBarrier
 }
 
-\item {\textbf{Focus Factor:} El factor de foco revela el foco que el equipo ha tenido para entregar valor y su prestancia. El mismo es la relación entre la Velocity y la capacidad de trabajo: ( Velocity / Work Capacity ) x 100\%. La misma debe permanecer en la vecindad de 80 \% en promedio para un equipo saludable. Estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previsibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad, aunque esto no indica necesariamente que están trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia.}
+\item {\textbf{Focus Factor:} El factor de foco revela el foco que el equipo ha tenido para entregar valor y su prestancia. El mismo es la relación entre la velocidad y la capacidad (o capacidad de trabajo): ( Velocity / Capacity ) x 100\%. La misma debe permanecer, según recomendación, en la vecindad de 80 \% en promedio para un equipo saludable. En el caso de contemplar la capacidad de trabajo (work capacity), estos puntos de datos por debajo del 80 por ciento indican un equipo que está interrumpido o incapaz de convertir su trabajo estimado en trabajo aceptado mostrando poca previsibilidad. Cuando el valor es alto, cercano al 100, el equipo ha estado bajo la previsión de su capacidad, aunque esto no indica necesariamente que están trabajando bien. Por ejemplo, el equipo puede estar aparentando ser perfecto forzando la coincidencia. Si lo que se usa es la capacidad aceptada (Capacity done), puede ser un indicativo de que cuanto se ha trabajado en historias de usuario en relación a historias técnicas.}
+
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.90\textwidth]{Factor_de_Foco}
+  \caption{Gráfico de factor de foco}
+  \centering
+  \label{fig:Factor_de_Foco} %\ref{fig:Factor_de_Foco}
+  \end{figure}
+  \FloatBarrier
 
 \item {\textbf{Targeted Value Increase (TVI+):} El TVI+ responde a cuánto cambio ha habido en la velocidad del equipo a través del tiempo desde el primer Sprint. Es la Velocity del Sprint actual dividido la Velocity Original (velocity del primer sprint): ( Current Sprint’s Velocity / Original Velocity ) x 100\%. Sirve para medir el aumento de la contribución de valor de un equipo en base a su velocidad origen Sprint a Sprint.
 Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su capacidad de resolver con éxito la complejidad requerida.
 }
 
-\item {\textbf{Effectiveness:} La efectividad de un sprint medida como historias o features entregadas (aceptadas) versus las elegidas en la planning (las que se tomaron en el sprint). También se podría medir la efectividad relacionada a si se cumplió con el objetivo del sprint.
+\item {\textbf{Effectiveness:} La efectividad de un sprint medida como historias o features entregadas (aceptadas) versus las elegidas en la planning, las que se tomaron en el sprint (forecasting). También se podría medir la efectividad relacionada a si se cumplió con el objetivo del sprint.
 }
 
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.90\textwidth]{Metricas_de_Proceso_Eficacia}
+  \caption{Gráfico de efectividad}
+  \centering
+  \label{fig:Metricas_de_Proceso_Eficacia} %\ref{fig:Metricas_de_Proceso_Eficacia}
+  \end{figure}
+  \FloatBarrier
+  
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Metricas_de_Proceso_Datos}
+  \caption{Datos consolidados}
+  \centering
+  \label{fig:Metricas_de_Proceso_Datos} %\ref{fig:Metricas_de_Proceso_Datos}
+  \end{figure}
+  \FloatBarrier
 %Otras: Percentage of Adopted Work, Percentage of Found Work, Accuracy of Estimation, Accuracy of Forecast, Targeted Value Increase (TVI+), Success at Scale
 
 \item {\textbf{Delivery rate:} La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery.
@@ -158,10 +205,12 @@ Las métricas de prestancia o rendimiento de aplicación nos ayudan a detectar p
 
 Estas métricas listadas son solo una guía para investigar otras y analizar cuáles pueden ser necesarias para algún caso particular.
 
-\subsection{Métricas de impacto de negocio}
+\subsection{Métricas de resultados de negocio}
 
-Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso. Pero, ¿qué es valioso y para quién? Cabe aclarar que, el valor de negocio no se refiere solo a valor monetario, también puede ser de valor intangible, como el posicionamiento de una marca o el valor dado por mejorar la experiencia del usuario, siendo un beneficio para el usuario o cliente y, en consecuencia, también para la compañía. El valor es lo valioso para la compañía y para el cliente. Si estamos centrados en el cliente debemos pensar en qué es valioso para él. Pues bien, ¿cómo medir qué es valioso?
-Scrum no prescribe métricas de negocio o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si realmente estamos entregando valor o generando el impacto deseado. El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor. En esta vía, el PO tiene la posibilidad de usar Business Value Point para estimar valor entregado o hacer una distinción entre historias de usuario de cara a cliente o técnicas (más adelante explicado). Por otro lado, también se pueden manejar un conjunto mínimo y suficiente de indicadores de negocio. A estos indicadores, que se los suele llamar KPI's, podemos interpretarlos como "indicadores claves de impacto" del producto. 
+Siguiendo una de las claves de la agilidad, el flujo de entrega de valor continuo, es que podemos suponer que la verdadera medida de éxito en Scrum es el incremento de producto que es valioso, que genera resultados valiosos. Pero, ¿qué es valioso y para quién? Cabe aclarar que, el valor de negocio no se refiere solo a valor monetario, también puede ser de valor intangible, como el posicionamiento de una marca o el valor dado por mejorar la experiencia del usuario, siendo un beneficio para el usuario o cliente y, en consecuencia, también para la compañía. El valor es lo valioso para la compañía y para el cliente. Si estamos centrados en el cliente debemos pensar en qué es valioso para él. Pues bien, ¿cómo medir qué es valioso?
+Scrum no prescribe métricas de resultados de negocio (business outcome) o indicadores clave de impacto de negocio, aunque es necesario usarlos para saber si realmente estamos entregando valor o generando el impacto deseado. 
+
+El PO tiene el poder de tomar la decisión última de negocio y necesita datos empíricos para hacerlo. Además, en el proceso de inspección y adaptación, para construir el producto adecuado, el equipo con el PO necesitan observar indicadores de producto, orientarse, decidir y actuar, en busca de maximizar el valor: “maximizar el outcome con el mínimo output”. En esta vía, el PO tiene la posibilidad de manejar un conjunto mínimo y suficiente de indicadores, que se los suele llamar KPI's (business outcome KPIs), y que podemos interpretarlos como indicadores claves del impacto del producto o indicadores de resultados del negocio.
 
 \begin{figure}[h]
   \centering
