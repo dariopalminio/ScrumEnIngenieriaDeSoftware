@@ -158,10 +158,31 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
   \label{fig:Metricas_de_Proceso_Datos} %\ref{fig:Metricas_de_Proceso_Datos}
   \end{figure}
   \FloatBarrier
-%Otras: Percentage of Adopted Work, Percentage of Found Work, Accuracy of Estimation, Accuracy of Forecast, Targeted Value Increase (TVI+), Success at Scale
 
-\item {\textbf{Delivery rate:} La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery.
+\item {\textbf{Delivery rate:} La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery. Se puede calcular como tiempo promedio entre subidas a producción o como cantidad de subidas promedio en un período de tiempo (por ejemplo por sprint).
 }
+
+\item {\textbf{Stories Inventory:} El “inventario de historias” mide el inventario de código o producto potencialmente entregable. Es decir, mide las historias que se terminaron pero no se subieron a producción para que estén funcionando de cara al cliente. En Scrum se busca un flujo limpio (lean) y el código no entregado a producción es un inventario, que es una forma de grasa del sistema de producción y que queremos reducir. Esta métrica, al igual que el Delivery rate, nos puede ayudar a visibilizar esta grasa para mejorar el continuous delivery.
+}
+
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Inventario_Producto_Potencialmente_Entregable_Grafico}
+  \caption{Gráfico de Stories Inventory}
+  \centering
+  \label{fig:Inventario_Producto_Potencialmente_Entregable_Grafico} %\ref{fig:Inventario_Producto_Potencialmente_Entregable_Grafico}
+  \end{figure}
+  \FloatBarrier
+
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.90\textwidth]{Inventario_Producto_Potencialmente_Entregable_Datos}
+  \caption{Datos consolidados del gráfico Stories Inventory}
+  \centering
+  \label{fig:Inventario_Producto_Potencialmente_Entregable_Datos} %\ref{fig:Inventario_Producto_Potencialmente_Entregable_Datos}
+  \end{figure}
+  \FloatBarrier
+
 
 \item {\textbf{Métricas de flujo:} Scrum no prescribe métricas, por lo que bien podrían usarse métricas de flujo en vez de las basadas en SP, tomando cosas del método kanban. Algunas de ellas son el Throughput, Lead time (Lt) y Cycle time (Ct). Siendo el Throughput la velocidad, como número medio de unidades procesadas en un tiempo determinado. El Lead time, tiempo total en que una unidad pasa por el sistema de trabajo. Y el Cycle time, tiempo real de trabajo sobre una unidad sin los tiempos de cola o espera.
 }
@@ -174,12 +195,25 @@ Bajo el marco ágil buscamos la excelencia técnica y en esa vía buscamos produ
 
   \begin{enumerate}    
 
-  \item {\textbf{Maintainability:} Hay métricas asociadas a la mantenibilidad, como lo son: test Coverage, CLOC, issues, complexity,  etcétera. 
+  \item {\textbf{Maintainability:} Hay métricas asociadas a la mantenibilidad, como lo son: test Coverage, CLOC, issues, complexity, technical debt, etcétera. 
   
     \begin{enumerate}    
     \item {\textbf{Test coverage:}
 Por ejemplo la cobertura de prueba es una herramienta útil para encontrar partes no probadas de una base de código, lo cual nos ayuda a saber si se están realizando pruebas suficientes para apoyar el aseguramiento de calidad.
 }
+    \item {\textbf{Accumulated technical debt:}
+La deuda técnica creada es una forma de inventario no deseado y que debemos manejar adecuadamente, para tener una buena calidad. Medir la deuda técnica acumulada versus la resuelta acumulada nos da una visibilidad de este inventario.
+}
+
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{AccumulatedTechnicalDebt}
+  \caption{Gráfico de deuda técnica acumulada versus resuelta}
+  \centering
+  \label{fig:AccumulatedTechnicalDebt} %\ref{fig:AccumulatedTechnicalDebt}
+  \end{figure}
+  \FloatBarrier
+
   \end{enumerate}
 }
 

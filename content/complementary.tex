@@ -261,14 +261,38 @@ Una manera de ayudar al desarrollo ágil a partir de requerimientos es usar el d
 
 \section{Técnicas de estimación}
 
-El desarrollo de software es una actividad de creación por evolución del conocimiento y, bajo el marco ágil, esta evolución es adaptativa, produciendo valor en lotes pequeños de trabajo. Esto hace que las planificaciones adaptativas sean más a corto plazo, donde las estimaciones de esfuerzo son realizadas con frecuencia para estimar iteraciones y conversar. Hay que considerar que bajo el marco Scrum las estimaciones se hacen con dos razones principales: planificar sprints y evolucionar el conocimiento compartido. La primera está relacionada a la predictibilidad del trabajo en pos de lograr una cadencia sostenible. En este aspecto, la predictibilidad se hace más certera al aumentar el grado de confianza al trabajar con sprint y hacer estimaciones a corta distancia en el tiempo. Además, es parte de un mecanismo de autoregulación del equipo en buscar lograr un flujo de trabajo sostenible, estable y homogéneo. Para ello, el equipo busca desglosar trabajo en esfuerzos equiparables y de tamaños similares. La segunda razón, que se puede considerar la principal para estimar, es la de evolucionar el conocimiento compartido en forma colaborativa. El tiempo insumido en estimar es tiempo aprovechado para charlar en equipo, generando entendimiento común en lo que se tiene que hacer y cómo hay que hacerlo. Si bien el entendimiento común se va madurando en los refinamientos, es en la planning cuando se valida que todos están en la misma página y, desde esta perspectiva, es una excusa para conversar. A continuación comento algunas técnicas elementales.
+El desarrollo de software es una actividad de creación por evolución del conocimiento y, bajo el marco ágil, esta evolución es adaptativa, produciendo valor en lotes pequeños de trabajo. Esto hace que las planificaciones adaptativas sean más a corto plazo, donde las estimaciones de esfuerzo son realizadas con frecuencia para estimar iteraciones y conversar. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Estimate}
+  \caption{Estimación}
+  \centering
+  \label{fig:Estimate} %\ref{fig:Estimate}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Hay que considerar, entonces, que bajo el marco Scrum las estimaciones se hacen con dos razones principales: planificar sprints (sprints, roadmap, etc.) y evolucionar el conocimiento compartido (refinando las historias). La primera está relacionada a la predictibilidad del trabajo en pos de lograr una cadencia sostenible. En este aspecto, la predictibilidad se hace más certera al aumentar el grado de confianza al trabajar con sprint y hacer estimaciones a corta distancia en el tiempo. Además, es parte de un mecanismo de autoregulación del equipo en buscar lograr un flujo de trabajo sostenible, estable y homogéneo. Para ello, el equipo busca desglosar trabajo en esfuerzos equiparables y de tamaños similares. La segunda razón, que se puede considerar la principal para estimar, es la de evolucionar el conocimiento compartido en forma colaborativa. El tiempo insumido en estimar es tiempo aprovechado para charlar en equipo, generando entendimiento común en lo que se tiene que hacer y cómo hay que hacerlo. Si bien el entendimiento común se va madurando en los refinamientos, donde se pueden hacer etimaciones a alto nivel, es en la planning cuando se valida que todos están en la misma página y, desde esta perspectiva, es una excusa para conversar. A continuación comento algunas técnicas elementales.
 
 \subsection{Estimación relativa}
 
-Debido a la complejidad inherente al desarrollo de software es que se recomienda la estimación relativa y que consiste en estimar bajo determinada incertidumbre y con valores relativos. Se suelen usar los puntos de historia o "Story Points", que son una medida relativa de estimación de un ítem de trabajo o una historia de usuario para poder medir su tamaño y, además, es útil para medir la velocidad de un equipo. Hacer estimaciones relativas con SP significa que las historias se comparan entre sí, buscando mantener una relación proporcional entre ellas según estos puntos de historia. O sea que si se piensa a nivel de esfuerzo, una historia que tiene 3 puntos de historia requerirá tres veces más de esfuerzo que una que sea de un punto historia.
-La estimación es relativa porque es subjetiva al equipo que estima. Si diferentes equipos toman a los puntos de historia como medida de complejidad de una historia, pueden llegar a valores distintos porque considerarán la complejidad acorde a su percepción de complejidad que puede ser diferente. Hay equipos que pueden tomar al SP como expectativa de esfuerzo en un día ideal de trabajo (día sin impedimentos) y la expectativa de esfuerzo resultará relativa al equipo que la forma\footnote{\cite{Cohn-2004}}.
+¿Para cuándo va a estar el desarrollo terminado? ¿Cuántas horas vas a demorar en terminar la historia? No queremos estimar en tiempo absoluto, porque estimar cuánto nos vamos a demorar en desarrollar una historia de software, es tan imposible como estimar cuánto dinero exacto vamos a ganar con esa historia. Debido a la complejidad inherente al desarrollo de software es que se recomienda la estimación relativa y que consiste en estimar bajo determinada incertidumbre y con valores relativos. Se suelen usar los puntos de historia o "Story Points", que son una medida relativa de estimación de un ítem de trabajo o una historia de usuario para poder medir su tamaño y, además, es útil para medir la velocidad de un equipo. Hacer estimaciones relativas con SP significa que las historias se comparan entre sí, buscando mantener una relación proporcional entre ellas según estos puntos de historia. O sea que si se piensa a nivel de esfuerzo, una historia que tiene 3 puntos de historia requerirá tres veces más de esfuerzo que una que sea de un punto historia.
 
-Hay que tener en cuenta que "bajo ningún punto de vista la estimación (en story points) es un compromiso"\footnote{\cite{UNTREF-2014}} y que los puntos de historia no son medidas objetivas convertibles en forma precisa a horas. Justamente se usan puntos de historia para no estimar en horas hombre.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Storypoints_between_teams}
+  \caption{Estimación relativa}
+  \centering
+  \label{fig:Storypoints_between_teams} %\ref{fig:Storypoints_between_teams}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+Cabe recalcar que la estimación es relativa, porque es subjetiva al equipo que estima. Entonces, si diferentes equipos toman a los puntos de historia como medida de complejidad de una historia, pueden llegar a valores distintos, porque considerarán la complejidad acorde a su percepción de complejidad y que es diferente. Hay equipos que pueden tomar al SP como expectativa de esfuerzo en un día ideal de trabajo (día sin impedimentos) y la expectativa de esfuerzo resultará relativa al equipo que la forma\footnote{\cite{Cohn-2004}}.
+
+También cabe aclarar que "bajo ningún punto de vista la estimación (en story points) es un compromiso"\footnote{\cite{UNTREF-2014}} y que los puntos de historia no son medidas objetivas convertibles en forma precisa a horas. Justamente se usan puntos de historia para no estimar en horas hombre. 
 
 \subsection{Poker de planeación}
 
@@ -283,9 +307,9 @@ Las Cartas de Poker de Planificación que más se usan son las T-Shirts y las de
 
 \begin{enumerate}
 
-\item \textbf{T-Shirts:} Las cartas de talles de camisetas (polera) contempla los valores XS (muy pequeño), S (Pequeño), M (Mediano), L (grande), XL (muy grande) y XXL (extra grande). En su forma más simple se puede usar: S, M y L. Estos valores sirven para estimar épicas, tamaños de historias o trabajo a alto nivel como el tamaño de funcionalidades. 
+\item \textbf{T-Shirts:} Las cartas de talles de camisetas (polera) contempla los valores XS (muy pequeño), S (Pequeño), M (Mediano), L (grande), XL (muy grande) y XXL (extra grande). En su forma más simple se puede usar: S, M y L. Estos valores sirven para estimar épicas, tamaños de historias o trabajo a alto nivel como el tamaño de funcionalidades. Este tipo de estimación se suele usar en los refinamientos del backlog y nos puede sugerir que una historia es lo bastante grande como para considerar desglosarla (Story Slicing) o lo suficientemente pequeña para tomarla en un futuro sprint.
 
-\item \textbf{Fibonacci:} Las cartas Fibonacci modificada contempla los valores 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que se basa en la secuencia fibonacci que se suele recomendar. Estos valores son útiles para estimar complejidad de historias o trabajo a nivel medio. Realizando una estimación relativa, estos valores corresponden a puntos de historia con los que se puede pesar un ítem de trabajo.
+\item \textbf{Fibonacci:} Las cartas Fibonacci modificada contempla los valores 0, 1, 2, 3, 5, 8, 13, 20, 40 y 100, que se basa en la secuencia fibonacci que se suele recomendar. Estos valores son útiles para estimar complejidad de historias o trabajo a nivel medio. Realizando una estimación relativa, estos valores corresponden a puntos de historia con los que se puede pesar un ítem de trabajo. Este tipo de estimación se suele usar en el planeamiento del sprint para estimar cuántas historias abordar.
 
 \end{enumerate}
 
