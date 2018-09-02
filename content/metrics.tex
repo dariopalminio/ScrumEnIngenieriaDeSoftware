@@ -159,9 +159,18 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
   \end{figure}
   \FloatBarrier
 
-\item {\textbf{Delivery rate:} La tasa de entrega es un indicador que nos puede servir para ver la evolución de los tiempos de entrega. Nos puede ayudar a mejorar el continuous delivery. Se puede calcular como tiempo promedio entre subidas a producción o como cantidad de subidas promedio en un período de tiempo (por ejemplo por sprint).
+\item {\textbf{Delivery Frequency:} La “frecuencia de entrega” (Delivery Frequency \footnote{\cite{Humble-2018}}) o la “tasa de entrega” (Delivery rate) es un indicador que nos puede servir para ver la evolución de los tiempos de entrega, que impacta en el tiempo de salida al mercado. Es un buen indicador cuando importa más el outcome que el output del equipo. Nos puede ayudar a mejorar el continuous delivery. Se puede calcular como tiempo promedio entre subidas a producción o como cantidad de subidas promedio en un período de tiempo (por ejemplo por sprint). La fórmula más simple puede ser, uno sobre el promedio de los períodos de despliegues.
 }
 
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{DeliveryFrequency}
+  \caption{Esquema del Delivery Frequency}
+  \centering
+  \label{fig:DeliveryFrequency} %\ref{fig:DeliveryFrequency}
+  \end{figure}
+  \FloatBarrier
+  
 \item {\textbf{Stories Inventory:} El “inventario de historias” mide el inventario de código o producto potencialmente entregable. Es decir, mide las historias que se terminaron pero no se subieron a producción para que estén funcionando de cara al cliente. En Scrum se busca un flujo limpio (lean) y el código no entregado a producción es un inventario, que es una forma de grasa del sistema de producción y que queremos reducir. Esta métrica, al igual que el Delivery rate, nos puede ayudar a visibilizar esta grasa para mejorar el continuous delivery.
 }
 
@@ -184,7 +193,7 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
   \FloatBarrier
 
 
-\item {\textbf{Métricas de flujo:} Scrum no prescribe métricas, por lo que bien podrían usarse métricas de flujo en vez de las basadas en SP, tomando cosas del método kanban. Algunas de ellas son el Throughput, Lead time (Lt) y Cycle time (Ct). Siendo el Throughput la velocidad, como número medio de unidades procesadas en un tiempo determinado. El Lead time, tiempo total en que una unidad pasa por el sistema de trabajo. Y el Cycle time, tiempo real de trabajo sobre una unidad sin los tiempos de cola o espera.
+\item {\textbf{Métricas de flujo:} Scrum no prescribe métricas, por lo que bien podrían usarse métricas de flujo en vez de las basadas en SP, tomando cosas del método kanban. Algunas de ellas son el Throughput, el Cycle time (Ct) y el Lead time (Lt). Siendo el Throughput la velocidad, como número medio de unidades procesadas en un tiempo determinado. El Cycle time, tiempo real de trabajo sobre una unidad sin los tiempos de cola o espera. Y el Lead time, tiempo total en que una unidad pasa por el sistema de trabajo. Esta última se puede calcular como el tiempo desde que una historia es creada hasta que es desplegada en producción\footnote{Agile Alliance Resources 2018}.  El Lead time también es un buen indicador cuando se prioriza el outcome sobre el output del equipo, indicando cuán rápidos somos para salir al mercado para obtener resultados.
 }
 
 \end{enumerate}
