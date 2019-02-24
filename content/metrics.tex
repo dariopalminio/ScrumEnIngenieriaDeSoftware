@@ -56,7 +56,8 @@ Cuando tenemos la información de cada miembro del equipo, el equipo puede hacer
   \end{enumerate}
 }
 
-\item {\textbf{Team Stability:} Se considera que se logra buena colaboración con equipos estables. Por ese motivo, bajo el marco ágil, se prioriza a los equipos estables por sobre los proyectos\footnote{The Disciplined Agile (DA) Framework}. Es decir que se recomienda mantener a los equipos estables y evitar mezclar personas entre equipos o desarmar equipos para asignar a otros proyectos (la rotación). Los equipos estables tienden a conocer mejor su capacidad, lo que permite cierta capacidad de predicción y mayor sinergia. Los miembros del equipo deben dedicarse a un solo equipo siempre que sea posible. Pero esto no siempre se logra por la rotación laboral o necesidades de la empresa. Por eso es útil medir el aspecto de “Team Stability” o  de rotación. Pues hay que mantener una rotación baja saludable.
+\item {\textbf{Team Stability:} Se considera que se logra buena colaboración con equipos estables. Por ese motivo, bajo el marco ágil, se prioriza a los equipos estables por sobre los proyectos\footnote{The Disciplined Agile (DA) Framework}. Es decir que se recomienda mantener a los equipos estables y evitar mezclar personas entre equipos o desarmar equipos para asignar a otros proyectos (la rotación). Los equipos estables tienden a conocer mejor su capacidad, lo que permite cierta capacidad de predicción y mayor sinergia. Los miembros del equipo deben dedicarse a un solo equipo siempre que sea posible. Pero esto no siempre se logra por la rotación laboral o necesidades de la empresa. Por eso es útil medir el aspecto de “Team Stability” o  de rotación. Pues hay que mantener una rotación baja saludable. Una forma de indicador puede ser: número de integrantes que salen del equipo al año / la media del número de integrantes de ese año o período.
+
 }
 
 \item {\textbf{Team Skill Balance:} Si existe un desbalance de conocimientos y de esfuerzo en el equipo puede provocar la fatiga de algunos integrantes, problemas por eslabones débiles (en contingencias, entrevistas, solución de problemas, etc.), dependencias sobre alguna persona o desavenencias por percepción de inequidad de esfuerzos. Un indicador de balance de competencias del equipo (Team Skill Balance Average) podría ayudar a que el equipo sea capaz de trabajar como una unidad integrada. Cada integrante debe ser un poco más multifuncional, colaborando en tareas o actividades que no son su fuerte o especialidad. 
@@ -159,7 +160,7 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
   \end{figure}
   \FloatBarrier
 
-\item {\textbf{Delivery Frequency:} La “frecuencia de entrega” (Delivery Frequency \footnote{\cite{Humble-2018}}) o la “tasa de entrega” (Delivery rate) es un indicador que nos puede servir para ver la evolución de los tiempos de entrega, que impacta en el tiempo de salida al mercado. Es un buen indicador cuando importa más el outcome que el output del equipo. Nos puede ayudar a mejorar el continuous delivery. Se puede calcular como tiempo promedio entre subidas a producción o como cantidad de subidas promedio en un período de tiempo (por ejemplo por sprint). La fórmula más simple puede ser, uno sobre el promedio de los períodos de despliegues.
+\item {\textbf{Delivery Frequency:} ¿Con qué frecuencia se despliega el código a producción? La “frecuencia de entrega” (Delivery Frequency \footnote{\cite{Humble-2018}}) o la “tasa de entrega” (Delivery rate) es un indicador que nos puede servir para ver la evolución de los tiempos de entrega, que impacta en el tiempo de salida al mercado. Es un buen indicador cuando importa más el outcome que el output del equipo. Nos puede ayudar a mejorar el continuous delivery. Se puede calcular como tiempo promedio entre subidas a producción o como cantidad de subidas promedio en un período de tiempo (por ejemplo por sprint). La fórmula más simple puede ser, uno sobre el promedio de los períodos de despliegues.
 }
 
   \begin{figure}[h]
@@ -192,17 +193,23 @@ Por ejemplo, si el resultado es 200\% significa que el equipo ha duplicado su ca
   \end{figure}
   \FloatBarrier
 
+\item {\textbf{Mean Time To Restore (MTTR):} Cuánto tiempo lleva generalmente restaurar el servicio para la aplicación principal o el servicio en el que trabajan cuando ocurre un incidente de servicio\footnote{\cite{Humble-2018}}.
+}
 
 \item {\textbf{Métricas de flujo:} Scrum no prescribe métricas, por lo que bien podrían usarse métricas de flujo en vez de las basadas en SP, tomando cosas del método kanban. Algunas de ellas son el Throughput, el Cycle time (Ct) y el Lead time (Lt). Siendo el Throughput la velocidad, como número medio de unidades procesadas en un tiempo determinado. El Cycle time, tiempo real de trabajo sobre una unidad sin los tiempos de cola o espera. Y el Lead time, tiempo total en que una unidad pasa por el sistema de trabajo. 
 
 \begin{enumerate}    
-    \item {\textbf{Delivery Lead Time:} El lead time del desarrollo de software se puede calcular como el tiempo desde que una historia es creada hasta que es desplegada en producción\footnote{Agile Alliance Resources 2018}.  Este lead time también es un buen indicador cuando se prioriza el outcome sobre el output del equipo, indicando parcialmente cuán rápidos somos para salir al mercado para obtener resultados.
+    \item {\textbf{Development Lead Time:} El lead time del desarrollo de software se puede calcular como el tiempo desde que una historia es creada hasta que es desplegada en producción\footnote{Agile Alliance Resources 2018}.  Este lead time también es un buen indicador cuando se prioriza el outcome sobre el output del equipo, indicando parcialmente cuán rápidos somos para salir al mercado para obtener resultados.
+}
+ \item {\textbf{Delivery Lead Time:} Desde el punto de vista de DevOps se puede medir el Lead Time desde que se hace el primer commit hasta que el código se despliega en producción\footnote{\cite{Humble-2018}}.
 }
 \end{enumerate}
 
 }
 
 \end{enumerate}
+
+Es recomendable tener en cuenta que estas métricas (las que seleccione el equipo) deben ser de uso interno del equipo, principalmente las de velocidad. En el caso que se requiera medir output (para evaluar la performance) de varios equipos, una tribu o una organización, se pueden usar métricas como las sugeridas por Jez Humble en su libro Accelerate\footnote{\cite{Humble-2018}}: Delivery Lead Time, Delivery Frequency, Mean Time To Restore (MTTR) y Change Failure Rate. De este modo se puede evaluar la prestancia del sistema de desarrollo de software y no medir equipos.
 
 \subsection{Métricas de calidad de producto}
 
@@ -237,6 +244,8 @@ La deuda técnica creada es una forma de inventario no deseado y que debemos man
   \begin{enumerate}    
     \item {\textbf{Escaped defects:}
 Un defecto escapado es un defecto que no fue encontrado por el equipo en el proceso de desarrollo y que escapó al control de calidad interno del equipo. Por lo general, esos problemas son incidentes en operaciones (OPCON), es decir que los encuentran los usuarios finales una vez que la versión de release fue publicada y puesta a su disposición. Su cálculo más simple es cantidad en un período dado (por ejemplo cantidad de OPCON por sprint). Como mencionamos antes, es una medida de fiabilidad, cuanto menos defectos más fiable.
+}
+\item {\textbf{Change Failure Rate:} El porcentaje de cambios a producción (releases o cambios) que dan como resultado un servicio degradado o fallo y posteriormente requieren remediación (hotfix, rollback, fix-forward, patch, etc.). Esta métrica también puede usarse como prestancia o calidad del proceso de desarrollo \footnote{\cite{Humble-2018}}.
 }
   \end{enumerate}
   }
