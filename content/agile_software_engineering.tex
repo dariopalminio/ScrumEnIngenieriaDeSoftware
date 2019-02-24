@@ -2,7 +2,7 @@
 
 \section{Proceso de desarrollo}
 
-Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de hacer ingeniería de software además de agilidad. Hay diferentes procesos de ingeniería y podemos tomar el siguiente: descubrimiento y definición de requerimientos (Discovery \& Requirements), análisis y diseño (Analysis \& Design), implementación y pruebas (Implementation \& Testing), integración y pruebas (Integration \& Testing), despliegue (Delivery) y "operación y monitoreo" (Operation \& Monitoring). En la última fase se contempla operaciones, monitoreo y el análisis de datos. Operaciones en cuanto a aseguramiento de la operatividad y rendimiento del software. El monitoreo de datos es el seguimiento a determinadas acciones que podemos cuantificar y que nos arrojaran datos relevantes para la estrategia (KPIs). Y el análisis de datos es la base de la optimización de la estrategia, que nos permite modificar, continuar o establecer nuevas directrices, sin perder de vista el objetivo final del software o producto. Dicho esto, hay que considerar que el proceso de Ingeniería de Software sobre una pieza de Software (feature o historia), si bien es secuencial, tiene las fases que se solapan (ver fig. \ref{fig:PhasesOfSoftwareEngineering}). 
+Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de hacer ingeniería de software además de agilidad. Hay diferentes procesos de ingeniería o ciclos de vida y podemos tomar el siguiente: descubrimiento y definición de requerimientos (Discovery \& Requirements), análisis y diseño (Analysis \& Design), implementación y pruebas (Implementation \& Testing), integración y pruebas (Integration \& Testing), despliegue (Delivery) y "operación y monitoreo" (Operation \& Monitoring). En la última fase se contempla operaciones, monitoreo y el análisis de datos. Operaciones en cuanto a aseguramiento de la operatividad y rendimiento del software. El monitoreo de datos es el seguimiento a determinadas acciones que podemos cuantificar y que nos arrojaran datos relevantes para la estrategia (KPIs). Y el análisis de datos es la base de la optimización de la estrategia, que nos permite modificar, continuar o establecer nuevas directrices, sin perder de vista el objetivo final del software o producto.
 
 \begin{figure}[h]
   \centering
@@ -14,8 +14,11 @@ Hacer agilidad no nos asegura calidad. Para ello primero hay que asegurarse de h
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Correr este proceso bajo un marco ágil como Scrum, con prácticas ágiles es lo que podemos llamar Ingeniería de Software Ágil (Agile Software Engineering). Además es conveniente introducir la idea de prácticas continuas, es decir refinamiento continuo (análisis y diseño con trabajo UX continuo), testing continuo (continuous testing), integración continua (continuous integration), despliegue o entrega continua (continuous deployment \& continuous delivery) y monitoreo continuo (continuous monitoring). 
-Dicho esto, tenemos que tener en cuenta cómo unir y ajustar el proceso de Ingeniería de Software con el marco de trabajo Scrum. En este sentido es que se plantea ejecutar las fases del proceso de ingeniería, sobre historias de usuario, dentro del tren de sprints. En un equipo extremadamente autónomo y ágil, todas las fases se pueden desarrollar bajo el tren de sprints de Scrum.
+
+Dicho esto, hay que considerar que el proceso de ingeniería de software ágil se hace sobre piezas de software (batch, feature o historia de usuario), y si bien es secuencial, tiene las fases del ciclo de vida que se solapan con las de otros piezas (ver fig. \ref{fig:PhasesOfSoftwareEngineering}). Es decir que el software se va desarrollando de a fragmentos o pequeñas piezas de software, en forma incremental y evolutiva. Cada pieza de software se desarrolla con diferentes instancias del ciclos de vida.
+
+Correr este proceso bajo un marco ágil como Scrum, con prácticas ágiles es lo que podemos llamar ingeniería de software ágil (Agile Software Engineering). Además es conveniente introducir la idea de prácticas continuas, es decir refinamiento continuo (análisis y diseño con trabajo UX continuo), testing continuo (continuous testing), integración continua (continuous integration), despliegue o entrega continua (continuous deployment \& continuous delivery) y monitoreo continuo (continuous monitoring). 
+Dicho esto, tenemos que tener en cuenta cómo unir y ajustar el proceso de ingeniería de software con el marco de trabajo Scrum. En este sentido es que se plantea ejecutar las fases del proceso de ingeniería, sobre historias de usuario, dentro del tren de sprints. En un equipo extremadamente autónomo y ágil, todas las fases se pueden desarrollar bajo el tren de sprints de Scrum.
 
 \begin{figure}[h]
   \centering
@@ -29,16 +32,55 @@ Dicho esto, tenemos que tener en cuenta cómo unir y ajustar el proceso de Ingen
 
 De este modo, se integra el testing en fases más tempranas del desarrollo, por lo que QA no retrasa al equipo de desarrollo, porque QA está dentro del equipo y se trabaja con testing continuo. Los mismo sucede con UX y Operaciones.
 
-\section{Prácticas técnicas}
+\section{Testing continuo}
 
-Como ya he mencionado, es deseable que el SM vele por la excelencia técnica de su equipo y del proceso de desarrollo buscando lograr un flujo limpio. Claro que la responsabilidad es del equipo y tanto un líder técnico como el SM, puede liderar o guiar el proceso de mejora continua del flujo. Teniendo en cuenta las fases de desarrollo de los ítems de trabajo como historias, podemos tener dos aspectos en consideración para analizar el estado de nuestro procesos de desarrollo en cuanto a excelencia técnica. Por un lado, el aspecto de prácticas técnicas considerando la información, proceso, métodos, técnicas y organización (aquí se tiene en cuenta XP entre otras cosas). Por otro lado el aspecto tecnológico considerando las herramientas empleadas que cubren estas prácticas técnicas. Por ejemplo a continuación muestro un esquema de flujo y sus prácticas técnicas relacionadas.
+Si pensamos en Agile Testing pensamos en que queremos un testing dentro del equipo, con todo el equipo colaborando, que no sea solo una fase en un cascada, que reduce el tiempo para recibir retroalimentación y asegura calidad suficiente. Cuando se incorpora agile testing, se introducen algunas prácticas, como por ejemplo Testing de “todo el equipo”, integración continua, testing guiado por pruebas (TDD), desarrollo guiado por pruebas de aceptación (ATDD), implementar la V de calidad pero con historias, entre otros. 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.99\textwidth]{TechnicalPractices}
+  \includegraphics[width=0.99\textwidth]{AgileTesting_V}
+  \caption{Modelo en V de calidad y testing}
+  \centering
+  \label{fig:AgileTesting_V} %\ref{fig:AgileTesting_V}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Aunque considero que lo más importante es incorporar la mentalidad de testing continuo, independientemente de las prácticas o técnicas particulares.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{structure_of_software_engineering_on_batch_life_cycle}
+  \caption{Ciclo de vida de una historia y prácticas}
+  \centering
+  \label{fig:structure_of_software_engineering_on_batch_life_cycle} %\ref{fig:structure_of_software_engineering_on_batch_life_cycle}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Cada fase del ciclo de vida del desarrollo puede contener prácticas de testing, desde las fases más tempranas hasta producción.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{continuous_testing_on_batch_life_cycle}
+  \caption{Prácticas básicas en continuous testing}
+  \centering
+  \label{fig:continuous_testing_on_batch_life_cycle} %\ref{fig:continuous_testing_on_batch_life_cycle}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+\section{Prácticas técnicas}
+
+Como ya he mencionado, es deseable que el SM vele por la excelencia técnica de su equipo y del proceso de desarrollo, buscando lograr un flujo limpio, cadenciosos y sostenible. Claro que la responsabilidad es del equipo y tanto un líder técnico como el SM, pueden liderar o guiar al equipo en el proceso de mejora continua del flujo de trabajo. Teniendo en cuenta las fases de desarrollo de los ítems de trabajo como historias, podemos tener dos aspectos en consideración para analizar el estado de nuestro procesos de desarrollo en cuanto a excelencia técnica. Por un lado, el aspecto de prácticas técnicas considerando la información, proceso, métodos, técnicas y organización (aquí se tiene en cuenta XP, DevOps, etc.). Por otro lado el aspecto tecnológico considerando las herramientas empleadas que cubren estas prácticas técnicas. Por ejemplo a continuación muestro un esquema de flujo y sus prácticas técnicas relacionadas.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{practices_of_software_engineering}
   \caption{Flujo de prácticas técnicas}
   \centering
-  \label{fig:TechnicalPractices} %\ref{fig:TechnicalPractices}
+  \label{fig:practices_of_software_engineering} %\ref{fig:practices_of_software_engineering}
 \end{figure}
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
@@ -59,5 +101,6 @@ Hay que tener en cuenta que para que el flujo de desarrollo de software fluya li
 
 \section{En síntesis}
 
-Hacer ingeniería de software ágil es desarrollar software de valor, de modo iterativo e incremental, con un producto o servicio que evoluciona, donde los requisitos y soluciones evolucionan con el tiempo, haciendo entregas frecuentes de calidad y valor, trabajando con equipos auto-organizados y multidisciplinarios que mejoran, inmersos en un proceso compartido de toma de decisiones interactiva y dinámica. Y, lo más importante, es considerar que la ingeniería es, además de una práctica científica, una práctica humana. Construir software se trata de relaciones humanas en un sistema social. Por eso, hay que construir relaciones humanas de valor, que habiliten la entrega continua de valor.
+Hacer ingeniería de software ágil es desarrollar software de valor, de modo iterativo, incremental y evolutivo, con un producto o servicio que evoluciona, donde los requisitos y soluciones cambian con el tiempo, haciendo entregas frecuentes de calidad y valor, testeando continuamente, con feedback rápido, trabajando con equipos auto-organizados y multidisciplinarios que mejoran, inmersos en un proceso compartido de toma de decisiones interactiva y dinámica y entendiendo el negocio. Y, lo más importante, es considerar que la ingeniería es, además de una práctica científica, una práctica humana. Construir software se trata de relaciones humanas en un sistema social. Por eso, hay que construir relaciones humanas de valor, que habiliten la entrega continua de valor. Según Patrick Lencioni, un equipo humano debería tener ciertas aptitudes funcionales que posibilitan el trabajo de alto rendimiento: confianza, sin miedo al conflicto, compromiso, asunción de responsabilidades y atención a los resultados. Según el proyecto Aristóteles de Google, la clave es la cultura del equipo y lo necesario en ella es la seguridad psicológica entendida como: el sentimiento de confianza de que el equipo no va a avergonzar, rechazar o castigar a alguien por sus opiniones, comportamientos o ideas. Y como un equipo no es una isla, la organización que le da contexto debe reforzar este tipo de cultura, el factor humano, para lograr personas extraordinarias desarrollando resultados extraordinarios.
+
 
