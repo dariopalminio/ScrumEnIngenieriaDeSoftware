@@ -240,19 +240,34 @@ La estructura de un criterio de aceptación presentado como escenario puede ser 
   \item \textbf{Then}  [resultado] And [otro resultado]...
   \end{itemize}
 \end{itemize}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-\subsubsection{Jerarquía en el backlog}
+\subsubsection{Jerarquía y desglose del Backlog}
 
-Una decisión importante a la hora de trabajar con historias de usuario es hacer la estricta demarcación o no. La primera opción es ser estrictos y categorizarlas según si son historias de usuario o técnicas y, de este modo, podemos medir la velocity sobre historias reales y el capacity en trabajo técnico. También visualmente nos da una idea del balance de trabajo técnico versus historias de cara al usuario. Esto requiere más detalle y disciplina. La otra opción es tratarlas a todas como historias. De este modo podremos darnos cuenta si son técnicas o no según el rol que figure en el “COMO” de la redacción. Lo que sí es conveniente es redactar a todas con el formato de historia.
-Otras categorías a tener en cuenta son las abstracciones de alto nivel como son: los temas (theme) y las épicas (epic). Hacer este tipo de categorizaciones nos ayudará a hacer mejor el desglose de trabajo y ordenar mejor el backlog. De este modo, podremos agrupar por niveles desde temas en el superior, épicas que agrupan historias y las historias que agrupan tareas (ver fig. \ref{fig:Jerarquias_en_backlog}). Otra manera de agrupar sin usar épicas ni temas es simplemente agrupar por MVPs. Esto dependerá del equipo y el PO, de lo que les sea más cómodo y útil.
+Otras categorías a tener en cuenta son las abstracciones de alto nivel que permiten jerarquizar el desglose de trabajo en el Backlog. Esta depende del autor al cual uno se refiera y la convención del equipo. Por ejemplo hay quienes quieren trabajar con temas (theme), pero en mi experiencia es mejor manejar pocos conceptos y el de más alto nivel es el producto. A partir de un producto comenzamos a desglosar en épicas. Las épicas se pueden dividir en dos o más historias de tamaño más pequeño. Es difícil trabajar con épicas porque con frecuencia contienen múltiples historias. Generalmente se clasifican en una de dos categorías: historia compuesta o historia compleja (Mike-Cohn, “User Stories Applied”). Hacer este tipo de categorizaciones nos ayudará a hacer mejor el desglose de trabajo y ordenar mejor el backlog. A este modelo lo considero simplificado (ver fig. \ref{fig:Backlog_Model}). Es simplificado porque no trabajamos con features por separado. Desde un punto de vista más semántico: la features es una parte del sistema que está intentando construir, y la historia es una manera de describir esa parte. Según Kent Beck y Martin Fowler, las features y user stories son sinónimos. De hecho, podemos trabajar con historias que tengan título, donde el título representa a la descripción abreviada de la feature. 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{Jerarquias_en_backlog}
-  \caption{Jerarquía en el backlog.}
+  \includegraphics[width=0.99\textwidth]{Backlog_Model}
+  \caption{Modelo conceptual del backlog}
   \centering
-  \label{fig:Jerarquias_en_backlog} %\ref{fig:Jerarquias_en_backlog}
+  \label{fig:Backlog_Model} %\ref{fig:Backlog_Model}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Uno modelo más complejo es trabajar con features (ver fig. \ref{fig:Backlog_Model}). Podemos usar features como contenedor de historias (ver fig. \ref{fig:Backlog_breakdown}). En cualquier modo que elijamos podemos trabajar con MVPs, como parte del roadmap del producto. Los MVPs van a referenciar a features o a títulos de historias. El modelo conceptual que se use dependerá del equipo y el PO, de lo que les sea más cómodo y útil.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{Backlog_breakdown}
+  \caption{Desglose del backlog}
+  \centering
+  \label{fig:Backlog_breakdown} %\ref{fig:Backlog_breakdown}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{BDD}
 
