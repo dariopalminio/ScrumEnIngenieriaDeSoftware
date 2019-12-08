@@ -72,6 +72,36 @@ Cada fase del ciclo de vida del desarrollo puede contener prácticas de testing,
 
 Y, si lo pensamos bien, podemos decir que Scrum es una prueba de integración del sistema organizacional para validar continuamente si es posible que una organización entregue valor en un Sprint\footnote{Stacia Heimgartner Viscardi, Professional ScrumMaster's Handbook}. La prueba de Scrum revela los fallos de la organización, disfuncionalidades o los impedimentos que luego debemos buscar solucionar para lograr la agilidad organizacional. De este modo, cada Sprint que hagamos será un ciclo de testing organizacional, tanto de nuestro equipo como del resto de la organización, para levantar acciones de mejora que podemos explicitar, definir y evaluar en las sesiones de retrospectivas que tengamos y que apuntan a mejorar la propuesta de valor y el tiempo entre que se crea una historia y que la misma pueda ser validada por el cliente en forma operativa. Como dijo Jon Kern (co-autor del Manifiesto Ágil), “Ágil es reducir la brecha entre actuar y recibir feedback”, que en el desarrollo de productos se traduce a reducir el Time to Market (desde la perspectiva de negocio) o reducir el Delivery Lead Time (desde la perspectiva de DevOps); y Scrum nos ayuda a testear y medir esa brecha para reducirla. Con Scrum buscamos entregar software de calidad, que aporte valor, lo más pronto que sea posible.
 
+\subsection{Tamaños de Testing}
+
+Y hacia el equipo, el Scrum Master debe ayudarlo a que encuentre su manera de hacer buen testing y de mejorarlo. No existe realmente una forma única. Tampoco un convención de nombres y tipos de prueba claras. Depende de diferentes autores y de cada equipo. El Scrum Master debe ayudar con eso. Un ejemplo de esquema es el que han usado equipos en Google. A los desarrolladores de Google les gusta tomar decisiones basadas en datos, en lugar de confiar en el instinto o en algo que no se puede medir y evaluar. Ellos, llegaron a un acuerdo sobre un conjunto de convenciones de nomenclatura basadas en datos para sus pruebas. Llamaron a sus pruebas: "pequeñas", "medianas" y "grandes" \footnote{Test Sizes by Simon Stewart, Google Testing Blog, Monday, December 13, 2010.}. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Continuous_Delivery_Pipeline-small-medium-large}
+  \caption{Tamaños de testing en el pipeline del Continuous Delivery}
+  \centering
+  \label{fig:Continuous_Delivery_Pipeline-small-medium-large} %\ref{fig:Continuous_Delivery_Pipeline-small-medium-large}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+Van de la prueba pequeña que equivale a una prueba de unidad, pasan por la prueba mediana que asegura que los niveles en la arquitectura de una aplicación pueden comunicarse correctamente y por una prueba grande que es una de extremo a extremo o de sistema.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{TestingSize}
+  \caption{Tamaños de testing y tipos en el pipeline del Continuous Delivery}
+  \centering
+  \label{fig:TestingSize} %\ref{fig:TestingSize}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+El Scrum Master debe asegurarse que el equipo encuentre la manera más efectiva y eficiente de hacer testing. Puede usar un esquema como el anterior, la pirámide de testing de Mike Cohn, la de Lisa Crispin o lo que encuentren apropiado. Sin testing de calidad no hay software de calidad.
+
 \section{Prácticas técnicas}
 
 Como ya he mencionado, es deseable que el SM vele por la excelencia técnica de su equipo y del proceso de desarrollo, buscando lograr un flujo limpio, cadenciosos y sostenible. Claro que la responsabilidad es del equipo y tanto un líder técnico como el SM, pueden liderar o guiar al equipo en el proceso de mejora continua del flujo de trabajo. Teniendo en cuenta las fases de desarrollo de los ítems de trabajo como historias, podemos tener dos aspectos en consideración para analizar el estado de nuestro procesos de desarrollo en cuanto a excelencia técnica. Por un lado, el aspecto de prácticas técnicas considerando la información, proceso, métodos, técnicas y organización (aquí se tiene en cuenta XP, DevOps, etc.). Por otro lado el aspecto tecnológico considerando las herramientas empleadas que cubren estas prácticas técnicas. Por ejemplo a continuación muestro un esquema de flujo y sus prácticas técnicas relacionadas.
@@ -103,4 +133,3 @@ Hay que tener en cuenta que para que el flujo de desarrollo de software fluya li
 \section{En síntesis}
 
 Hacer ingeniería de software ágil es desarrollar software de valor, de modo iterativo, incremental y evolutivo, con un producto o servicio que evoluciona, donde los requisitos y soluciones cambian con el tiempo, haciendo entregas frecuentes de calidad y valor, testeando continuamente, con feedback rápido, trabajando con equipos auto-organizados y multidisciplinarios que mejoran, inmersos en un proceso compartido de toma de decisiones interactiva y dinámica y entendiendo el negocio. Y, lo más importante, es considerar que la ingeniería es, además de una práctica científica, una práctica humana. Construir software se trata de relaciones humanas en un sistema social. Por eso, hay que construir relaciones humanas de valor, que habiliten la entrega continua de valor. Según Patrick Lencioni, un equipo humano debería tener ciertas aptitudes funcionales que posibilitan el trabajo de alto rendimiento: confianza, sin miedo al conflicto, compromiso, asunción de responsabilidades y atención a los resultados. Según el proyecto Aristóteles de Google, la clave es la cultura del equipo y lo necesario en ella es la seguridad psicológica entendida como: el sentimiento de confianza de que el equipo no va a avergonzar, rechazar o castigar a alguien por sus opiniones, comportamientos o ideas. Y como un equipo no es una isla, la organización que le da contexto debe reforzar este tipo de cultura, el factor humano, para lograr personas extraordinarias desarrollando resultados extraordinarios.
-
