@@ -15,6 +15,8 @@ Cuando iniciamos una organización o migramos desde una tradicional, de manageme
   \centering
   \label{fig:Scrum-Team-constitution} %\ref{fig:Scrum-Team-constitution}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 De esta idea se desprende la pregunta de ¿qué propósito damos a cada equipo? o ¿cómo estructuramos a los equipos según qué propósitos? Una manera de hacerlo, pensando en productos y en el sector de producción de la compañía, es tomando una unidad de negocio o producto y ver si su alcance o tamaño es suficiente para un equipo o para varios. Si es para varios, una forma es analizar la jornada o flujo de experiencia del producto, determinar los KPIs involucrados y desglosar en subproductos con sus KPIs asociados. Así cada equipo puede ser responsable de un subproducto y de impactar según los KPIs identificados. Esta es una manera de hacerlo de arriba hacia abajo y orientados a producto. Luego, otra pregunta que surge es: ¿cómo los estructuramos? Bien, si el equipo es de producción como el desarrollo de software de productos, con trabajo planificable y divisible en lotes, Scrum viene como anillo al dedo. O sea que necesitamos a un SM y un PO en el equipo. Un equipo Scrum puede estar formado por diferentes roles, tales como: UX/UI, SM, PO, BA, QA, FE Dev, BE Dev, etcétera. Por ejemplo, un equipo puede estar formado por: PO, SM, UX/UI, 3 FE Dev y 3 BE Dev; otra estructura puede ser: PO, SM, BA, QA, 2 FE Dev y 2 BE Dev. O sea que podemos tener una infinidad de configuraciones. ¿Cuál puede ser la apropiada? No solo depende del propósito, sino de cómo desarrollaremos ese propósito o cuán autónomos somos en relación a él. En esta vía tenemos tres lineamientos básicos de configuración: equipos Scrum de características, equipos Scrum de componentes o uno mixto. Y cada una de estas modalidades pueden tener diversas configuraciones de roles.
 
@@ -29,6 +31,8 @@ Abordar el problema de proyectos grandes con "Equipos Scrum de características"
   \centering
   \label{fig:ScrumTeamsByFeatures} %\ref{fig:ScrumTeamsByFeatures}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 En esta arquitectura de organización es necesario coordinar el trabajo de los diferentes equipos. Los Scrum Master deben reunirse con regularidad, promoviendo la transformación a través de una lista visible de los impedimentos de organización. Los Scrum Master, además deberán estar familiarizados con biografía relacionada a este problema de escalabilidad como "Scaling Lean and Agile Development" \cite{Larman-Vodde-2008}.
 
@@ -43,6 +47,8 @@ Abordar el problema de proyectos grandes con "Equipos Scrum de componentes" (ver
   \centering
   \label{fig:ScrumTeamsByComponent} %\ref{fig:ScrumTeamsByComponent}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 Para terminar una PBI o historia de usuario hay en la mayoría de los casos la necesidad de dividir las historias en partes más pequeñas que podrían ser implementadas dentro de un solo componente. Además se genera dependencias entre los diferentes equipos haciendo necesario procesos de integración periódica y coordinación de equipos. En muchos casos, una sola historia de usuario no se puede implementar dentro de un único sprint y, en su defecto, depende de los resultados de otras historias desarrolladas por otro equipo que aún no están disponibles. A esto se lo llama "pipeline" y debe evitarse en lo posible o gestionarse apropiadamente.
 
@@ -62,6 +68,8 @@ También es posible la configuración de equipos mixtos que son la combinación 
   \centering
   \label{fig:ScrumTeamsMix} %\ref{fig:ScrumTeamsMix}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \section{Integración}
 
@@ -94,7 +102,8 @@ En una organización grande, independientemente de Scrum, se suelen formar comun
   \centering
   \label{fig:Communities} %\ref{fig:Communities}
 \end{figure}
-
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Integración UX}
 
@@ -119,6 +128,8 @@ En ambas propuestas es necesario coordinar e integrar el flujo de trabajo UX con
   \centering
   \label{fig:UXtask-and-Story-in-Scrum} %\ref{fig:UXtask-and-Story-in-Scrum}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Scrum y DevOps}
 
@@ -131,9 +142,10 @@ La integración a escala para que una Software Factory sea ágil y lleve adelant
   \centering
   \label{fig:DevOps} %\ref{fig:DevOps}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Una manera de integrar Operaciones con Desarrollo es mediante el uso de herramientas compartidas, misma cultura, comunidades en común, procesos ágiles compartidos, comunicación estandarizada, etcétera. Algo crucial en una organización madura es la automatización máxima en procesos de Continuous Integration y Continuous Delivery. 
-Además, por un lado son los propios equipos los que pueden responsabilizarse de DevOps y de su propio pipeline de Continuous Delivery, ya sea trabajando colaborativamente entre los Devs, Testers y Ops o con perfiles de trabajo DevOps.
+Como primer estrategia, los propios equipos pueden responsabilizarse de DevOps y de su propio pipeline de Continuous Integration y Continuous Delivery, ya sea trabajando colaborativamente entre los Devs, Testers y Ops o con perfiles de trabajo DevOps. Algunas organizaciones usan esta estrategia, la de no contar con equipos de desarrollo y operaciones separados. En su lugar, tienen un único equipo “NoOps” que asume ambas responsabilidades.
 
 \begin{figure}[h]
   \centering
@@ -142,9 +154,14 @@ Además, por un lado son los propios equipos los que pueden responsabilizarse de
   \centering
   \label{fig:DevOps-pipeline} %\ref{fig:DevOps-pipeline}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Por otro lado, el área de operaciones (o equipo DevOps o de plataforma e infraestructura) no necesita implementar Scrum, pero sí puede llevar en práctica sus valores, ser ágil (con Lean, Kanban, DAD, etc.) y tener en cuenta los ciclos Scrum de los equipos de desarrollo. Este equipo, más que trabajar como auditor, rector y bajo demanda (un modo push) deberían trabajar más en un modo facilitador, líder y como soporte (un modo pull) de los equipos de desarrollo, promoviendo un sistema de autogestión (donde los equipos puedan autogestionar sus sistemas DevOps incluyendo su plataforma e infraestructura).
-DevOps es sólo un paso importante para unirse a la cultura general de la colaboración ágil y que debe involucrar a todas las disciplinas en una organización. 
+Por otro lado, como segunda estrategia, se puede mantener el área de operaciones (o equipo DevOps o de plataforma e infraestructura) el cual no necesita implementar Scrum, pero sí puede llevar en práctica sus valores, ser ágil (con Lean, Kanban, DAD, etc.) y tener en cuenta los ciclos Scrum de los equipos de desarrollo. Además de mantener herramientas compartidas, misma cultura, comunidades en común, procesos ágiles compartidos, comunicación estandarizada, etcétera. Este equipo, más que trabajar como auditor, rector y bajo demanda (un modo push) deberían trabajar más en un modo facilitador, líder y como soporte (un modo pull) de los equipos de desarrollo, promoviendo un sistema de autogestión (donde los equipos puedan autogestionar sus sistemas DevOps incluyendo su plataforma e infraestructura). 
+
+De esto se desprende una tercer estrategia plausible, que consta en que la organización tenga equipos DevOps dedicados e intermediarios, que desarrollan herramientas comunes, crean estándares, solucionan conflictos y fomentan la colaboración interequipo. Estos equipos funcionarían como centro de excelencia DevOps sin añadir burocracia ni convertirse los dueños de DevOps, sin tener que hacer frente a todos los problemas relacionados. Porque se podría transformar en un cuello de botella por sobrecarga.
+
+DevOps, como parte de ingeniería de software, es sólo un paso importante para unirse a la cultura general de la colaboración ágil e involucrar a todas las disciplinas, en una organización, en busca de entregar software funcional en entregas más pequeñas y frecuentes.
 
 
 \section{Modelos de escalamiento}
@@ -161,6 +178,8 @@ El framework Scrum@Scale fue creado por Jeff Sutherland para integrar múltiples
   \centering
   \label{fig:ScrumScale} %\ref{fig:ScrumScale}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Spotify}
 
@@ -173,6 +192,8 @@ Spotify es un caso de estudio que demuestra que puede ser aplicado más allá de
   \centering
   \label{fig:Spotify_organizational_model} %\ref{fig:Spotify_organizational_model}
 \end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 La tribu también tiene un líder de producto (PL) y uno de diseño (DL). Dentro de cada tribu hay capítulos (Chapter) y cada uno engloba un área funcional técnica de ingeniería, agrupando a los miembros de diferentes escuadrones con habilidades similares y que trabajan dentro del mismo área de competencia (por ejemplo el capítulo QA, BE, FE, etc.). Cada capítulo tiene un líder del capítulo ("Chapter lead" o CL) quien se encarga del desarrollo profesional, la cultura de la ingeniería, el apoyo del escuadrón y en asegurar la contratación de las personas adecuadas. Los líderes de capítulo suelen ser desarrolladores a tiempo parcial, por lo general se sientan en uno de los escuadrones de la tribu. 
 Las diferentes tribus se pueden relacionar de diferentes maneras. Dos de ellas son la alianza (Alliance) y las comunidades (Guild). Una comunidad es una "comunidad de interés" (explicadas anteriormente). Los capítulos siempre son locales para una tribu, mientras que una comunidad generalmente es transversal a varias tribus. Cada comunidad puede tener un "coordinador de comunidad" y su alcance es más flexible. Y por último, la alianza une a diferentes comunidades por cohesión funcional de producto y tiene tres líderes serviciales (TL, PL y DL) quienes facilitan el trabajo de los líderes de las tribus unidas y el funcionamiento de las tribus, en general.
@@ -199,3 +220,4 @@ Si bien estos modelos tiene distintos grados de aceptación y éxito en muchas o
 \section{Equipo de mejora continua}
 
 Como se ha visto, el escalamiento no es tarea simple y no existe una solución universal. Se puede dejar que los cambios organizacionales emerjan de abajo hacia arriba (desde los equipos, comunidades o individuos), sean dirigidos por un ente director (coaches, consultoras o un líder transformacional) o algo mixto. Hay frameworks que recomiendan que, cuando se desea llevar a cabo transformaciones organizacionales hacia la agilidad, se constituya un equipo de expertos ágiles llamado centro de excelencia, centro de transformación digital, centro de soporte ágil o equipo transversal de mejora continua \footnote{ScrumStudy recomienda un Scrum Guidance Body y DAD recominda un equipo de excelencia CoE.}. Este equipo se encargaría de hacer coaching a equipos y a otros roles, proponer iniciativas de mejoras organizacionales y apoyar la transformación cultural. El equipo puede estar formado por Coaches Ágiles Empresariales, gerentes ágiles, ingenieros de sistemas, ingenieros de operaciones, capital humano, etc. Los miembros deben ser capaces de trabajar en cualquier nivel de la organización, teniendo una visión multidisciplinaria, global y perspectiva sistémica.
+
