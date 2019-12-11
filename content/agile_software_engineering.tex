@@ -116,7 +116,18 @@ Como ya he mencionado, es deseable que el SM vele por la excelencia técnica de 
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-Se puede hacer un esquema de flujo semejante con los aspecto tecnológico, de herramientas, correspondientes a cada fase.
+Se puede hacer un esquema de flujo (el pipeline de producto o de delivery) semejante con los aspecto tecnológico, de herramientas, correspondientes a cada fase. Si bien hay un flujo genérico, cada equipo determinará cuál es su flujo y, en consecuencia, su pipeline.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Product_Pipeline}
+  \caption{Flujo de producto vs. de delivery}
+  \centering
+  \label{fig:Product_Pipeline} %\ref{fig:Product_Pipeline}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
 
 Hay que tener en cuenta que para que el flujo de desarrollo de software fluya limpio y cadencioso, la experiencia del desarrollo debe ser memorable y fluida sobre una plataforma e infraestructura que la facilite. Es por esto que un equipo de desarrollo tiene interdependencia con equipos de operaciones e infraestructura y es parte del desafío de un equipo de alto rendimiento disminuir la brecha, empoderarse y facilitar la integración de ese área de conocimiento.
 
@@ -129,6 +140,92 @@ Hay que tener en cuenta que para que el flujo de desarrollo de software fluya li
 \end{figure}
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\section{Plataforma e infraestructura}
+
+Una manera de deducir el nivel de calidad de trabajo de un equipo es ver cómo se desenvuelven con DevOps en cuanto a cómo manejan la optimización y automatización del flujo de trabajo, y  la calidad y flexibilidad de su plataforma y su infraestructura.
+
+
+\subsection{Plataforma}
+
+
+El trabajo de desarrollo de software es una actividad bastante compleja. Ya no se programa en texto plano y se integra enviando archivos por email. El trabajo del Scrum Master es ayudar a su equipo a que encuentre su stack tecnológico adecuado para el problema que intenta resolver. La complejidad de plataforma justa y mínima que facilite y optimice el flujo de desarrollo. Se debería preguntar: ¿Qué plataforma tiene y debería tener el equipo? ¿Cómo maneja o debería manejar la plataforma? ¿Cuáles son sus herramientas informáticas para idear, crear, integrar, probar, desplegar, monitorear y corregir errores de software de una manera ágil? ¿Cuán rápido permiten llevar una idea a producción?
+
+
+Por ejemplo, un equipo estándar que desarrolla algún sitio web con una arquitectura orientada a microservicios. ¿Qué necesitaría? A modo de ejemplo podemos pensar en lo siguiente:
+\begin{itemize}
+
+\item \textbf{Análisis y diseño:} El equipo usará, en una de sus primeras fases, herramientas de gestión de proyectos (como Jira de Atlassian, Trello, etc.) para idear, definir, compartir, coordinar y planificar trabajo en forma de historias de usuario, tickets o docs. El equipo necesita comunicarse para lo que usará software de chatting (email, Slack, Rocket.Chat, Fleep, etc. ) y conferencias (Google Hangouts, Zoom, skype, etc.). En el proceso de análisis y diseño necesitará compartir documentación y otros archivos necesitando un repositorio de documentos compartidos (Google Drive, Dropbox, OneDrive y SharePoint en Office 36 de Microsoft, etc.). Sumando herramientas de diseño UX (por ejemplo para Wireframes, Visual Design, etc.) y de diseño y diagramado de software (Día, Visio, Google Draw.io, etc.). 
+
+\item \textbf{Implementación:} En programación incluirán lenguajes, entornos IDE de programación (Eclipse, etc.) y librerías. Necesitará un gestor de configuración y versionado de software o Version Control System para trabajar en un código de propiedad compartida (github, Subversion, CVS, etc.). 
+
+\item \textbf{Integración:} Trabajará con un esquema de branching e integración de código para lo cual usará herramientas de integración y despliegue (como Gitlab) además de herramientas de automatización de integración y despliegue (como Jenkins, Travis CI, Buildbot, DotCi, etc.). 
+Pruebas: Junto a esto, para realmente hacer ingeniería, necesita herramientas de gestión,  ejecución y automatización de pruebas (como Selenium, Sahi, Source Labs, Testing Bot etc.). 
+
+\item \textbf{Despliegue:} Herramientas para desplegar en producción (Jenkins, Travis CI, Buildbot, DotCi, etc.). 
+
+\item \textbf{Monitoreo:} Y, en su etapa de monitorear el software operativo en producción, necesita monitorear el rendimiento y la saludo del software y atender las contingencias que ocurran. Aquí necesitará herramientas de Bug-tracking como comunicación y sistema de ticket para identificaciones de errores y bugs (Bugzila, Mantis Bug Tracker, etc.), herramienta de logs o  registros y monitoreo (Splunk, Sumo Logic, LogStash, GrayLog, Loggly, PaperTrails, etc.). Y por último el equipo necesita evaluar los datos del negocio que opera el software, tendencias, comportamientos de los usuarios y clientes, para lo que puede usar herramientas de Analítica digital y Business Intelligence (Splunk, Google Analytic, etc.).
+
+\end{itemize}
+
+Luego, todas estas herramientas... ¿Sobre qué corren? ¿Sobre qué infraestructura funciona? ¿Qué ambientes de programación, pruebas y producción manejan? ¿Cuán versátil y fácil de configurar es? ¿Que dominio, propiedad y responsabilidad tiene el equipo sobre esta? ¿Cómo se comunica y se coordina con los proveedores y el soporte?
+
+
+\subsection{Infraestructura}
+
+
+\subsubsection{Ambientes de software}
+El flujo de desarrollo de software sucede y fluye por diferentes ambientes de software, que podrían clasificarse como ambiente de desarrollo local, de desarrollo compartido (o de integración), de prueba, de preparación (Staging) y de producción.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Environment}
+  \caption{Ambientes del flujo de desarrollo}
+  \centering
+  \label{fig:Environment} %\ref{fig:Environment}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\begin{itemize}
+
+\item \textbf{Desarrollo:} Un ambiente de desarrollo compartido e integración está configurado para permitir a los desarrolladores escribir código rápidamente, verificarlo creando pruebas básicas (pruebas unitarias) y ser productivo. Este entorno es mucho más pequeño de lo que se necesita para ejecutar una aplicación completa en una implementación de la vida real. También presenta herramientas específicas para desarrolladores que a veces pueden obstaculizar la validación rigurosa del control de calidad. Y lo más importante, el entorno de desarrollo cambia constantemente, con nuevas funciones que se agregan todo el tiempo, lo que dificulta que los ingenieros de control de calidad realicen pruebas que requieren mucho tiempo, pruebas de regresión o integración, sin interrumpir el proceso de desarrollo. Debido a que ejecutar pruebas complejas en el entorno de desarrollo conduciría a una gran pérdida de tiempo de los desarrolladores y, a su vez, por la poca estabilidad del software dificultaría el trabajo de los testers, es que se hace necesario otro entorno especializado para probar.
+
+\item \textbf{Prueba:} El ambiente de prueba es donde los ingenieros de control de calidad pueden usar una variedad de herramientas de prueba para ejecutar todas sus diferentes pruebas sobre el código de aplicación tomado del entorno de desarrollo. Mientras los desarrolladores comprueban su código en busca de errores simples antes de pasarlo para garantizar la calidad, los testers ejecutan tipos de pruebas más complejas y que requieren mucho tiempo para verificar la compatibilidad del código nuevo y antiguo, la integración correcta de los diferentes módulos, el rendimiento del sistema, etc. 
+
+\item \textbf{Staging:} Luego se necesitan pruebas de aceptación del usuario en un ambiente Staging, provisional, antes de subir a producción. El Staging es un entorno de ensayo pre-productivo y es una réplica idéntica del entorno de producción del cliente, que también suele contener datos de producción reales que se han desinfectado por motivos de seguridad. Está alojado de la misma manera que los servidores de producción e implica una configuración idéntica y operaciones de actualización. Por lo tanto, las pruebas en un entorno provisional ofrecen la forma más confiable de verificar la calidad del código y garantizar que los servidores de producción tengan éxito.
+
+\item \textbf{Producción:} Y por último el ambiente productivo donde se explotará el software. Aquí estarán todos los datos reales del cliente y es donde el software, de algún modo, vive.
+
+\end{itemize}
+
+\subsubsection{Infraestructura ágil}
+La infraestructura es como la autopista por donde circula nuestro código dentro de los ambientes como veículos. En consecuencia la calidad y tecnología de esta autopista determina la velocidad con que circulará nuestro código y la tasa de accidentes. La infraestructura ha evolucionado y seguirá haciéndolo a un ritmo acelerado. A continuación cuento una visión general de cómo se ha dado. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Infrastructures}
+  \caption{Infraestructura}
+  \centering
+  \label{fig:Infrastructures} %\ref{fig:Infrastructures}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\begin{itemize}
+
+\item \textbf{Baseline:} La forma más simple de infraestructura de trabajo que tenemos como desarrolladores es el Baseline, en donde el desarrollador instala todo lo necesario para programar y correr la aplicación desarrollada en su máquina física local. Y, además, puede usar servidores dedicados o Datacenters para hacer pruebas y despliegues. El problema de esta estrategia es que cuando estamos desarrollando una aplicación inestable puede desestabilizar todo el sistema, desconfigurar el computador y terminar todo en un caos provocado por la coexistencia de varios lenguajes o plataformas, librerías, servidores de bases de datos locales, espacios de trabajo de nuestro IDE, proyectos de versionado de código, etc… Y esto nos hace perder mucho tiempo en estabilizar todo de nuevo. Y en el caso de servidores compartidos esto se potencia, porque son más personas las que echan manos. Esto no es para nada ágil. Para mejorar esto surgió la posibilidad de trabajar con virtualización.
+
+\item \textbf{Virtualización:} La virtualización nos permite ejecutar aplicaciones en un entorno controlado, con lo necesario para funcionar, encapsulado en un sistema operativo virtual independientemente de la máquina real que use. La virtualización funciona por medio de la abstracción de recursos, esto es por parte de un Hypervisor o VMM que corre en la máquina física del desarrollador. Una de las principales ventajas que tiene la virtualización es la capacidad de separar un entorno inestable (el virtual) de otro estable (la máquina física).  Esto permite restaurar el sistema a cualquier estado previo correcto en menos tiempo que si se trabajara directamente en la máquina física real como el caso Baseline. Otra ventaja es poder trabajar con múltiples entornos de prueba. Por ejemplo, en la misma máquina podemos correr la aplicación en distintos sistemas operativos. Esto mejora también el trabajo sobre servidores compartidos. Diferentes herramientas nos ofrecen virtualización de sistemas operativos (Docker, Virtuozzo, OpenVZ, Linux-VServer, etc.). Además existe la virtualización de procesos (Java Virtual Machine, etc.) y de sistemas (Oracle VM VirtualBox, MTL Virtual Machine, etc.). Junto a estas tecnologías surge la virtualización de red que nos ayuda a desacoplar completamente los recursos de red del hardware subyacente. El problema de la virtualización es que el proceso de configuración y distribución sigue siendo una tarea manual, repetitiva y en definitiva, poco conveniente. Esta forma no tiene tanta flexibilidad y portabilidad. Además, cuando necesitamos tener máquinas virtuales dedicadas y tenemos un elevado número de servidores en una misma máquina, se ve una clara reducción de recursos. Por eso surgió otra estrategia de virtualización más avanzada, la ‘containerización’.
+
+\item \textbf{Containerización:} Los contenedores nos proporcionan un entorno aislado e independiente como forma de empaquetar todo lo necesario para ejecutar una aplicación: el código, las herramientas del sistema, librerías, etcétera. Sin usar sistemas operativos virtuales completos. Esto permite la portabilidad, que implica que los desarrolladores puedan crear aplicaciones en una computadora portátil y desplegarlas en los servidores, de forma más rápido, arrancarlas y pararlas más rápido y aprovechar mejor los recursos de hardware. Además facilita trabajar en una arquitectura de microservicios. Existen diferentes herramientas software que nos provee containerización (Kubernetes, Docker, Solaris Containers, etc.).
+
+\item \textbf{Infraestructura como código:} Por otra parte, surge la “infraestructura como código”, en alternativa a la infraestructura tradicional que traía procesos manuales, errores humanos, demoras en configuraciones, cuellos de botella por entrega de la infraestructura, documentación incompleta, dificultad de introducir frecuentes cambios, etcétera. Con ella aplicamos herramientas y prácticas de ingeniería de software en nuestra infraestructura. Esto nos permite gestionar y proporcionar infraestructura de forma programática a través de código y automatización, para crear y cambiar servidores, instancias, entornos, contenedores o alguna otra infraestructura de forma ágil. En otras palabras, escribimos y ejecutamos código con diferentes herramientas software (Chef, Ansible de Redhat, Puppet, SaltStack, Terraform de HashiCorp, Vagrant, etc.) que define, despliega y actualiza infraestructuras.
+
+\item \textbf{Cloud Computing:} Y todo esto nos lleva al Cloud Computing, o computación en la nube. Que es una plataforma que permite ofrecer las TI como servicios en la red. Todo lo que se encuentra en la nube Cloud se ofrece al usuario o programador como servicio, tanto software (SaaS), plataforma (PaaS) e infraestructuras (IaaS). El Cloud está basado en entornos virtualizados de alta disponibilidad y rendimiento sobre la infraestructura de Datacenter del proveedor. Además existe Elastic Computing que se aplica en los Elastic Cloud como tecnología de adaptación de uso de recursos en función de la demanda. Actualmente estas tecnologías son provista por proveedores dedicados al negocio de Clouding (Amazon, Azure, Google, Alibaba, etc.).
+
+\end{itemize}
 
 \section{En síntesis}
 

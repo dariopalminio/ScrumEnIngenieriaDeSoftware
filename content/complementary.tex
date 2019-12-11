@@ -597,23 +597,36 @@ La práctica consiste en que una vez que el programador desarrolló un trabajo d
 El "Test Driven Development" (TDD) o "desarrollo guiado por pruebas"\footnote{\cite{Jurado-2010}} es una práctica, técnica de desarrollo ágil y técnica de programación que hace foco en el comportamiento especificado de unidades de software\footnote{[Wikipedia 2014]} como disparador para el desarrollo de pruebas. O sea, basándose en especificaciones, esta práctica tiene como táctica escribir primero las pruebas (código de prueba) y después el código (código de producto) para luego realizar ciclos de "refactorización" \cite{Kent-Beck-2003}. Con este enfoque se pretende, entre otras cosas, que el diseño sea el código mismo (código de producto) y que las pruebas concretas (código de prueba) sirvan de documentación. Esta técnica se complementa con la automatización de pruebas. En todo ese conjunto de pruebas concretas, las pruebas de unidad se usan para validar métodos individuales y conjuntos de métodos. En consecuencia, en este tipo de desarrollos, se logran sistemas con un gran conjunto de pruebas (muchas líneas de código en pruebas). Por eso hay que considerar que, si bien se pueden lograr productos de calidad, demanda un costo considerable.\newline
 Si tenemos que asignar un lema a este enfoque es "la prueba en primer lugar" y su afirmación filosófica principal sería que "el diseño emerge del refactoring originado por pruebas".
 
-\subsection{Integración continua}
-
-La integración continua (Continuous Integration\footnote{Continuous Integration fue propuesto inicialmente por Martin Fowler.}) es una práctica de ingeniería de software y modelo informático que consiste en hacer integraciones automáticas de un proyecto, compilación y ejecución de pruebas, lo más a menudo posible para así poder detectar fallos cuanto antes.
-
-\subsection{Entrega continua}
-
-El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción. Trabajar bajo el marco ágil y no trabajar con testing continuo, integración continua ni entrega continua puede conducir a un trabajo poco ingenieril y menos eficiente. Es parte de reducir el time to market y el tiempo de despliegue, facilitar el flujo entre el desarrollo y despliegue, reduciéndo el tiempo lo máximo posible y manteniendo calidad. Aquí el desafío es lograr hacer el desarrollo con TDD (ATDD o DDD), integración y despliegue, todo dentro de un mismo sprint.
-
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.80\textwidth]{Continuous_delivery_flow}
+  \includegraphics[width=0.75\textwidth]{Continuous_delivery_flow}
   \caption{Flujo de delivery}
   \centering
   \label{fig:Continuous_delivery_flow} %\ref{fig:Continuous_delivery_flow}
 \end{figure}
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+\subsection{Integración continua}
+
+La integración continua (Continuous Integration\footnote{Continuous Integration fue propuesto inicialmente por Martin Fowler.}) es una práctica de ingeniería de software y modelo informático que consiste en hacer integraciones automáticas de un proyecto, compilación y ejecución de pruebas, lo más a menudo posible para así poder detectar fallos cuanto antes.
+
+\subsection{Entrega y despliegue continuo}
+
+El Continuous Delivery es un enfoque de ingeniería de software en el que los equipos producen software en ciclos cortos, garantizando releases de forma fiable en cualquier momento del desarrollo. Este modelo suele ser parte incluida en la cultura DevOps y, a su vez, suele incluir la práctica de Continuous Deployment para desplegar, en forma automática, código a producción. Tal vez la única diferencia entre Continuous Delivery y Continuous Deployment es que en esta última todo está automatizado y en la anterior uncluye un trabajo manual en el despliegue a producción.
+Trabajar bajo el marco ágil y no trabajar con testing continuo, integración continua ni entrega continua puede conducir a un trabajo poco ingenieril y menos eficiente. Es parte de reducir el time to market y el tiempo de despliegue, facilitar el flujo entre el desarrollo y despliegue, reduciéndo el tiempo lo máximo posible y manteniendo calidad. Aquí el desafío es lograr hacer el desarrollo con TDD (ATDD o DDD), integración y despliegue, todo dentro de un mismo sprint.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{DevOpsPipeline}
+  \caption{Continuous Delivery vs. Continuous Deployment}
+  \centering
+  \label{fig:DevOpsPipeline} %\ref{fig:DevOpsPipeline}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
 
 \newpage
 \section{Metodologías amigas}
