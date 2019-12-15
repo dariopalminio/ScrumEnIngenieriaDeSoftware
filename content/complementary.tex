@@ -229,19 +229,6 @@ Las historias de usuario tienen límites específicos para las características 
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-La estructura de un criterio de aceptación presentado como escenario puede ser como la siguiente:
-
-%Criterio de aceptación ejemplo con un escenario
-\begin{itemize}
-\item \textbf{Scenario 1:} Título
-  \begin{itemize}
-  \item \textbf{Given} [contexto] And [otro contexto]...
-  \item \textbf{When}  [evento] 
-  \item \textbf{Then}  [resultado] And [otro resultado]...
-  \end{itemize}
-\end{itemize}
-\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
-% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsubsection{Jerarquía y desglose del Backlog}
 
@@ -269,6 +256,19 @@ Uno modelo más complejo es trabajar con features (ver fig. \ref{fig:Backlog_Mod
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
+\subsection{Slicing}
+
+En la actividad de refinamiento del Backlog, el PO conversa y analiza con el equipo sobre si las historias son lo suficientemente pequeñas para desarrollarse y cumplir con el DoR. En caso de que aún sean demasiado grande podrán subdividirse según algún criterios de un conjunto de patrones de Slicing. Estos patrones ayudarán a encontrar la manera de pasar de historias grandes o complejas a otras más pequeñas y simples, manteniendo siempre la cualidad de User Story.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Slicing}
+  \caption{Actividad de Slicing}
+  \centering
+  \label{fig:Slicing} %\ref{fig:Slicing}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \section{Técnicas de estimación}
 
@@ -611,7 +611,21 @@ Hay que tener en cuenta que esta metodología es muy parecida a ATDD. Solo que t
 
 \subsection{ATDD}
 
-ATDD (Acceptance Test Driven Development) es una metodología en la cual todo el equipo discute en colaboración criterios de aceptación de una historia de usuario, con ejemplos, y luego crea un conjunto de pruebas de aceptación en forma de escenarios (por ejemplo en formato Gherkin) en concreto. Continuadamente se automatiza la prueba de aceptación de los escenarios que fallarán (fail) en su primera corrida.  Luego recién se procede a programar la implementación de la historia de usuario para que pase (pass) los escenarios. Aquí es donde se relaciona con TDD, ya que la implementación del código de la historia se puede hacer usando la técnica TDD. Este proceso se repite por cada historia de usuario. Las herramientas para trabajar con ATDD incluirían a Cucumber y Fitnesse, entre otras.
+ATDD (Acceptance Test Driven Development) es una metodología en la cual todo el equipo discute en colaboración criterios de aceptación de una historia de usuario, con ejemplos, y luego crea un conjunto de pruebas de aceptación en forma de escenarios (por ejemplo en formato Gherkin) en concreto. La estructura de un criterio de aceptación presentado como escenario puede ser como la siguiente:
+
+%Criterio de aceptación ejemplo con un escenario
+\begin{itemize}
+\item \textbf{Scenario 1:} Título
+  \begin{itemize}
+  \item \textbf{Given} [contexto] And [otro contexto]...
+  \item \textbf{When}  [evento] 
+  \item \textbf{Then}  [resultado] And [otro resultado]...
+  \end{itemize}
+\end{itemize}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Continuadamente se automatiza la prueba de aceptación de los escenarios que fallarán (fail) en su primera corrida.  Luego recién se procede a programar la implementación de la historia de usuario para que pase (pass) los escenarios. Aquí es donde se relaciona con TDD, ya que la implementación del código de la historia se puede hacer usando la técnica TDD. Este proceso se repite por cada historia de usuario. Las herramientas para trabajar con ATDD incluirían a Cucumber y Fitnesse, entre otras.
 
 \begin{figure}[h]
   \centering
