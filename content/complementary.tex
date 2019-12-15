@@ -269,10 +269,6 @@ Uno modelo más complejo es trabajar con features (ver fig. \ref{fig:Backlog_Mod
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-\subsection{BDD}
-
-Una manera de ayudar al desarrollo ágil a partir de requerimientos es usar el desarrollo conducido por comportamiento (Behavior Driven Development o BDD), el cual es un proceso de desarrollo por el que se busca comenzar a partir de un lenguaje común que une la parte técnica y la de negocio, y desde ese lenguaje común se parte hacia el Testing y, posteriormente, al desarrollo. El proceso consta básicamente en escribir las historias de usuario o features (en lenguaje ubicuo), escribir los escenarios (o criterios de aceptación en forma de escenarios) y automatizar las pruebas de aceptación de los escenarios (aquí es donde comenzamos a hacer TDD).
-
 
 \section{Técnicas de estimación}
 
@@ -607,6 +603,25 @@ Si tenemos que asignar un lema a este enfoque es "la prueba en primer lugar" y s
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
+
+\subsection{BDD}
+
+Una manera de ayudar al desarrollo ágil a partir de requerimientos es usar BDD (Behavior Driven Development). El desarrollo conducido por comportamiento se puede ver como una extensión de TDD. La mejora clave con BDD es la introducción de un lenguaje específico de dominio que es muy accesible para los usuarios de negocios. BDD generalmente estará más en el nivel de prueba funcional ya que es el resultado natural de trabajar con un lenguaje centrado en el negocio. De este modo el PO se sienta con el cliente y escribe oraciones significativas sobre cómo debería funcionar todo el sistema. Se han usado herramientas software como Pepino para soportar el trabajo con BDD.
+Hay que tener en cuenta que esta metodología es muy parecida a ATDD. Solo que tiene un alcance algo distinto, ya que BDD trabaja muy cerca del cliente (capa testing end-to-end) y ATDD es más a nivel de la creación de la US (capa testing de integración). Aunque las diferencias son algo difusas. El libro "Specification by Example", dice que ATDD,  BDD y otros términos, son distintos nombres para referirse a la misma metodología. Un libro que coincide es "ATDD by Example", añadiendo que también podemos conocerlo con el nombre de Specification by Example, Story Testing o Agile Acceptance Testing. Mi consejo, por simplicidad, es no prestar importancia a las diferencias y centrarse en ATDD si es que decide aplicar esta metodología.
+
+\subsection{ATDD}
+
+ATDD (Acceptance Test Driven Development) es una metodología en la cual todo el equipo discute en colaboración criterios de aceptación de una historia de usuario, con ejemplos, y luego crea un conjunto de pruebas de aceptación en forma de escenarios (por ejemplo en formato Gherkin) en concreto. Continuadamente se automatiza la prueba de aceptación de los escenarios que fallarán (fail) en su primera corrida.  Luego recién se procede a programar la implementación de la historia de usuario para que pase (pass) los escenarios. Aquí es donde se relaciona con TDD, ya que la implementación del código de la historia se puede hacer usando la técnica TDD. Este proceso se repite por cada historia de usuario. Las herramientas para trabajar con ATDD incluirían a Cucumber y Fitnesse, entre otras.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{ATDD_methodology}
+  \caption{Esquema del proceso básico de ATDD}
+  \centering
+  \label{fig:ATDD_methodology} %\ref{fig:ATDD_methodology}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \subsection{Integración continua}
 
