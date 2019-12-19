@@ -144,7 +144,7 @@ Hay que tener en cuenta que para que el flujo de desarrollo de software fluya li
 
 \section{DevOps}
 
-Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software útil y el enfoque DevOps nos ayuda a este objetivo. Aclaro aquí que DevOps no es más que una práctica y efoque dentro de la ingeniería de software. Por este motivo, una manera de deducir el nivel de ingeniería y, en consecuencia, de calidad de trabajo de un equipo es ver cómo se desenvuelven con DevOps en cuanto a cómo manejan la optimización y automatización del flujo de trabajo, la calidad y flexibilidad de su plataforma e infraestructura y como se integran o gestionan operaciones. A continuación veremos algunos temas de plataforma, infraestructura, pipeline, automatización y Feature toggles.
+Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software útil y el enfoque DevOps nos ayuda a este objetivo. Aclaro aquí que DevOps no es más que una forma de especialización y de efoque dentro de la ingeniería de software. Por este motivo, una manera de deducir el nivel de ingeniería y, en consecuencia, de calidad de trabajo de un equipo es ver cómo se desenvuelven con DevOps en cuanto a cómo manejan la optimización y automatización del flujo de trabajo, la calidad y flexibilidad de su plataforma e infraestructura y como se integran o gestionan operaciones. A continuación veremos algunos temas de plataforma, infraestructura, pipeline, automatización y Feature toggles.
 
 
 \subsection{Plataforma}
@@ -158,19 +158,19 @@ Por ejemplo, un equipo estándar que desarrolla algún sitio web con una arquite
 
 \item \textbf{Análisis y diseño:} El equipo usará, en una de sus primeras fases, herramientas de gestión de proyectos (como Jira de Atlassian, Trello, etc.) para idear, definir, compartir, coordinar y planificar trabajo en forma de historias de usuario, tickets o docs. El equipo necesita comunicarse para lo que usará software de chatting (email, Slack, Rocket.Chat, Fleep, etc. ) y conferencias (Google Hangouts, Zoom, skype, etc.). En el proceso de análisis y diseño necesitará compartir documentación y otros archivos necesitando un repositorio de documentos compartidos (Google Drive, Dropbox, OneDrive y SharePoint en Office 36 de Microsoft, etc.). Sumando herramientas de diseño UX (por ejemplo para Wireframes, Visual Design, etc.) y de diseño y diagramado de software (Día, Visio, Google Draw.io, etc.). 
 
-\item \textbf{Implementación:} En programación incluirán lenguajes, entornos IDE de programación (Eclipse, etc.) y librerías. Necesitará un gestor de configuración y versionado de software o Version Control System para trabajar en un código de propiedad compartida (github, Subversion, CVS, etc.). 
+\item \textbf{Implementación:} En programación incluirán lenguajes, entornos IDE de programación (Eclipse, etc.) y librerías. Necesitará un gestor de configuración y versionado de software o Version Control System para trabajar en un código de propiedad compartida (github, Subversion, CVS, etc.). Para luego hacer sus push de código al repositorio.
 
-\item \textbf{Integración:} Trabajará con un esquema de branching e integración de código para lo cual usará herramientas de compilación, dependencias y building, integración y despliegue (como Gitlab, Maven, etc.) además de herramientas de automatización de integración y despliegue (como Jenkins, Travis CI, Buildbot, DotCi, etc.). 
+\item \textbf{Integración:} Trabajará con un esquema de branching e integración de código para lo cual usará herramientas de compilación, dependencias y building, integración y despliegue (como Gitlab, Maven, etc.) además de herramientas de automatización de integración y despliegue (como Jenkins, Travis CI, Buildbot, DotCi, etc.). Aquí lo que hace es básicamente integrar en un ambiente aislado y posiblemente crear imágenes portables. También puede desplegar en ambientes de testing para luego correr las pruebas.
 
-\item \textbf{Pruebas:} Junto a esto, para realmente hacer ingeniería, necesita herramientas de gestión, ejecución y automatización de pruebas (como Selenium, Sahi, Source Labs, Testing Bot etc.). 
+\item \textbf{Pruebas:} Junto a esto, para realmente hacer ingeniería, necesita herramientas de gestión, ejecución y automatización de pruebas (como Selenium, Sahi, Source Labs, Testing Bot etc.). Aquí ejecutará en un ambiente de testing pruebas automatizadas. También puede desplegar y testear en otros ambientes.
 
-\item \textbf{Despliegue:} Herramientas para desplegar en producción (Jenkins, Travis CI, Buildbot, DotCi, Ansible, Puppet, Docker, etc.). 
+\item \textbf{Despliegue:} Herramientas para desplegar en producción (Jenkins, Travis CI, Buildbot, DotCi, Ansible, Puppet, Docker, etc.). Aquí se termina haciendo el despliegue a producción.
 
 \item \textbf{Monitoreo:} Y, en su etapa de monitorear el software operativo en producción, necesita monitorear el rendimiento y la saludo del software y atender las contingencias que ocurran. Aquí necesitará herramientas de Bug-tracking como comunicación y sistema de ticket para identificaciones de errores y bugs (Bugzila, Mantis Bug Tracker, etc.), herramienta de logs o  registros y monitoreo (Splunk, Sumo Logic, LogStash, GrayLog, Loggly, PaperTrails, etc.). Y por último el equipo necesita evaluar los datos del negocio que opera el software, tendencias, comportamientos de los usuarios y clientes, para lo que puede usar herramientas de analítica digital y Business Intelligence (Splunk, Google Analytic, Elasticsearch y Kibana, Gafana, etc.).
 
 \end{itemize}
 
-Luego, todas estas herramientas... ¿Sobre qué corren? ¿Sobre qué infraestructura funciona? ¿Qué ambientes de programación, pruebas y producción manejan? ¿Cuán versátil y fácil de configurar es? ¿Que dominio, propiedad y responsabilidad tiene el equipo sobre esta? ¿Cómo se comunica y se coordina con los proveedores y el soporte?
+La cantidad de pasos y despliegues dependerá de su pipeline, ambientes e infraestructura. Aquí nos podemos preguntar... ¿Sobre qué corren? ¿Sobre qué infraestructura funciona? ¿Qué ambientes de programación, pruebas y producción manejan? ¿Cuán versátil y fácil de configurar es? ¿Que dominio, propiedad y responsabilidad tiene el equipo sobre esta? ¿Cómo se comunican y se coordinan con los proveedores, admins y soportes?
 
 
 \subsection{Infraestructura}
@@ -232,7 +232,7 @@ La infraestructura es como la autopista por donde circula nuestro código dentro
 
 \subsection{Pipeline automatizado}
 
-Desde el aspecto técnico, en ingeniería de software buscamos reducir el tiempo entre el inicio del desarrollo de una funcionalidad y su puesta en operaciones (lead time), la mejora continua de nuestro proceso de desarrollo de software y lograr código de calidad. Es decir acelerar el time-to-market, ser eficientes y entregar software de calidad que sea valioso para el cliente o el usuario. Y DevOps es parte de esta disciplina que se centra en efientizar todo el proceso desde el desarrollo hasta producción. En este sentido, podemos decir que el santo grial de DevOps es la automatización completa de todo el proceso centrándonos, de principio, desde que el desarrollador hace commit (push del código) hasta que su código llega a producción (Delivery Lead Time). Para automatizar este proceso o flujo de despliegue, se necesita programar la generacón de código, integración, empaquetados, testing automáticos, orquestación, empaquetado y/o containerización y despliegue. Una manera de centralizar todo el flujo es en un “pipeline” y lo hacemos mediante la programación de configuraciones como scripts (pipeline as code) usando algún “automation server” como Jenkins. 
+Desde el aspecto técnico, en ingeniería de software buscamos reducir el tiempo entre el inicio del desarrollo de una funcionalidad y su puesta en operaciones (lead time), la mejora continua de nuestro proceso de desarrollo de software y lograr código de calidad. Es decir acelerar el time-to-market, ser eficientes y entregar software de calidad que sea valioso para el cliente o el usuario. Y DevOps es parte de esta disciplina que se centra en efientizar todo el proceso desde el desarrollo hasta producción. En este sentido, podemos decir que el santo grial de DevOps es la automatización completa de todo el proceso centrándonos, de principio, desde que el desarrollador hace commit (push del código) hasta que su código llega a producción (Delivery Lead Time). El ideal de DevOps es lograr el "one click deployment": apretar una tecla y que llegue a producción. Para automatizar este proceso o flujo de despliegue, se necesita programar la generacón de código, integración, empaquetados, testing automáticos, orquestación, empaquetado y/o containerización y despliegue. Una manera de centralizar todo el flujo es en un “pipeline” y lo hacemos mediante la programación de configuraciones como scripts ("pipeline as code") usando algún “automation server” como Jenkins. 
 
 \begin{figure}[h]
   \centering
@@ -281,8 +281,6 @@ Algo contemplado en DevOps es la posibilidad de hacer rollback rápido o desacti
 
 \item \textbf{Context Flag:} Otro mecanismo es el que permite desactivar ciertas funciones para nuestra base general de usuarios en producción, pero poder activarla para usuarios internos. Esto se puede implementar usando configuradores de ambientes con Toggle Context. El Toggle Router leerá el ambiente de este Toggle Context y el Toggle Point encendera o apagará una característica según el contexto y el valor del Toggle Configuration.
 
-\item \textbf{Canary Releasing:} Esta técnica es una manera de incluir a la anterior. Consiste en permitir ir activando funcionalidades por zonas. Primero las activaríamos en sistemas internos, después en sistemas de clientes con confianza y si todo funciona correcto al final se activaría a todos o los clientes críticos. Si en alguna de estas zonas hay problemas, dejaríamos de avanzar y reestableceríamos el sistema para luego resolver el problema.
-
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.55\textwidth]{Feature_Toggle}
@@ -293,6 +291,17 @@ Algo contemplado en DevOps es la posibilidad de hacer rollback rápido o desacti
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
+\item \textbf{Canary Releasing:} Esta técnica es una manera de incluir a la anterior. Consiste en permitir ir activando funcionalidades por zonas. Primero las activaríamos en sistemas internos, después en sistemas de clientes con confianza y si todo funciona correcto al final se activaría a todos o los clientes críticos. Si en alguna de estas zonas hay problemas, dejaríamos de avanzar y reestableceríamos el sistema para luego resolver el problema.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.90\textwidth]{canarycontext}
+  \caption{Ejemplo de diferentes contextos para Canary Releasing}
+  \centering
+  \label{fig:canarycontext} %\ref{fig:canarycontext}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
 \end{itemize}
 
