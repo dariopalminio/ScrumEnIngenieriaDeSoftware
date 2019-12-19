@@ -141,9 +141,10 @@ Hay que tener en cuenta que para que el flujo de desarrollo de software fluya li
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
-\section{Plataforma e infraestructura}
 
-Una manera de deducir el nivel de calidad de trabajo de un equipo es ver cómo se desenvuelven con DevOps en cuanto a cómo manejan la optimización y automatización del flujo de trabajo, y  la calidad y flexibilidad de su plataforma y su infraestructura.
+\section{DevOps}
+
+Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software útil y el enfoque DevOps nos ayuda a este objetivo. Aclaro aquí que DevOps no es más que una práctica y efoque dentro de la ingeniería de software. Por este motivo, una manera de deducir el nivel de ingeniería y, en consecuencia, de calidad de trabajo de un equipo es ver cómo se desenvuelven con DevOps en cuanto a cómo manejan la optimización y automatización del flujo de trabajo, la calidad y flexibilidad de su plataforma e infraestructura y como se integran o gestionan operaciones. A continuación veremos algunos temas de plataforma, infraestructura, pipeline, automatización y Feature toggles.
 
 
 \subsection{Plataforma}
@@ -159,12 +160,13 @@ Por ejemplo, un equipo estándar que desarrolla algún sitio web con una arquite
 
 \item \textbf{Implementación:} En programación incluirán lenguajes, entornos IDE de programación (Eclipse, etc.) y librerías. Necesitará un gestor de configuración y versionado de software o Version Control System para trabajar en un código de propiedad compartida (github, Subversion, CVS, etc.). 
 
-\item \textbf{Integración:} Trabajará con un esquema de branching e integración de código para lo cual usará herramientas de integración y despliegue (como Gitlab) además de herramientas de automatización de integración y despliegue (como Jenkins, Travis CI, Buildbot, DotCi, etc.). 
-Pruebas: Junto a esto, para realmente hacer ingeniería, necesita herramientas de gestión,  ejecución y automatización de pruebas (como Selenium, Sahi, Source Labs, Testing Bot etc.). 
+\item \textbf{Integración:} Trabajará con un esquema de branching e integración de código para lo cual usará herramientas de compilación, dependencias y building, integración y despliegue (como Gitlab, Maven, etc.) además de herramientas de automatización de integración y despliegue (como Jenkins, Travis CI, Buildbot, DotCi, etc.). 
 
-\item \textbf{Despliegue:} Herramientas para desplegar en producción (Jenkins, Travis CI, Buildbot, DotCi, Ansible, Puppet, etc.). 
+\item \textbf{Pruebas:} Junto a esto, para realmente hacer ingeniería, necesita herramientas de gestión, ejecución y automatización de pruebas (como Selenium, Sahi, Source Labs, Testing Bot etc.). 
 
-\item \textbf{Monitoreo:} Y, en su etapa de monitorear el software operativo en producción, necesita monitorear el rendimiento y la saludo del software y atender las contingencias que ocurran. Aquí necesitará herramientas de Bug-tracking como comunicación y sistema de ticket para identificaciones de errores y bugs (Bugzila, Mantis Bug Tracker, etc.), herramienta de logs o  registros y monitoreo (Splunk, Sumo Logic, LogStash, GrayLog, Loggly, PaperTrails, etc.). Y por último el equipo necesita evaluar los datos del negocio que opera el software, tendencias, comportamientos de los usuarios y clientes, para lo que puede usar herramientas de Analítica digital y Business Intelligence (Splunk, Google Analytic, Elasticsearch y Kibana, Gafana, etc.).
+\item \textbf{Despliegue:} Herramientas para desplegar en producción (Jenkins, Travis CI, Buildbot, DotCi, Ansible, Puppet, Docker, etc.). 
+
+\item \textbf{Monitoreo:} Y, en su etapa de monitorear el software operativo en producción, necesita monitorear el rendimiento y la saludo del software y atender las contingencias que ocurran. Aquí necesitará herramientas de Bug-tracking como comunicación y sistema de ticket para identificaciones de errores y bugs (Bugzila, Mantis Bug Tracker, etc.), herramienta de logs o  registros y monitoreo (Splunk, Sumo Logic, LogStash, GrayLog, Loggly, PaperTrails, etc.). Y por último el equipo necesita evaluar los datos del negocio que opera el software, tendencias, comportamientos de los usuarios y clientes, para lo que puede usar herramientas de analítica digital y Business Intelligence (Splunk, Google Analytic, Elasticsearch y Kibana, Gafana, etc.).
 
 \end{itemize}
 
@@ -226,6 +228,75 @@ La infraestructura es como la autopista por donde circula nuestro código dentro
 \item \textbf{Cloud Computing:} Y todo esto nos lleva al Cloud Computing, o computación en la nube. Que es una plataforma que permite ofrecer las TI como servicios en la red. Todo lo que se encuentra en la nube Cloud se ofrece al usuario o programador como servicio, tanto software (SaaS), plataforma (PaaS) e infraestructuras (IaaS). El Cloud está basado en entornos virtualizados de alta disponibilidad y rendimiento sobre la infraestructura de Datacenter del proveedor. Además existe Elastic Computing que se aplica en los Elastic Cloud como tecnología de adaptación de uso de recursos en función de la demanda. Actualmente estas tecnologías son provista por proveedores dedicados al negocio de Clouding (Amazon, Azure, Google, Alibaba, etc.).
 
 \end{itemize}
+
+
+\subsection{Pipeline automatizado}
+
+Desde el aspecto técnico, en ingeniería de software buscamos reducir el tiempo entre el inicio del desarrollo de una funcionalidad y su puesta en operaciones (lead time), la mejora continua de nuestro proceso de desarrollo de software y lograr código de calidad. Es decir acelerar el time-to-market, ser eficientes y entregar software de calidad que sea valioso para el cliente o el usuario. Y DevOps es parte de esta disciplina que se centra en efientizar todo el proceso desde el desarrollo hasta producción. En este sentido, podemos decir que el santo grial de DevOps es la automatización completa de todo el proceso centrándonos, de principio, desde que el desarrollador hace commit (push del código) hasta que su código llega a producción (Delivery Lead Time). Para automatizar este proceso o flujo de despliegue, se necesita programar la generacón de código, integración, empaquetados, testing automáticos, orquestación, empaquetado y/o containerización y despliegue. Una manera de centralizar todo el flujo es en un “pipeline” y lo hacemos mediante la programación de configuraciones como scripts (pipeline as code) usando algún “automation server” como Jenkins. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{CICDautomated_pipeline_forjava}
+  \caption{Ejemplo de un CI-CD pipeline para una App Java con arquitectura de Microservicios}
+  \centering
+  \label{fig:CICDautomated_pipeline_forjava} %\ref{fig:CICDautomated_pipeline_forjava}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+Un pipeline es una secuencia de eventos o jobs que se pueden configurar y ejecutar como una secuencia de etapas STAGE. Donde cada STAGE es un conjunto de pasos Steps. Y cada Steps es una tarea que dice qué hacer mediante un bloque de líneas de código script.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{CICDautomated_pipeline_forjava-code}
+  \caption{Script ejemplo de un pipeline}
+  \centering
+  \label{fig:CICDautomated_pipeline_forjava-code} %\ref{fig:CICDautomated_pipeline_forjava-code}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+Cada pipeline que el equipo cree dependerá de su arquitectura de software, plataforma y la propia madurez de ingeniería de software del equipo. Y la arquitectura de software o la plataforma no es excusa para no hacer DevOps ni tener en cuenta un pipeline. Uses Java, Microsoft Visual Studio o SAP tu puedes hacer DevOps. Tal vez un  equipo más inmaduro en su desarrollo o al inicio de su proyecto tenga un pipeline pobre o no lo tenga. Y un equipo más desarrollado o avanzado tenga un pipeline más sofisticado (aunque simple de usar), rápido y automatizado. Tu pipeline demuestra tu nivel de DevOps y tu nivel de DevOps demuestra tu nivel de Ingeniería de Software. En particular recomiendo un pipeline basado en pruebas pequeñas (pruebas unitarias), medianas (pruebas de integración) y grandes (pruebas de sistema) y evolucionarlo de algo simple a algo más sofisticado y completamente automatizado. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\textwidth]{CICDpipeline_small-medium-large}
+  \caption{Esquema de un CI-CD pipeline tipo small-medium-large test}
+  \centering
+  \label{fig:CICDpipeline_small-medium-large} %\ref{fig:CICDpipeline_small-medium-large}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+\subsection{Activadores de características}
+
+Algo contemplado en DevOps es la posibilidad de hacer rollback rápido o desactivar funcionalidades de forma simple y rápida. Algo que ayuda a esto y a desplegar rápidamente pequeñas funcionalidades es una técnica introducida por de "Feature Toggles" (feature switch o feature flag). Esta permite a los equipos modificar el comportamiento del sistema de software sin cambiar el código. Es como tener llaves de encendido de características de nuestra aplicación que corre en producción. Los Feature toggles se implementan con Feature Flags (vanderas de características). Y tenemos tres opciones básicas para implementar:
+
+\begin{itemize}
+
+\item \textbf{Static Feature Flag:} Esta es la manera más simple, pero menos recomendada, y consiste en usar variables banderas directamente en el código fuente y productivo como "toggle point" para habilitar o deshabilitar funcionalidades.
+
+\item \textbf{Dynamic Feature Flag:} Otra manera es activar o desactivar flags de una manera dinámica fuera del código fuente core desde un subsistema que centraliza la configuración de flags y que se llama Toggle Configuration. Los  Toggle Configuration pueden ser archivos de configuración o config file (flags en archivos) o bases de datos (flags en tablas) con algún software de gestión de Feature Flags. Las aplicaciones tendrán características con Toggle Points que usan un Toggle Router para decidir según un Toggle Configuration externo. El Toggle Configuration y Toggle Router pueden evolucionar a subsistemas de administración más complejos, con interfaces de usuario y sistemas de autenticación.
+
+\item \textbf{Context Flag:} Otro mecanismo es el que permite desactivar ciertas funciones para nuestra base general de usuarios en producción, pero poder activarla para usuarios internos. Esto se puede implementar usando configuradores de ambientes con Toggle Context. El Toggle Router leerá el ambiente de este Toggle Context y el Toggle Point encendera o apagará una característica según el contexto y el valor del Toggle Configuration.
+
+\item \textbf{Canary Releasing:} Esta técnica es una manera de incluir a la anterior. Consiste en permitir ir activando funcionalidades por zonas. Primero las activaríamos en sistemas internos, después en sistemas de clientes con confianza y si todo funciona correcto al final se activaría a todos o los clientes críticos. Si en alguna de estas zonas hay problemas, dejaríamos de avanzar y reestableceríamos el sistema para luego resolver el problema.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Feature_Toggle}
+  \caption{Esquema de feature toggle}
+  \centering
+  \label{fig:Feature_Toggle} %\ref{fig:Feature_Toggle}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
+\end{itemize}
+
+Los Feature Flags ayudan a desplegar pequeños experimentos en producción para recibir feedback rápido, recuperar la estabilidad de la aplicación ante fallos fácilmente sin tener que desinstalar (sin hacer rollback), encender releases planificados desplegados apagados con anterioridad (solo encendiendo flags), hacer pruebas por zonas de alcance de usuarios. Los Feature Flags impactan a las métricas de Deployment Frequency y MTTR mejorando la prestancia DevOps. Aunque no se debería abusar del uso de esta técnica. Se recomienda trabajar primero buscando desarrollar features lo más chicas posibles para hacer despliegues continuos de pequeñas funcionalidades. Y usar Feature Toggles solo cuando el equipo considere adecuado.
 
 \section{En síntesis}
 
