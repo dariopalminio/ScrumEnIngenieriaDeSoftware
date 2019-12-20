@@ -185,6 +185,33 @@ Resumidamente, la gestión de proyecto se orienta al producto y su ciclo de vida
 \FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
 % El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
 
+\subsubsection{Tres aspectos de la evolución de producto}
+
+Cuando nos enfocamos en el producto y no en el proyecto comenzamos a prestar atención a otros aspectos más externos y no tan internalistas. Por ejemplo en los tres aspectos de la evolución de producto: el producto como tal, los cliente y el mercado. El producto evolucionará de menos a más. Primero buscaremos la solution-fit con un grupo reducido de usuarios, como los innovadores. Luego buscaremos el market-fit con adoptadores tempranos, primero y luego con la mayoría temprana. Luego el producto crecerá junto a que lo hará el mercado para pensar en el escalamiento. El producto llegará a su estado de decaimiento y antes de eso pensaremos en el escalamiento o en las posibles innovaciones del mismo. No hay una única manera de administrar el producto, sus clientes y el mercado, pero si cualquiera de ellas no se centra en proyecto.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.70\textwidth]{3product_evolution}
+  \caption{Tres aspectos de la evolución de producto}
+  \centering
+  \label{fig:3product_evolution} %\ref{fig:3product_evolution}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+De este modo el trabajo se enfoca en descubrir un producto que sea valioso para el mercado (aspecto de negocio), utilizable para los usuarios (aspecto de experiencia de usuario) y factible (aspecto técnico). El autor Martin Eriksson, en su definición de gestión de productos, lo llama la intersección entre el negocio, la experiencia del usuario y la tecnología. Un equipo de desarrollo de software incluye tres tipos de profesionales según esos aspectos: PO, UX y Devs. Y posiblemente, además del PO, un gerente de producto colaborando con el equipo que lidere y se centre en la optimización de un producto o familia de productos para lograr los objetivos comerciales y maximizar el retorno de la inversión.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.40\textwidth]{3areas_ux_business_tech}
+  \caption{Esquema según Martin Eriksson (2011)}
+  \centering
+  \label{fig:3areas_ux_business_tech} %\ref{fig:3areas_ux_business_tech}
+\end{figure}
+\FloatBarrier % Command to control the position of floating images. With its, I can get the figures not to be pushed to the end of the document.
+% El comando FloatBarrier es usado aqui para que la imagen se clave en este lugar y que no sea acarreada al final del documento.
+
+
 \subsubsection{Llevar trabajo a los equipos}
 
 Al cambiar la perspectiva hacia estar orientados a productos y mantener equipos estables, cambia el enfoque de la gestión de proyectos. Ya no buscamos recursos humanos para proyectos, desarmando y armando equipos en función de proyectos. Lo que se busca hacer, entre otras cosas, es llevar trabajo a los equipos, buscando productos para equipos. Buscamos alinear a equipos en función de objetivos estratégicos. Mantener productos o servicios de valor para objetivos estratégicos. Donde los equipos son activos de la empresa y que buscan siempre maximizar el valor entregado. Esto puede llevar a cambiar toda la dinámica de funcionamiento de una PMO e, inclusive, desarrollar independientemente de presupuestos (tema que queda fuera del alcance de este libro).
@@ -201,7 +228,7 @@ Al cambiar la perspectiva hacia estar orientados a productos y mantener equipos 
 
 \subsection{Gestión de riesgos}
 
-Si bien la gestión de riesgos no es parte de scrum y un facilitador no se encarga de la gestión al modo tradicional como la gestión de riesgos, sí debería velar por mitigar los problemas que surjan en el proyecto y apoyar, en consecuencia, a la gestión de riesgos. En este sentido, no solo se encargaría de ayudar a desbloquear problemas y reducir impedimentos para que el sistema de trabajo fluya, sino que también puede preocuparse de prever issues para anticiparse a los problemas y controlar así, de antemano y en la medida de lo posible, los riesgos asociados a bloqueos del flujo de trabajo que atentan contra los objetivos del proyecto. Lo difícil es lograr una gestión de riesgos ágil en vez de una gestión pesada, dificultosa y que demande mucho esfuerzo de gestión. En esta vía, es preferible mantener un simple registro de riesgos con información concisa. Los datos principales a registrar de un riesgo, además de su nombre, pueden ser: descripción, probabilidad (probability), impacto (severity), criticidad (criticality), acciones de mitigación, dueño y estado.
+Si bien la gestión de riesgos no es parte de scrum y un facilitador no se encarga de la gestión al modo tradicional como la gestión de riesgos, sí debería velar por mitigar los problemas que surjan en el desarrollo de producto y apoyar, en consecuencia, a la gestión de riesgos. En este sentido, no solo se encargaría de ayudar a desbloquear problemas y reducir impedimentos para que el sistema de trabajo fluya, sino que también puede preocuparse de prever issues para anticiparse a los problemas y controlar así, de antemano y en la medida de lo posible, los riesgos asociados a bloqueos del flujo de trabajo que atentan contra los objetivos estratégicos. Lo difícil es lograr una gestión de riesgos ágil en vez de una gestión pesada, dificultosa y que demande mucho esfuerzo de gestión. En esta vía, es preferible mantener un simple registro de riesgos con información concisa. Los datos principales a registrar de un riesgo, además de su nombre, pueden ser: descripción, probabilidad (probability), impacto (severity), criticidad (criticality), acciones de mitigación, dueño y estado.
 
 Algo simple que se puede lograr trabajando con criticidad es usar tres valores en la probabilidad de ocurrencia y en el impacto (1, 2 y 3). El impacto representa la severidad de la ocurrencia de un problema asociado al riesgo o el tiempo perdido (size of loss). Por otro lado, la criticidad representa la prioridad del riesgo o el grado en que ese riesgo afecta negativamente al proyecto (exposure). El mismo será resultado del producto entre la probabilidad y el impacto. En consecuencia, la criticidad podría ser: 1, 2, 3, 4, 6, 9.
 
